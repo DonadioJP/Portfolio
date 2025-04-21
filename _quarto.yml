@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "João Pedro Donadio"
+  navbar:
+    title: JP Donadio
+    background: "primary"
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Portfolio
+        menu:
+          - href: projects.qmd
+            text: "All Projects"
+          - href: metaanalysis.qmd
+            text: "Meta-analysis"
+          - href: watercalves.qmd
+            text: "Experiment"
+      - href: cv.qmd
+        text: Curriculum vitae
+
+    right:
+    - href: index.qmd#contact
+      icon: envelope  
+      text: Contact Me  
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: false
+
+editor: visual
+

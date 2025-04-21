@@ -1,0 +1,97 @@
+---
+title: "Meta-analysis: Calves in Group Housing" 
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(htmltools)
+
+# Content Columns
+content_cols <- list(
+  list(
+    title = "Background",
+    content = tags$p("Analysis of 35 peer-reviewed studies comparing individual vs group housing systems, assessing health, growth, and behavioral outcomes in dairy calves.")
+  ),
+  list(
+    title = "Goals",
+    content = tags$ul(
+      tags$li("Compare weight gain patterns"),
+      tags$li("Assess social behavior development"),
+      tags$li("Evaluate disease transmission risks")
+    )
+  ),
+  list(
+    title = "Results",
+    content = tagList(
+      tags$ul(
+        tags$li("15% ↑ social interactions in groups"),
+        tags$li("No significant difference in disease rates"),
+        tags$li("Improved feed efficiency in groups")
+      ),
+      tags$a(href="#publication", style="color: #3b82f6;", "View Publication")
+    )
+  )
+)
+
+# Graph Boxes
+graphs <- list(
+  list(
+    title = "Growth Rate Comparison",
+    img = "assets/growth-chart.png",
+    desc = "Group-housed calves showed more consistent weight gain after weaning period (p < 0.05)."
+  ),
+  list(
+    title = "Social Interaction Analysis",
+    img = "assets/social-heatmap.png",
+    desc = "Increased play behavior observed in group housing systems."
+  )
+)
+
+# Skills
+skills <- c("R Metafor", "PRISMA", "Python", "Tableau", "JBI Checklist")
+
+# Build Page
+project_page <- div(class = "project-container",
+  
+  # Single image spanning above the columns
+  img(class = "shared-header",
+      src = "images/IMG_20240111_204935_6162.png",
+      alt = "Research Header Image"),
+  
+  # Three columns
+  div(class = "columns-wrapper",
+    lapply(content_cols, function(col) {
+      div(class = "column-box",
+        div(class = "column-content",
+          h3(style = "color: #1e40af; margin-top: 0; border-bottom: 2px solid #3b82f6;", col$title),
+          col$content
+        )
+      )
+    })
+  ),
+  
+  # Full width content
+  div(lapply(graphs, function(g) {
+      div(class = "full-width-section",
+        h2(style = "color: #1e40af; border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem;",
+           g$title),
+        img(src = g$img, alt = g$title, style = "width:100%; margin:1rem 0; border-radius: 4px;"),
+        p(g$desc)
+      )
+    })
+  ),
+  
+  # Skills section
+  div(class = "skills-plain",
+    h3("Skills Used:"),
+    div(lapply(skills, function(s) {
+      span(s)
+    }))))
+
+
+project_page
+```
+
