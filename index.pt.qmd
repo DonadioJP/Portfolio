@@ -1,0 +1,264 @@
+---
+title: "João Pedro Donadio"
+subtitle: "Engenheiro Agrônomo | Analista de Dados de Pesquisa"
+lang: pt
+---
+
+:::::: columnsABC
+::: column1
+![](images/8ac03fa4-397b-4d5e-8d64-ad34940eac8f-02.jpeg){#profile-pic .rounded .shadow fig-align="left"} [jp.donadio\@gmail.com](mailto:jp.donadio@gmail.com)\
+[LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-pedro-donadio-1543821a0/)\
+[GitHub](https://github.com/DonadioJP)\
+[ORCID](https://orcid.org/0000-0002-6728-4373)
+:::
+
+:::: column2
+::: bio-box
+**Olá, eu sou João Pedro Donadio** - Engenheiro Agrônomo e Analista de Dados de Pesquisa apaixonado por transformar dados brutos em insights significativos. Sou especializado em fazer a ponte entre o trabalho de campo e a análise de dados, ajudando pesquisadores e gestores a tomar decisões embasadas em dados.
+
+Minhas ferramentas incluem R, SQL, modelagem estatística, Tableau, Quarto, PowerPoint e Canva. Também trabalho com controle de versão no GitHub para garantir fluxos de trabalho limpos e colaborativos.
+
+Movido por uma profunda curiosidade sobre como os sistemas funcionam, trago uma combinação única de rigor técnico e experiência prática de campo. Com formação em pecuária sustentável e pesquisa aplicada, foco em soluções práticas para desafios do mundo real.
+:::
+::::
+::::::
+
+::: bio-box2
+Estou aqui para ajudá-lo a conectar ciência e estratégia através de:
+
+-   **Planejamento rigoroso de estudos** com objetivos claros e acionáveis
+
+-   **Coleta e limpeza de dados** de diversas fontes
+
+-   **Identificação de padrões** através de análise estatística robusta
+
+-   **Criação de visualizações intuitivas** que contam histórias
+
+-   **Elaboração de relatórios dinâmicos** para tomada de decisão inteligente
+:::
+
+::: services
+```{r echo=FALSE}
+library(ggplot2)
+library(ggimage)
+library(ggiraph)
+library(patchwork)
+
+# --- First Plot (p1) ---
+services1 <- data.frame(
+  stage = c("Planejamento", "Coleta de Dados", "Limpeza"),
+  x = 1:3,
+  y = rep(1.03, 3),
+  image = paste0("images_plot/", c("project-planning", "data-collection", "cleaning"), ".png"),
+  tooltip = c("Definir escopo e objetivos do projeto",
+              "Coletar dados brutos de várias fontes",
+              "Limpar e preparar os dados")
+)
+
+p1 <- ggplot(services1, aes(x, y)) +
+  geom_line(linewidth = 5, color = "#2E48AB", alpha = 0.7) +
+  geom_image(aes(image = image), size = 0.6) +
+  geom_text(aes(label = stage), 
+            color = "black", size = 3.8,
+            nudge_y = -0.05, vjust = 3.8, fontface = "bold") +
+  geom_point_interactive(aes(tooltip = tooltip, data_id = stage), size = 15, alpha = 0) +
+  scale_y_continuous(limits = c(0.9, 1.1)) +
+  scale_x_continuous(limits = c(0.5, 3.5)) +
+  theme_void() +
+  theme(panel.background = element_rect(fill = "white", color = NA))
+
+# --- Second Plot (p2) ---
+services2 <- data.frame(
+  stage = c("Análise Exploratória", "Análise Estatística", "Visualização", "Relatório"),
+  x = 1:4,
+  y = rep(1, 4),
+  image = paste0("images_plot/", c("exploratory-analysis", "statistical-analysis",
+                                 "visualization", "reporting"), ".png"),
+  tooltip = c("Explorar padrões e relações",
+              "Aplicar modelos estatísticos",
+              "Criar representações visuais",
+              "Comunicar resultados efetivamente")
+)
+
+p2 <- ggplot(services2, aes(x, y)) +
+  geom_line(linewidth = 5, color = "#2E48AB", alpha = 0.7) +
+  geom_image(aes(image = image), size = 0.6) +
+  geom_text(
+    aes(label = stage),
+    color = "black",
+    size = 3.8,
+    position = position_nudge(y = -0.15),
+    vjust = 3.8,
+    fontface = "bold"
+  ) +
+  geom_point_interactive(aes(tooltip = tooltip, data_id = stage), size = 15, alpha = 0) +
+  scale_y_continuous(limits = c(0.7, 1.4)) +
+  scale_x_continuous(limits = c(0.5, 4.5)) +
+  theme_void() +
+  theme(
+    panel.background = element_rect(fill = "white", color = NA),
+    plot.margin = margin(0, 0, 0.5, 0, "cm")
+  )
+
+# --- Combine Plots ---
+combined <- (p1 / p2) +
+  plot_layout(heights = c(1, 1)) &
+  theme(
+    plot.margin = margin(0, 0, 0, 0, "cm"))
+
+combined <- patchwork::wrap_elements(full = combined) +
+  theme(plot.background = element_rect(color = "#2E48AB", fill = NA))
+
+girafe(ggobj = combined,
+       options = list(
+         opts_hover(css = "transform: scale(1.3); transition: 0.2s;"),
+         opts_tooltip(css = "background-color:white; color:black; 
+                      border:1px solid #ccc; padding:5px; 
+                      border-radius:1px;"),
+         opts_sizing(width = 0.9)
+       ),
+      width_svg = 6.8,
+       height_svg = 4)
+```
+:::
+
+::: quote-box
+"Dados por si só não são suficientes, eles precisam ser analisados profundamente, visualizados claramente e comunicados efetivamente para impulsionar decisões significativas."
+:::
+
+::: cv-button
+```{r}
+#| echo: false
+htmltools::tags$div(
+  class = "cv-button-box",
+  href = "cv.pt.qmd",
+  style = "cursor: pointer;",
+  "Quer saber mais? Acesse meu CV"
+)
+```
+:::
+
+```{r}
+#| echo: FALSE
+#| results: asis
+
+library(htmltools)
+
+# Standard divider
+divider <- function(thick = FALSE) {
+  class <- ifelse(thick, "section-divider thick", "section-divider")
+  tags$hr(class = class)
+}
+
+# Usage between sections:
+divider()
+```
+
+::: Portfolio
+### Portfolio
+```{r}
+#| echo: FALSE
+#| results: asis
+
+library(htmltools)
+
+portfolio_gallery <- function() {
+  div(class = "portfolio-gallery",
+    # Item 1 (Projeto normal)
+    div(class = "portfolio-item",
+        a(href = "watercalves.pt.qmd",
+          img(src = "images/Calves_water.png", class = "portfolio-image", alt = "watercalves")
+        ),
+        p(class = "portfolio-theme", "Experimento"),
+        h3(class = "portfolio-title", "Método de fornecimento de água"),
+        p(class = "portfolio-date", "Outubro 2023")
+    ),
+    
+    # Item 2 (Projeto normal)
+    div(class = "portfolio-item",
+        a(href = "metaanalysis.pt.qmd",
+          img(src = "images/IMG_20240111_204935_6162.png", class = "portfolio-image", alt = "meta-analysis")
+        ),
+        p(class = "portfolio-theme", "Meta-Análise"),
+        h3(class = "portfolio-title", "Bezerros em Alojamento Coletivo"),
+        p(class = "portfolio-date", "Maio 2024")
+    ),
+    
+    # Item 3 (Ver portfólio completo)
+    div(class = "portfolio-item see-more",
+        a(href = "projects.pt.qmd", class = "full-portfolio-link",
+          img(src = "images/seemore.png", class = "portfolio-image", alt = "Full Portfolio"),
+        p(class = "portfolio-theme", ""),
+        h3(class = "portfolio-title", "Ver mais projetos"),
+        p(class = "portfolio-date", ""),
+          div(class = "portfolio-overlay",
+              div(class = "plus-sign", "+")
+          )
+        )
+    )
+  )
+}
+
+portfolio_gallery()
+```
+:::
+```{r}
+divider()
+```
+::: contact
+### Entre em contato ✉️ {#contact}
+:::
+```{r echo=FALSE}
+library(htmltools)
+
+formspree_form <- function(form_id) {
+  tags$div(
+    class = "contact-form",
+    tags$form(
+      action = "https://formspree.io/f/xjkwbbgg"),
+      method = "POST",
+      tags$div(
+        class = "form-group",
+        tags$label(`for` = "name", class = "form-label", "Nome"),
+        tags$input(
+          type = "text",
+          class = "form-control",
+          id = "name",
+          name = "name",
+          required = NA
+        )
+      ),
+      tags$div(
+        class = "form-group",
+        tags$label(`for` = "email", class = "form-label", "Email"),
+        tags$input(
+          type = "email",
+          class = "form-control",
+          id = "email",
+          name = "_replyto",
+          required = NA
+        )
+      ),
+      tags$div(
+        class = "form-group",
+        tags$label(`for` = "message", class = "form-label", "Mensagem"),
+        tags$textarea(
+          class = "form-control",
+          id = "message",
+          name = "message",
+          required = NA
+        )
+      ),
+    tags$div(
+  class = "form-group btn-container",
+  tags$button(
+    type = "submit",
+    class = "btn btn-primary",
+    "Enviar"
+  )
+)
+      )
+}
+
+formspree_form("xjkwbbgg")
+```
