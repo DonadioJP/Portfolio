@@ -4,14 +4,28 @@
     "href": "watercalves.html",
     "title": "Experiment: Water Delivery Method for Dairy Calves",
     "section": "",
-    "text": "Background\nAnalysis of 35 peer-reviewed studies comparing individual vs group housing systems, assessing health, growth, and behavioral outcomes in dairy calves.\n\n\n\n\nGoals\n\nCompare weight gain patterns\nAssess social behavior development\nEvaluate disease transmission risks\n\n\n\n\n\nResults\n\n15% ↑ social interactions in groups\nNo significant difference in disease rates\nImproved feed efficiency in groups\n\nView Publication\n\n\n\n\n\nGrowth Rate Comparison\n\nGroup-housed calves showed more consistent weight gain after weaning period (p &lt; 0.05).\n\n\nSocial Interaction Analysis\n\nIncreased play behavior observed in group housing systems.\n\n\n\nSkills Used:\n\nR Metafor\nPRISMA\nPython\nTableau\nJBI Checklist"
+    "text": "Background\nCross-sucking is a common abnormal behaviour in group-housed dairy calves, linked to welfare concerns and management practices. This study evaluates whether nipple-equipped water troughs can reduce this behaviour, promoting more natural drinking patterns and improved welfare outcomes.\n\n\n\n\nGoals\n\nAssess the effect of nipple water troughs on the frequency and duration of cross-sucking in group-housed calves\nEvaluate behavioural changes in response to different water provision systems\nDetermine whether nipple water troughs support more natural oral behaviours in calves after milk feeding\n\n\n\n\n\nResults\n\n42% reduction in cross-sucking in calves with nipple access vs. open troughs (p = 0.003)\nNo negative impact on growth (weaning weights: p = 0.788)\nLonger water trough visits and nighttime water intake in groups of calves with nipple water troughs\n\n\n\n\n\n\nCross-sucking Behavior\n\nCalves with nipple water troughs exhibited less cross-sucking events than calves with open water troughs during pre-weaning period.\n\n\nWater intake\n\nCalves with nipple water troughs consumed more water during night-time.\n\n\nWeight Gain\n\nThere was no difference in the performance of calves with nipple or open water troughs.\n\n\n\nSkills Used:\n\nR\nExcel\nData collection\nData visualization\nApplied Ethology\nAnimal Science"
   },
   {
     "objectID": "metaanalysis.html",
     "href": "metaanalysis.html",
     "title": "Meta-analysis: Calves in Group Housing",
     "section": "",
-    "text": "View Publication\n\n\n\n\n\n\n\nBackground\nDairy calves are traditionally separated from dams shortly after birth and raised individually during the preweaning period. While this practice is common, it contrasts with natural social dynamics and raises welfare concerns. Social isolation can lead to stress, fearfulness, and reduced cognitive development. Group housing (pairs or small groups) has emerged as a potential alternative, but its effects on performance, health, and behavior remain inconsistently reported across studies.\n\n\n\n\nGoals\n\nAssess how group housing impacts performance, health, and behavior compared to individual housing of dairy calves\nInvestigate housing factors that may influence the outcomes of group housing for dairy calves\nSynthesize findings to support practical improvements in calf-rearing systems\n\n\n\n\n\nResults\n\nGroup-housed calves had higher average daily gain (ADG) (+0.06 kg/d, P = 0.001) and weaning weight (+1.44 kg, P = 0.037)\nMore active behaviors (feeding, playing) and fewer stress-related behaviors (self-grooming, pen interactions) in group-housed calves\nLimited data on robust health outcomes (e.g., disease incidence)\n\n\n\n\n\n\nFlowchart of the systematic collection and screening of articles\n\nThe process to identify and screen articles for eligibility and inclusion in this systematic review and meta-analysis.\n\n\nSubgroup analysis of weaning age on average daily gain of dairy calves\n\nDifferent weaning ages have different effects on the average daily gain of dairy calves.\n\n\nForest plot of the effects of group size on average daily gain of dairy calves\n\nStudies on pair-housed calves show a higher average daily gain compared to individually housed calves.\n\n\n\nSkills Used:\n\nR\nExcel\nData Collection\nPRISMA\nSystematic Review\nMeta-analysis\nData Visualization"
+    "text": "View Publication\n\n\n\n\n\n\n\nBackground\nDairy calves are traditionally separated from dams shortly after birth and raised individually during the preweaning period. While this practice is common, it contrasts with natural social dynamics and raises welfare concerns. Social isolation can lead to stress, fearfulness, and reduced cognitive development. Group housing (pairs or small groups) has emerged as a potential alternative, but its effects on performance, health, and behavior remain inconsistently reported across studies.\n\n\n\n\nGoals\n\nAssess how group housing impacts performance, health, and behavior compared to individual housing of dairy calves\nInvestigate housing factors that may influence the outcomes of group housing for dairy calves\nSynthesize findings to support practical improvements in calf-rearing systems\n\n\n\n\n\nResults\n\nGroup-housed calves had higher average daily gain (ADG) (+0.06 kg/d, P = 0.001) and weaning weight (+1.44 kg, P = 0.037)\nMore active behaviors (feeding, playing) and fewer stress-related behaviors (self-grooming, pen interactions) in group-housed calves\nLimited data on robust health outcomes (e.g., disease incidence)\n\n\n\n\n\n\nFlowchart\n\nThe process to identify and screen articles for eligibility and inclusion in this systematic review and meta-analysis.\n\n\nSubgroup analysis\n\nDifferent weaning ages have different effects on the average daily gain of dairy calves.\n\n\nForest plot\n\nStudies on pair-housed calves show a higher average daily gain compared to individually housed calves.\n\n\n\nSkills Used:\n\nR\nExcel\nData Collection\nPRISMA\nSystematic Review\nMeta-analysis\nData Visualization"
+  },
+  {
+    "objectID": "index.pt.html",
+    "href": "index.pt.html",
+    "title": "João Pedro Donadio",
+    "section": "",
+    "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\n\n\n\nOlá, eu sou João Pedro Donadio - Engenheiro Agrônomo e Analista de Dados de Pesquisa apaixonado por transformar dados brutos em insights significativos. Sou especializado em fazer a ponte entre o trabalho de campo e a análise de dados, ajudando pesquisadores e gestores a tomar decisões embasadas em dados.\nMinhas ferramentas incluem R, SQL, modelagem estatística, Tableau, Quarto, PowerPoint e Canva. Também trabalho com controle de versão no GitHub para garantir fluxos de trabalho limpos e colaborativos.\nMovido por uma profunda curiosidade sobre como os sistemas funcionam, trago uma combinação única de rigor técnico e experiência prática de campo. Com formação em pecuária sustentável e pesquisa aplicada, foco em soluções práticas para desafios do mundo real.\n\n\n\n\nEstou aqui para ajudá-lo a conectar ciência e estratégia através de:\n\nPlanejamento rigoroso de estudos com objetivos claros e acionáveis\nColeta e limpeza de dados de diversas fontes\nIdentificação de padrões através de análise estatística robusta\nCriação de visualizações intuitivas que contam histórias\nElaboração de relatórios dinâmicos para tomada de decisão inteligente\n\n\n\n\n\n\n\n\n\n\n\n“Dados por si só não são suficientes, eles precisam ser analisados profundamente, visualizados claramente e comunicados efetivamente para impulsionar decisões significativas.”\n\n\n\n\nQuer saber mais? Acesse meu CV\n\n\n\n\n\nPortfolio\n\n\n\n\n\nExperimento\nMétodo de fornecimento de água\nOutubro 2023\n\n\n\n\n\nMeta-Análise\nBezerros em Alojamento Coletivo\nMaio 2024\n\n\n\n\n\nVer mais projetos\n\n\n+\n\n\n\n\n\n\ndivider()\n\n\n\n\n\nEntre em contato ✉️\n\n\n\n\n\n\nNome\n\n\n\nEmail\n\n\n\nMensagem\n\n\n\nEnviar"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "cv.html",
@@ -28,25 +42,25 @@
     "text": "Education\n\n\n\nMSc Animal Science\n\nSão Paulo State University\n\n2023-2025\n\n\nBSc Agriculture\n\nFederal University of Santa Catarina\n\n2017-2022"
   },
   {
-    "objectID": "cv.html#professional-experience",
-    "href": "cv.html#professional-experience",
+    "objectID": "cv.html#courses-certificates",
+    "href": "cv.html#courses-certificates",
     "title": "Curriculum Vitæ",
-    "section": "Professional Experience",
-    "text": "Professional Experience\n\n\n\n\n←\n→\n\n\n2025-Present\nResearch Assistant\nSão Paulo State University\n\nTraining teams on experimental procedures\nStatistical analysis planning\nTechnical report writing\n\n\n\n2024\nVisiting Research Student\nUniversity of British Columbia\n\nAnimal welfare research collaboration\nPresented findings at international seminars\n\n\n\n2023-2024\nHerdsperson\nEMBRAPA Pecuária Sudeste\n\nManaged dairy calf health protocols\nImplemented vaccination programs\n\n\n\n2023-2025\nGraduate Researcher\nSão Paulo State University\n\nCoordinated international dairy cattle welfare projects\nDeveloped patents and scientific papers\n\n\n\n2023\nTeaching Intern\nSão Paulo State University\n\nTaught 'Dairy Cattle' for veterinary students\n\n\n\n2022\nFarm Labourer\nEstância Santa Bárbara\n\nManaged operations for 11,000-head sheep farm\n\n\n\n2019-2022\nResearch Assistant\nFederal University of Santa Catarina (LETA)\n\nLed dairy cattle behavior studies\nDeveloped outreach materials\n\n\n\n2018\nTeaching Assistant\nFederal University of Santa Catarina\n\nPhysics instruction for agriculture students\n\n\n\n2017-2018\nSearch Engine Evaluator\nLionbridge\n\nImproved search algorithm quality"
+    "section": "Courses Certificates",
+    "text": "Courses Certificates\n\n\n\n\nDairy calf rearing: strategies to increase efficiency - Embrapa (40h)\nGraduate Student Writing Workshop - University of Calgary (12h)\nR Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)\nTeaching in higher education: foundations and pedagogical practices - São Paulo State University (30h)\nCalculation and analysis of production costs in agriculture - Federal University of Santa Catarina (16h)\nAmbience, Precision Animal Science and Animal Welfare - University of São Paulo (40h)"
   },
   {
     "objectID": "cv.html#skills-matrix",
     "href": "cv.html#skills-matrix",
     "title": "Curriculum Vitæ",
     "section": "Skills Matrix",
-    "text": "Skills Matrix\n\n\nProject Management\nTrello\nExperimental designs\nAcademic Research\nExcel\nSQL\nR\nData Visualization\nTableau\nQuarto\nWord\nGitHub\nMicrosoft Teams\nHTML\nCSS"
+    "text": "Skills Matrix\n\n\nProject Management\nExperimental designs\nAcademic Research\nAnimal Ethology\nAnimal Welfare\nExcel\nSQL\nR\nData Visualization\nQuarto\nWord\nGitHub\nMicrosoft Teams\nHTML\nCSS"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Curriculum Vitæ",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\n\n\n\n←\n→\n\n\n2025-Present\nResearch Assistant\nSão Paulo State University\n\nTraining teams on experimental procedures\nStatistical analysis planning\nTechnical report writing\n\n\n\n2024\nVisiting Research Student\nUniversity of British Columbia\n\nAnimal welfare research collaboration\nPresented findings at international seminars\n\n\n\n2023-2024\nHerdsperson\nEMBRAPA Pecuária Sudeste\n\nManaged dairy calf health protocols\nImplemented vaccination programs\n\n\n\n2023-2025\nGraduate Researcher\nSão Paulo State University\n\nCoordinated international dairy cattle welfare projects\nDeveloped patents and scientific papers\n\n\n\n2023\nTeaching Intern\nSão Paulo State University\n\nTaught 'Dairy Cattle' for veterinary students\n\n\n\n2022\nFarm Labourer\nEstância Santa Bárbara\n\nManaged operations for 11,000-head sheep farm\n\n\n\n2019-2022\nResearch Assistant\nFederal University of Santa Catarina (LETA)\n\nLed dairy cattle behavior studies\nDeveloped outreach materials\n\n\n\n2018\nTeaching Assistant\nFederal University of Santa Catarina\n\nPhysics instruction for agriculture students\n\n\n\n2017-2018\nSearch Engine Evaluator\nLionbridge\n\nImproved search algorithm quality"
   },
   {
     "objectID": "index.html",
@@ -56,94 +70,10 @@
     "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\n\n\n\nHi, I’m João Pedro Donadio — an Agricultural Engineer and Research Data Analyst passionate about turning raw data into meaningful insights. I am specialized in bridging the gap between fieldwork and analytics, helping researchers and decision-makers make informed, data-driven choices.\nMy toolbox includes SQL, R, statistical modeling, Quarto, MS Office (Excel, Word, Powerpoint…), and Canva. I’m also comfortable with version control on GitHub to ensure clean and collaborative workflows.\nDriven by a deep curiosity about how systems work, I bring a unique blend of technical rigor and hands-on field experience. With a background in sustainable livestock farming and applied research, I focus on practical solutions for real-world challenges.\n\n\n\n\nI’m here to help you connect science and strategy by:\n\nDesigning rigorous studies with clear, actionable objectives\nCollecting and cleaning data from diverse sources\nUncovering patterns through robust statistical analysis\nCreating intuitive visualizations that bring stories to life\nDelivering dynamic reports for intelligent decision-making\n\n\n\n\n\n\n\n\n\n\n\n“Data alone isn’t enough, it must be analysed deeply, visualized clearly, and communicated effectively to drive meaningful decisions.”\n\n\n\n\nWant to know more? Access my CV\n\n\n\n\n\nPortfolio\n\n\n\n\n\nExperiment\nNipple water troughs for dairy calves\nNovember 2024\n\n\n\n\n\nMeta-analysis\nGroup-housed Calves\nJune 2024\n\n\n\n\n\nPortfolio\nSee more projects\nSince 2023\n\n\n+\n\n\n\n\n\n\n\n\n\n\n\nContact me ✉️\n\n\n\n\n\n\nName\n\n\n\nEmail\n\n\n\nMessage\n\n\n\nSend"
   },
   {
-    "objectID": "cv.html#courses-certificates",
-    "href": "cv.html#courses-certificates",
-    "title": "Curriculum Vitæ",
-    "section": "Courses Certificates",
-    "text": "Courses Certificates\n\n\n\n\nAdvanced R Programming - Coursera\nAnimal Welfare Science - EdX\nProject Management Professional - PMI"
-  },
-  {
-    "objectID": "footer.html",
-    "href": "footer.html",
-    "title": "João Pedro Donadio",
-    "section": "",
-    "text": "© 2025 João Pedro Donadio\n\n\nWebsite made with Quarto"
-  },
-  {
-    "objectID": "index.pt.html",
-    "href": "index.pt.html",
-    "title": "João Pedro Donadio",
-    "section": "",
-    "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\n\n\n\nOlá, eu sou João Pedro Donadio - Engenheiro Agrônomo e Analista de Dados de Pesquisa apaixonado por transformar dados brutos em insights significativos. Sou especializado em fazer a ponte entre o trabalho de campo e a análise de dados, ajudando pesquisadores e gestores a tomar decisões embasadas em dados.\nMinhas ferramentas incluem R, SQL, modelagem estatística, Tableau, Quarto, PowerPoint e Canva. Também trabalho com controle de versão no GitHub para garantir fluxos de trabalho limpos e colaborativos.\nMovido por uma profunda curiosidade sobre como os sistemas funcionam, trago uma combinação única de rigor técnico e experiência prática de campo. Com formação em pecuária sustentável e pesquisa aplicada, foco em soluções práticas para desafios do mundo real.\n\n\n\n\nEstou aqui para ajudá-lo a conectar ciência e estratégia através de:\n\nPlanejamento rigoroso de estudos com objetivos claros e acionáveis\nColeta e limpeza de dados de diversas fontes\nIdentificação de padrões através de análise estatística robusta\nCriação de visualizações intuitivas que contam histórias\nElaboração de relatórios dinâmicos para tomada de decisão inteligente\n\n\n\n\n\n\n\n\n\n\n\n“Dados por si só não são suficientes, eles precisam ser analisados profundamente, visualizados claramente e comunicados efetivamente para impulsionar decisões significativas.”\n\n\n\n\nQuer saber mais? Acesse meu CV\n\n\n\n\n\nPortfolio\n\n\n\n\n\nExperimento\nMétodo de fornecimento de água\nOutubro 2023\n\n\n\n\n\nMeta-Análise\nBezerros em Alojamento Coletivo\nMaio 2024\n\n\n\n\n\nVer mais projetos\n\n\n+\n\n\n\n\n\n\ndivider()\n\n\n\n\n\nEntre em contato ✉️\n\n\n\n\n\n\nNome\n\n\n\nEmail\n\n\n\nMensagem\n\n\n\nEnviar"
-  },
-  {
-    "objectID": "medicare.html",
-    "href": "medicare.html",
-    "title": "Medicare problem - TidyTuesday",
-    "section": "",
-    "text": "Background\nEmergency room wait times vary significantly across the United States depending on factors such as hospital resources, patient volume, and staffing levels, with some states facing delays that can stretch for more than three hours.\n\n\nQuestions\n\nIs there a connection between state populations and wait times?\n\nWhich conditions have the longest wait times? The shortest?\n\n\n\n\n---- Compiling #TidyTuesday Information for 2025-04-08 ----\n--- There is 1 file available ---\n\n\n── Downloading files ───────────────────────────────────────────────────────────\n\n  1 of 1: \"care_state.csv\"\n\n\n[1] \"state\"        \"condition\"    \"measure_id\"   \"measure_name\" \"score\"       \n[6] \"footnote\"     \"start_date\"   \"end_date\""
-  },
-  {
-    "objectID": "watercalves.pt.html",
-    "href": "watercalves.pt.html",
-    "title": "Experimento: Método de Fornecimento de Água para Bezerros Leiteiros",
-    "section": "",
-    "text": "project_page"
-  },
-  {
-    "objectID": "metaanalysis.pt.html",
-    "href": "metaanalysis.pt.html",
-    "title": "Meta-análise: Bezerros em Alojamento Coletivo",
-    "section": "",
-    "text": "Contexto\nAnálise de 35 estudos revisados por pares comparando sistemas individuais versus coletivos, avaliando saúde, crescimento e comportamentos em bezerros leiteiros.\n\n\n\n\nObjetivos\n\nComparar padrões de ganho de peso\nAvaliar desenvolvimento de comportamento social\nAnalisar riscos de transmissão de doenças\n\n\n\n\n\nResultados\n\n15% ↑ interações sociais em grupos\nNenhuma diferença significativa em taxas de doença\nMelhor eficiência alimentar em grupos\n\nVer Publicação\n\n\n\n\n\nComparação de Taxa de Crescimento\n\nBezerros em grupo mostraram ganho de peso mais consistente após desmame (p &lt; 0.05).\n\n\nAnálise de Interação Social\n\nAumento de comportamentos lúdicos observado em sistemas coletivos.\n\n\n\nHabilidades Utilizadas:\n\nR Metafor\nPRISMA\nPython\nTableau\nChecklist JBI"
-  },
-  {
-    "objectID": "cv.pt.html",
-    "href": "cv.pt.html",
-    "title": "Curriculum Vitæ",
-    "section": "",
-    "text": "Download PDF"
-  },
-  {
-    "objectID": "cv.pt.html#education",
-    "href": "cv.pt.html#education",
-    "title": "Curriculum Vitæ",
-    "section": "Education",
-    "text": "Education\n\n\n\nMSc Ciência Animal\n\nUniversidade Estadual Paulista\n\n2023-2025\n\n\nBSc Agronomia\n\nUniversidade Federal de Santa Catarina\n\n2017-2022"
-  },
-  {
-    "objectID": "cv.pt.html#cursos-e-certificações",
-    "href": "cv.pt.html#cursos-e-certificações",
-    "title": "Curriculum Vitæ",
-    "section": "Cursos e Certificações",
-    "text": "Cursos e Certificações\n\n\n\n\nProgramação Avançada em R - Coursera\nCiência do Bem-Estar Animal - EdX\nProfissional em Gerenciamento de Projetos - PMI"
-  },
-  {
-    "objectID": "cv.pt.html#experiência-profissional",
-    "href": "cv.pt.html#experiência-profissional",
-    "title": "Curriculum Vitæ",
-    "section": "Experiência Profissional",
-    "text": "Experiência Profissional\n\n\n\n\n←\n→\n\n\n2025-Presente\nAssistente de Pesquisa\nUniversidade Estadual Paulista\n\nTreinamento de equipes em procedimentos experimentais\nPlanejamento de análises estatísticas\nRedação de relatórios técnicos\n\n\n\n2024\nEstudante Visitante de Pesquisa\nUniversity of British Columbia\n\nColaboração em pesquisa de bem-estar animal\nApresentação de resultados em seminários internacionais\n\n\n\n2023-2024\nTécnico Agropecuário\nEMBRAPA Pecuária Sudeste\n\nGerenciamento de protocolos de saúde de bezerros leiteiros\nImplementação de programas de vacinação\n\n\n\n2023-2025\nPesquisador de Pós-Graduação\nUniversidade Estadual Paulista\n\nCoordenação de projetos internacionais de bem-estar de gado leiteiro\nDesenvolvimento de patentes e artigos científicos\n\n\n\n2023\nEstagiário de Docência\nUniversidade Estadual Paulista\n\nMinistrou aulas de 'Bovinocultura Leiteira' para estudantes de veterinária\n\n\n\n2022\nTrabalhador Rural\nEstância Santa Bárbara\n\nGerenciamento de operações em fazenda de ovinos com 11.000 cabeças\n\n\n\n2019-2022\nAssistente de Pesquisa\nUniversidade Federal de Santa Catarina (LETA)\n\nLiderou estudos sobre comportamento de gado leiteiro\nDesenvolveu materiais de divulgação científica\n\n\n\n2018\nMonitor de Disciplina\nUniversidade Federal de Santa Catarina\n\nMinistrou aulas de física para estudantes de agronomia\n\n\n\n2017-2018\nAvaliador de Mecanismos de Busca\nLionbridge\n\nAprimoramento da qualidade de algoritmos de busca"
-  },
-  {
-    "objectID": "cv.pt.html#skills-matrix",
-    "href": "cv.pt.html#skills-matrix",
-    "title": "Curriculum Vitæ",
-    "section": "Skills Matrix",
-    "text": "Skills Matrix\n\n\nProgramação em R\nGLMMs\nVisualização de Dados\nQuarto\nCiência Animal\nGestão de Projetos"
-  },
-  {
-    "objectID": "cowpersonality.html",
-    "href": "cowpersonality.html",
-    "title": "Workshop: Attendants’ Views on the Personalities of Cows",
-    "section": "",
-    "text": "Background\nAnalysis of 35 peer-reviewed studies comparing individual vs group housing systems, assessing health, growth, and behavioral outcomes in dairy calves.\n\n\n\n\nGoals\n\nCompare weight gain patterns\nAssess social behavior development\nEvaluate disease transmission risks\n\n\n\n\n\nResults\n\n15% ↑ social interactions in groups\nNo significant difference in disease rates\nImproved feed efficiency in groups\n\nView Publication\n\n\n\n\n\nGrowth Rate Comparison\n\nGroup-housed calves showed more consistent weight gain after weaning period (p &lt; 0.05).\n\n\nSocial Interaction Analysis\n\nIncreased play behavior observed in group housing systems.\n\n\n\nSkills Used:\n\nR Metafor\nPRISMA\nPython\nTableau\nJBI Checklist"
-  },
-  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Portfolio Gallery",
     "section": "",
-    "text": "Experiment\nNipple Water Troughs Reduces Cross-Sucking in Dairy Calves.\nExcel, R, Data collection, Data visualization, Animal Behavior, Animal science\nNovember 2024\n\nView Project\n\n\n\n\n\n\n\n\n\n\n\nMeta-analysis\nEvaluation of the effects of early group housing on calf performance, health, and behavior during the preweaning period.\nR, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization\nJune 2024\n\nView Project"
+    "text": "Experiment\nNipple Water Troughs Reduces Cross-Sucking in Dairy Calves.\nExcel, R, Data collection, Data visualization, Applied Ethology, Animal science\nNovember 2024\n\nView Project\n\n\n\n\n\n\n\n\n\n\n\nMeta-analysis\nEvaluation of the effects of early group housing on calf performance, health, and behavior during the preweaning period.\nR, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization\nJune 2024\n\nView Project"
   }
 ]
