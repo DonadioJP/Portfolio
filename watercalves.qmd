@@ -38,19 +38,19 @@ content_cols <- list(
 # Graph Boxes
 graphs <- list(
   list(
-    title = "Growth Rate",
-    img = "assets/growth-chart.png",
-    desc = "Group-housed calves showed more consistent weight gain after weaning period (p < 0.05)."
+    title = "Cross-sucking Behavior",
+    img = "images/cross_calves.png",
+    desc = "Calves with nipple water troughs exhibited less cross-sucking events than calves with open water troughs during pre-weaning period."
   ),
   list(
-    title = "Social Interaction Analysis",
-    img = "assets/social-heatmap.png",
-    desc = "Increased play behavior observed in group housing systems."
+    title = "Water intake",
+    img = "images/waterintake_calves.png",
+    desc = "Calves with nipple water troughs consumed more water during night-time."
   ),
   list(
-    title = "Social Interaction Analysis",
-    img = "assets/social-heatmap.png",
-    desc = "Increased play behavior observed in group housing systems."
+    title = "Weight Gain",
+    img = "images/weight_calves.png",
+    desc = "There was no difference in the performance of calves with nipple or open water troughs."
   )
 )
 
