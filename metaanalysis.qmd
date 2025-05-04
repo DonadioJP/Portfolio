@@ -13,45 +13,56 @@ library(htmltools)
 content_cols <- list(
   list(
     title = "Background",
-    content = tags$p("Analysis of 35 peer-reviewed studies comparing individual vs group housing systems, assessing health, growth, and behavioral outcomes in dairy calves.")
+    content = tags$p("Dairy calves are traditionally separated from dams shortly after birth and raised individually during the preweaning period. While this practice is common, it contrasts with natural social dynamics and raises welfare concerns. Social isolation can lead to stress, fearfulness, and reduced cognitive development. Group housing (pairs or small groups) has emerged as a potential alternative, but its effects on performance, health, and behavior remain inconsistently reported across studies.")
   ),
   list(
     title = "Goals",
     content = tags$ul(
-      tags$li("Compare weight gain patterns"),
-      tags$li("Assess social behavior development"),
-      tags$li("Evaluate disease transmission risks")
+      tags$li("Assess how group housing impacts performance, health, and behavior compared to individual housing of dairy calves"),
+      tags$li("Investigate housing factors that may influence the outcomes of group housing for dairy calves"),
+      tags$li("Synthesize findings to support practical improvements in calf-rearing systems")
     )
   ),
   list(
     title = "Results",
     content = tagList(
       tags$ul(
-        tags$li("15% ↑ social interactions in groups"),
-        tags$li("No significant difference in disease rates"),
-        tags$li("Improved feed efficiency in groups")
-      ),
-      tags$a(href="#publication", style="color: #3b82f6;", "View Publication")
+        tags$li("Group-housed calves had higher average daily gain (ADG) (+0.06 kg/d, P = 0.001) and weaning weight (+1.44 kg, P = 0.037)"),
+        tags$li("More active behaviors (feeding, playing) and fewer stress-related behaviors (self-grooming, pen interactions) in group-housed calves"),
+        tags$li("Limited data on robust health outcomes (e.g., disease incidence)")
+      )
     )
   )
+)
+
+htmltools::tags$div(
+  class = "cv-button-box",
+  href = "images/metaanalysis_manuscript.pdf",
+  style = "cursor: pointer;",
+  "View Publication"
 )
 
 # Graph Boxes
 graphs <- list(
   list(
-    title = "Growth Rate Comparison",
-    img = "assets/growth-chart.png",
-    desc = "Group-housed calves showed more consistent weight gain after weaning period (p < 0.05)."
+    title = "Flowchart",
+    img = "images/flowchart_ma_calves.png",
+    desc = "The process to identify and screen articles for eligibility and inclusion in this systematic review and meta-analysis."
   ),
   list(
-    title = "Social Interaction Analysis",
-    img = "assets/social-heatmap.png",
-    desc = "Increased play behavior observed in group housing systems."
+    title = "Subgroup analysis",
+    img = "images/subgroup_calves.png",
+    desc = "Different weaning ages have different effects on the average daily gain of dairy calves."
+  ),
+  list(
+    title = "Forest plot",
+    img = "images/forest_calves.png",
+    desc = "Studies on pair-housed calves show a higher average daily gain compared to individually housed calves."
   )
 )
 
 # Skills
-skills <- c("R Metafor", "PRISMA", "Python", "Tableau", "JBI Checklist")
+skills <- c("R", "Excel", "Data Collection", "PRISMA", "Systematic Review", "Meta-analysis", "Data Visualization")
 
 # Build Page
 project_page <- div(class = "project-container",
@@ -59,7 +70,7 @@ project_page <- div(class = "project-container",
   # Single image spanning above the columns
   img(class = "shared-header",
       src = "images/IMG_20240111_204935_6162.png",
-      alt = "Research Header Image"),
+      alt = "Group_calves"),
   
   # Three columns
   div(class = "columns-wrapper",

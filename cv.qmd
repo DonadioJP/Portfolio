@@ -1,96 +1,193 @@
 ---
-title: "Curriculum Vitae"
+title: "Curriculum Vitæ"
 ---
 
-## Education
 ```{r}
 #| echo: false
-knitr::kable(
-  data.frame(
-    Degree = c("MSc Animal Science", "BSc Agriculture"),
-    Institution = c("São Paulo State University", "Federal University of Santa Catarina"),
-    Period = c("2023-2025", "2017-2022"),
-    GPA = c("CAPES Scholarship", "8.74/10")
+library(htmltools)
+
+div(style = "position: relative; height: 100px; text-align: center;",
+    a(href = "images/CV_JP2025.pdf", download = "CV_JP2025.pdf", 
+    class = "download-button",
+    "PDF Download"
   )
 )
 ```
 
+## Education
+
+```{r}
+#| echo: false
+
+edu_content <- tagList(
+  div(class = "edu-box",
+      h3("MSc Animal Science"),
+      p(em("São Paulo State University")),
+      p(style = "text-align: right;", "2023-2025"),
+      style = "float: right;"
+  ),
+  div(class = "edu-box",
+      h3("BSc Agriculture"),
+      p(em("Federal University of Santa Catarina")),
+      p(style = "text-align: right;", "2017-2022"),
+      style = "float: left;"
+  ),
+  div(style = "clear: both;")
+)
+
+edu_content
+```
+
+## Courses Certificates
+
+```{r}
+#| echo: false
+div(class = "cert-box",
+    tags$ul(
+      tags$li("Dairy calf rearing: strategies to increase efficiency - Embrapa (40h)"),
+      tags$li("Graduate Student Writing Workshop - University of Calgary (12h)"),
+      tags$li("R Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)"),
+      tags$li("Teaching in higher education: foundations and pedagogical practices - São Paulo State University (30h)"),
+      tags$li("Calculation and analysis of production costs in agriculture - Federal University of Santa Catarina (16h)"),
+      tags$li("Ambience, Precision Animal Science and Animal Welfare - University of São Paulo (40h)")
+    )
+)
+```
+
+## Skills Matrix
+
+```{r}
+#| echo: false
+skills <- c("Project Management", "Experimental designs", "Academic Research", "Animal Ethology", "Animal Welfare", "Excel", "SQL", "R", "Data Visualization", "Quarto", "Word", "GitHub", "Microsoft Teams", "HTML", "CSS")
+
+tagList(
+  lapply(skills, function(skill) {
+    div(class = "skill-box", skill)
+  })
+)
+```
 
 ## Professional Experience
 
-::: {.timeline}
-
-**2025-Present**  
-**Research Assistant**  
-São Paulo State University  
-- Training teams on experimental procedures  
-- Statistical analysis planning  
-- Technical report writing  
-
-**2024**  
-**Visiting Research Student**  
-University of British Columbia  
-- Animal welfare research collaboration  
-- Presented findings at international seminars  
-
-**2023-2024**  
-**Herdsperson**  
-EMBRAPA Pecuária Sudeste  
-- Managed dairy calf health protocols  
-- Implemented vaccination programs  
-
-**2023-2025**  
-**Graduate Researcher**  
-São Paulo State University  
-- Coordinated international dairy cattle welfare projects  
-- Developed patents and scientific papers  
-
-**2023**  
-**Teaching Intern**  
-São Paulo State University  
-- Taught "Dairy Cattle" for veterinary students  
-
-**2022**  
-**Farm Labourer**  
-Estância Santa Bárbara  
-- Managed operations for 11,000-head sheep farm  
-
-**2019-2022**  
-**Research Assistant**  
-Federal University of Santa Catarina (LETA)  
-- Led dairy cattle behavior studies  
-- Developed outreach materials  
-
-**2018**  
-**Teaching Assistant**  
-Federal University of Santa Catarina  
-- Physics instruction for agriculture students  
-
-**2017-2018**  
-**Search Engine Evaluator**  
-Lionbridge  
-- Improved search algorithm quality  
-
-:::
-
-
-## Skills Matrix
 ```{r}
 #| echo: false
-#| fig-width: 8
-#| fig-height: 3
-library(ggplot2)
-skills <- data.frame(
-  skill = c("R Programming", "GLMMs", "Data Viz", "Quarto", "Animal Science", "Project Mgmt"),
-  level = c(95, 90, 85, 90, 95, 80)
+carousel <- div(class = "timeline-container",
+  div(class = "carousel-nav",
+    tags$button(class = "carousel-arrow left", HTML("&larr;"), onclick = "moveCarousel(-1)"),
+    tags$button(class = "carousel-arrow right", HTML("&rarr;"), onclick = "moveCarousel(1)")
+  ),
+  div(class = "carousel-item active",
+      h3("2025-Present"),
+      h4("Research Assistant"),
+      p("São Paulo State University"),
+      tags$ul(
+        tags$li("Training teams on experimental procedures"),
+        tags$li("Statistical analysis planning"),
+        tags$li("Technical report writing")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2024"),
+      h4("Visiting Research Student"),
+      p("University of British Columbia"),
+      tags$ul(
+        tags$li("Animal welfare research collaboration"),
+        tags$li("Presented findings at international seminars")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2023-2024"),
+      h4("Herdsperson"),
+      p("EMBRAPA Pecuária Sudeste"),
+      tags$ul(
+        tags$li("Managed dairy calf health protocols"),
+        tags$li("Implemented vaccination programs")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2023-2025"),
+      h4("Graduate Researcher"),
+      p("São Paulo State University"),
+      tags$ul(
+        tags$li("Coordinated international dairy cattle welfare projects"),
+        tags$li("Developed patents and scientific papers")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2023"),
+      h4("Teaching Intern"),
+      p("São Paulo State University"),
+      tags$ul(
+        tags$li("Taught 'Dairy Cattle' for veterinary students")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2022"),
+      h4("Farm Labourer"),
+      p("Estância Santa Bárbara"),
+      tags$ul(
+        tags$li("Managed operations for 11,000-head sheep farm")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2019-2022"),
+      h4("Research Assistant"),
+      p("Federal University of Santa Catarina (LETA)"),
+      tags$ul(
+        tags$li("Led dairy cattle behavior studies"),
+        tags$li("Developed outreach materials")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2018"),
+      h4("Teaching Assistant"),
+      p("Federal University of Santa Catarina"),
+      tags$ul(
+        tags$li("Physics instruction for agriculture students")
+      )
+  ),
+  div(class = "carousel-item",
+      h3("2017-2018"),
+      h4("Search Engine Evaluator"),
+      p("Lionbridge"),
+      tags$ul(
+        tags$li("Improved search algorithm quality")
+      )
+  ),
+  tags$script(HTML('
+    let currentItem = 0;
+    const items = document.querySelectorAll(".carousel-item");
+    
+    function showItem(index) {
+      items.forEach((item, i) => {
+        item.classList.toggle("active", i === index);
+      });
+      
+      // Atualiza indicadores de navegação
+      const arrows = document.querySelectorAll(".carousel-arrow");
+      arrows[0].style.visibility = index > 0 ? "visible" : "hidden";
+      arrows[1].style.visibility = index < items.length - 1 ? "visible" : "hidden";
+    }
+    
+    function moveCarousel(step) {
+      const newIndex = currentItem + step;
+      if (newIndex >= 0 && newIndex < items.length) {
+        currentItem = newIndex;
+        showItem(currentItem);
+      }
+    }
+    
+    // Inicializa
+    showItem(0);
+    
+    // Mantém o listener do teclado
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") moveCarousel(-1);
+      if (e.key === "ArrowRight") moveCarousel(1);
+    });
+  '))
 )
 
-ggplot(skills, aes(x = reorder(skill, -level), y = level)) +
-  geom_col(fill = "#2E86AB", width = 0.7) +
-  geom_text(aes(label = paste0(level, "%")), vjust = -0.5) +
-  ylim(0, 100) +
-  labs(x = NULL, y = "Proficiency (%)") +
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+carousel
 ```
 

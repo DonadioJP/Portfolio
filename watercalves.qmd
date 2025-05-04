@@ -13,25 +13,24 @@ library(htmltools)
 content_cols <- list(
   list(
     title = "Background",
-    content = tags$p("Analysis of 35 peer-reviewed studies comparing individual vs group housing systems, assessing health, growth, and behavioral outcomes in dairy calves.")
+    content = tags$p("Cross-sucking is a common abnormal behaviour in group-housed dairy calves, linked to welfare concerns and management practices. This study evaluates whether nipple-equipped water troughs can reduce this behaviour, promoting more natural drinking patterns and improved welfare outcomes.")
   ),
   list(
     title = "Goals",
     content = tags$ul(
-      tags$li("Compare weight gain patterns"),
-      tags$li("Assess social behavior development"),
-      tags$li("Evaluate disease transmission risks")
+      tags$li("Assess the effect of nipple water troughs on the frequency and duration of cross-sucking in group-housed calves"),
+      tags$li("Evaluate behavioural changes in response to different water provision systems"),
+      tags$li("Determine whether nipple water troughs support more natural oral behaviours in calves after milk feeding")
     )
   ),
   list(
     title = "Results",
     content = tagList(
       tags$ul(
-        tags$li("15% ↑ social interactions in groups"),
-        tags$li("No significant difference in disease rates"),
-        tags$li("Improved feed efficiency in groups")
-      ),
-      tags$a(href="#publication", style="color: #3b82f6;", "View Publication")
+        tags$li("42% reduction in cross-sucking in calves with nipple access vs. open troughs (p = 0.003)"),
+        tags$li("No negative impact on growth (weaning weights: p = 0.788)"),
+        tags$li("Longer water trough visits and nighttime water intake in groups of calves with nipple water troughs")
+      )
     )
   )
 )
@@ -39,9 +38,14 @@ content_cols <- list(
 # Graph Boxes
 graphs <- list(
   list(
-    title = "Growth Rate Comparison",
+    title = "Growth Rate",
     img = "assets/growth-chart.png",
     desc = "Group-housed calves showed more consistent weight gain after weaning period (p < 0.05)."
+  ),
+  list(
+    title = "Social Interaction Analysis",
+    img = "assets/social-heatmap.png",
+    desc = "Increased play behavior observed in group housing systems."
   ),
   list(
     title = "Social Interaction Analysis",
@@ -51,7 +55,7 @@ graphs <- list(
 )
 
 # Skills
-skills <- c("R Metafor", "PRISMA", "Python", "Tableau", "JBI Checklist")
+skills <- c("R", "Excel", "Data collection", "Data visualization", "Applied Ethology", "Animal Science")
 
 # Build Page
 project_page <- div(class = "project-container",

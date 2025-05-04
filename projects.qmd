@@ -1,14 +1,13 @@
 ---
-title: "Portfolio"
+title: "Portfolio Gallery"
 ---
 
-:::portfolio-header
-## Portfolio Gallery
+::: portfolio-header
 :::
 
-:::portfolio-container
-::::columns
-::::: {.column}
+::::::::: portfolio-container
+::::: columns
+::: column
 ```{r echo=FALSE}
 library(htmltools)
 
@@ -17,18 +16,19 @@ portfolio_card <- tags$div(
   tags$a(
     class = "portfolio-card",
     tags$img(
-      src = "images/t_76bc4d4f3c9741609487d714b1df0926_name_Calves_What_you_need_to_know_62d0330f99af086f6b7e30b3_1_Jul_14_2022_15_29_52_poster.jpg",
-      alt = "Web Design Project",
+      src = "images/Calves_water.png",
+      alt = "calves_water",
       class = "card-image"
     ),
     tags$div(
       class = "card-content",
-      tags$h3("E-commerce Website", class = "card-title"),
+      tags$h3("Experiment", class = "card-title"),
       tags$p(
-        "A fully responsive e-commerce platform with product filtering and secure checkout.",
+        "Nipple Water Troughs Reduces Cross-Sucking in Dairy Calves.",
         class = "card-description"
       ),
-      tags$p("June 2023", class = "card-date")
+      tags$p("Excel, R, Data collection, Data visualization, Applied Ethology, Animal science", class = "card-tags"),
+      tags$p("November 2024", class = "card-date")
     ),
     tags$button(
       "View Project", href = "cv.qmd",
@@ -41,8 +41,9 @@ portfolio_card <- tags$div(
 # To render the HTML
 portfolio_card
 ```
-:::::
-::::: {.column}
+:::
+
+::: column
 ```{r echo=FALSE}
 library(htmltools)
 
@@ -51,21 +52,22 @@ portfolio_card <- tags$div(
   tags$a(
     class = "portfolio-card",
     tags$img(
-      src = "images/t_76bc4d4f3c9741609487d714b1df0926_name_Calves_What_you_need_to_know_62d0330f99af086f6b7e30b3_1_Jul_14_2022_15_29_52_poster.jpg",
-      alt = "Web Design Project",
+      src = "images/IMG_20240111_204935_6162.png",
+      alt = "group_calves",
       class = "card-image"
     ),
     tags$div(
       class = "card-content",
-      tags$h3("E-commerce Website", class = "card-title"),
+      tags$h3("Meta-analysis", class = "card-title"),
       tags$p(
-        "A fully responsive e-commerce platform with product filtering and secure checkout.",
+        "Evaluation of the effects of early group housing on calf performance, health, and behavior during the preweaning period.",
         class = "card-description"
       ),
-      tags$p("June 2023", class = "card-date")
+      tags$p("R, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization", class = "card-tags"),
+      tags$p("June 2024", class = "card-date")
     ),
     tags$button(
-      "View Project", href = "cv.qmd",
+      "View Project", href = "metaanalysis.qmd",
       class = "view-project-btn"
     )
   )
@@ -75,76 +77,6 @@ portfolio_card <- tags$div(
 # To render the HTML
 portfolio_card
 ```
+:::
 :::::
-::::
-
-::::columns
-::::: {.column}
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/t_76bc4d4f3c9741609487d714b1df0926_name_Calves_What_you_need_to_know_62d0330f99af086f6b7e30b3_1_Jul_14_2022_15_29_52_poster.jpg",
-      alt = "Web Design Project",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("E-commerce Website", class = "card-title"),
-      tags$p(
-        "A fully responsive e-commerce platform with product filtering and secure checkout.",
-        class = "card-description"
-      ),
-      tags$p("June 2023", class = "card-date")
-    ),
-    tags$button(
-      "View Project", href = "cv.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-
-
-# To render the HTML
-portfolio_card
-```
-:::::
-::::: {.column}
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/t_76bc4d4f3c9741609487d714b1df0926_name_Calves_What_you_need_to_know_62d0330f99af086f6b7e30b3_1_Jul_14_2022_15_29_52_poster.jpg",
-      alt = "Web Design Project",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("E-commerce Website", class = "card-title"),
-      tags$p(
-        "A fully responsive e-commerce platform with product filtering and secure checkout.",
-        class = "card-description"
-      ),
-      tags$p("June 2023", class = "card-date")
-    ),
-    tags$button(
-      "View Project", href = "cv.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-
-
-# To render the HTML
-portfolio_card
-```
-:::::
-::::
+:::::::::

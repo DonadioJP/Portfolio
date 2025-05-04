@@ -1,7 +1,7 @@
 project:
   type: website
   output-dir: docs
-
+  
 website:
   title: "João Pedro Donadio"
   navbar:
@@ -15,22 +15,23 @@ website:
           - href: projects.qmd
             text: "All Projects"
           - href: metaanalysis.qmd
-            text: "Meta-analysis"
+            text: "Meta-analysis Calves"
           - href: watercalves.qmd
-            text: "Experiment"
+            text: "Experiment Water for Calves"
       - href: cv.qmd
-        text: Curriculum vitae
-
+        text: Curriculum vitæ
+     
     right:
-    - href: index.qmd#contact
-      icon: envelope  
-      text: Contact Me  
-
+      - href: index.qmd#contact
+        icon: envelope  
+        text: Contact Me
+    
 format:
   html:
     theme: flatly
     css: styles.css
     toc: false
+    include-after-body: footer.html
 
 editor: visual
 
