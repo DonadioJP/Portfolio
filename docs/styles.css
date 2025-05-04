@@ -400,16 +400,6 @@ main {
 }
 
 /* Button-style box */
-.cv-button {
-  color: white;
-  text-decoration: none;
-  font-family: sans-serif;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  font-size: 1em;
-}
-
 .cv-button-box {
   padding: 0.8rem 1.5rem;
   border-radius: var(--border-radius);
