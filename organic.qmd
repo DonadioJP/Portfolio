@@ -1,0 +1,382 @@
+---
+title: "Organic Farming in Brazil" 
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(htmltools)
+
+organic_farming_page <- div(
+  class = "project-container",
+  
+  # Hero Section
+  div(
+    class = "project-hero",
+    img(
+      src = "images/organic_farmers_hero.jpg", 
+      alt = "Organic farmers in Brazil", 
+      class = "hero-image"
+    ),
+    div(
+      class = "hero-overlay",
+      h1("Organic Farming in Brazil"),
+      p("Analysis of the National Registration of Organic Farmers")
+    )
+  ),
+  
+  # Project Context
+  div(
+  class = "project-context",
+  h2("Background"),
+  p(
+    "This project analyzes data from the ", 
+    a(
+      href = "https://dados.agricultura.gov.br/dataset/cadastro-nacional-de-produtores-organicos",
+      target = "_blank",
+      strong("Cadastro Nacional de Produtores Orgânicos")
+    ), 
+    " maintained by the Coordenação de Produção Orgânica (CPO/DTEC/SDA/MAPA). ",
+    "Brazil has seen significant growth in organic farming, but adoption varies widely across regions. ",
+    "This analysis identifies patterns and opportunities for expansion."
+  )
+),
+  
+  # Objectives Section
+  div(
+    class = "project-objectives",
+    h2("Goals"),
+    tags$ul(
+      tags$li("Identify municipalities with highest concentration of organic farmers"),
+      tags$li("Analyze regional patterns in organic farming adoption"),
+      tags$li("Discover potential municipalities for organic farming expansion based on rural population and credit investment")
+    )
+  ),
+  
+  # Key Findings
+  div(
+    class = "project-findings",
+    h2("Results"),
+    div(
+      class = "findings-grid",
+      div(
+        class = "finding-card",
+        h3("Top 5 Municipalities"),
+        p("Lago do Junco (MA), Brasilia (DF), Viamão (RS), São Sebastião da Boa Vista (PA), Tijucas do Sul (PR) lead in organic farmer concentration")
+      ),
+      div(
+        class = "finding-card",
+        h3("Regional Cluster"),
+        p("South region shows highest density of organic farmers")
+      ),
+      div(
+        class = "finding-card",
+        h3("Expansion Potential"),
+        p("Identified municipalities with high rural population and credit investment but low organic adoption")
+      )
+    )
+  ),
+  
+  # SQL Analysis Section
+  div(
+    class = "sql-analysis",
+    h2("SQL Queries and Results"),
+    
+    # Query 1
+    div(
+      class = "query-card",
+      h3("1. Municipalities with Significant Organic Farmers"),
+      div(
+        class = "query-container",
+        tags$pre(
+          tags$code(
+            class = "sql",
+            "SELECT \n  municipality, \n  state, \n  COUNT(*) AS organic_farmers\n",
+            "FROM organic_data\n",
+            "GROUP BY municipality, state\n",
+            "ORDER BY organic_farmers DESC\n",
+            "LIMIT 5;"
+          )
+        ),
+        div(
+          class = "results-preview",
+          tags$table(
+            tags$thead(
+              tags$tr(
+                tags$th("Municipality"), 
+                tags$th("State"), 
+                tags$th("Organic Farmers")
+              )
+            ),
+            tags$tbody(
+              tags$tr(
+                tags$td("Lago do Junco"), 
+                tags$td("MA"), 
+                tags$td("709")
+              ),
+              tags$tr(
+                tags$td("Brasilia"), 
+                tags$td("DF"), 
+                tags$td("320")
+              ),
+              tags$tr(
+                tags$td("Viamão"), 
+                tags$td("RS"), 
+                tags$td("267")
+              ),
+              tags$tr(
+                tags$td("São Sebastião da Boa Vista"), 
+                tags$td("PA"), 
+                tags$td("259")
+              ),
+              tags$tr(
+                tags$td("Tijucas do Sul"), 
+                tags$td("PR"), 
+                tags$td("247")
+              )
+            )
+          )
+        )
+      )
+    ),
+    
+    # Query 2
+    div(
+      class = "query-card",
+      h3("2. Organic Farming Penetration by Region"),
+      div(
+        class = "query-container",
+        tags$pre(
+          tags$code(
+            class = "sql",
+           "SELECT \n  state,\n          SUM(organic_farmers_count) AS total_organic_farmers,\n    ((total_organic_farmers * 1000) / (sa.total_rural_pop)) AS penetration,\n    CASE \n     WHEN penetration_per_100_rural > 5 THEN 'Very High (>5%)'\n     WHEN penetration_per_100_rural > 2 THEN 'High (2-5%)' \n     WHEN penetration_per_100_rural > 1 THEN 'Medium (1-2%)' \n     WHEN penetration_per_100_rural > 0 THEN 'Low (<1%)' \n     ELSE 'None' \n     END AS penetration_category\n",
+            "FROM organic_data \n",
+            "FROM organic_data \n",
+            "GROUP BY state \n",
+            "ORDER BY penetration DESC \n",
+            "LIMIT 10;"
+          )
+        ),
+        div(
+          class = "results-preview",
+          tags$table(
+            tags$thead(
+              tags$tr(
+                 tags$th("State"), 
+                tags$th("Total Organic Farmers"),
+                tags$th("Penetration (%)"), 
+                tags$th("Category")
+              )
+            ),
+            tags$tbody(
+              tags$tr(
+                tags$td("PR"), 
+                tags$td("4351"), 
+                tags$td("3.44"), 
+                tags$td("High (2-5%)")
+              ),
+              tags$tr(
+                tags$td("DF"), 
+                tags$td("320"), 
+                tags$td("3.22"), 
+                tags$td("High (2-5%)")
+              ),
+              tags$tr(
+                tags$td("AP"), 
+                tags$td("221"), 
+                tags$td("2.68"), 
+                tags$td("High (2-5%)")
+              ),
+              tags$tr(
+                tags$td("RS"), 
+                tags$td("3325"), 
+                tags$td("2.45"), 
+                tags$td("High (2-5%)")
+              ),
+              tags$tr(
+                tags$td("RJ"), 
+                tags$td("579"),  
+                tags$td("1.72"), 
+                tags$td("Medium (1-2%)")
+              ),
+              tags$tr(
+                tags$td("SC"), 
+                tags$td("1351"), 
+                tags$td("1.52"), 
+                tags$td("Medium (1-2%)")
+              ),
+              tags$tr(
+                tags$td("PA"), 
+                tags$td("2475"),  
+                tags$td("1.22"), 
+                tags$td("Medium (1-2%)")
+              ),
+              tags$tr(
+                tags$td("AM"), 
+                tags$td("820"),  
+                tags$td("1.21"), 
+                tags$td("Medium (1-2%)")
+              ),
+              tags$tr(
+                tags$td("SP"), 
+                tags$td("1672"),  
+                tags$td("1.18"), 
+                tags$td("Medium (1-2%)")
+              ),
+              tags$tr(
+                tags$td("RN"), 
+                tags$td("691"),  
+                tags$td("1.16"), 
+                tags$td("Medium (1-2%)")
+              )
+            )
+          )
+        )
+      )
+    ),
+    
+    # Query 3
+    div(
+      class = "query-card",
+      h3("3. High-Potential Municipalities for Expansion"),
+      div(
+        class = "query-container",
+        tags$pre(
+          tags$code(
+            class = "sql",
+            "WITH high_potential_mun AS (\n",
+      "  SELECT \n",
+      "    md.municipality,\n",
+      "    md.state,\n",
+      "    md.organic_farmers_count,\n",
+      "    md.agriculture_produced_values,\n",
+      "    md.rural_credit_investment,\n",
+      "    ROUND(\n",
+      "      (LOG(md.agriculture_produced_values) * 0.3) + \n",
+      "      (LOG(md.rural_credit_investment) * 0.2) + \n",
+      "      (LOG(md.total_area_harvest) * 0.2) +\n",
+      "      (1 - (md.organic_farmers_count / NULLIF(pm.avg_organic_farmers, 0)) * 0.3), \n",
+      "      2\n",
+      "    ) AS potential_conversion_index\n",
+      "  FROM md\n",
+      "  CROSS JOIN production_metric pm\n",
+      ")\n\n",
+      "SELECT \n",
+      "  RANK() OVER(ORDER BY hpm.potential_conversion_index DESC) AS potential_rank,\n",
+      "  hpm.municipality,\n",
+      "  hpm.state,\n",
+      "  hpm.organic_farmers_count,\n",
+      "  hpm.potential_conversion_index\n",
+      "FROM high_potential_mun hpm\n",
+      "WHERE \n",
+      "  organic_farmers_count > 1\n",
+      "ORDER BY \n",
+      "  potential_rank ASC\n",
+      "LIMIT 5;"
+          )
+        ),
+        div(
+          class = "results-preview",
+          tags$table(
+            tags$thead(
+              tags$tr(
+                tags$th("Municipality"), 
+                tags$th("UF"), 
+                tags$th("Conversion Potential Index")
+              )
+            ),
+            tags$tbody(
+              tags$tr(
+                tags$td("São Félix do Araguaia"), 
+                tags$td("MT"),
+                tags$td("5.94")
+              ),
+              tags$tr(
+                tags$td("Ponta Porã"), 
+                tags$td("MS"), 
+                tags$td("5.90")
+              ),
+              tags$tr(
+                tags$td("Paracatu"), 
+                tags$td("MG"), 
+                tags$td("5.88")
+              ),
+              tags$tr(
+                 tags$td("Sinop"), 
+                tags$td("MT"), 
+                tags$td("5.83")
+              ),
+              tags$tr(
+                tags$td("Ipameri"), 
+                tags$td("GO"), 
+                tags$td("5.81")
+              ),
+              tags$tr(
+                tags$td("Coromandel"), 
+                tags$td("MG"), 
+                tags$td("5.78")
+              ),
+              tags$tr(
+                tags$td("Bebedouro"), 
+                tags$td("SP"), 
+                tags$td("5.75")
+              ),
+              tags$tr(
+                tags$td("São Borja"), 
+                tags$td("RS"), 
+                tags$td("5.75")
+              ),
+              tags$tr(
+                 tags$td("Araguari"), 
+                tags$td("MG"), 
+                tags$td("5.74")
+              ),
+              tags$tr(
+                tags$td("Santa Vitória do Palmar"), 
+                tags$td("RS"), 
+                tags$td("5.73")
+              )
+            )
+          )
+        )
+      )
+    )
+  ),
+  
+  # Tableau Dashboard
+  div(
+    class = "dashboard-section",
+    h2("Interactive Dashboard"),
+    a(
+      href = "https://public.tableau.com/views/Organic_Tableau/Dashboard1?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link", 
+      target = "_blank",
+      img(
+        src = "images/organic_dashboard_preview.jpg", 
+        alt = "Organic Farming Dashboard Preview", 
+        class = "dashboard-preview"
+      ),
+      p(class = "dashboard-link", "Click to view interactive dashboard on Tableau Public")
+    )
+  ),
+  
+  # Skills Section
+  div(
+    class = "skills-section",
+    h2("Skills Demonstrated"),
+    div(
+      class = "skills-tags",
+      span(class = "skill-tag", "Large Data Extraction"),
+      span(class = "skill-tag", "Data Cleaning"),
+      span(class = "skill-tag", "Excel"),
+      span(class = "skill-tag", "R"),
+      span(class = "skill-tag", "SQL"),
+      span(class = "skill-tag", "Tableau"),
+      span(class = "skill-tag", "Geospatial Visualization")
+    )
+  )
+)
+
+organic_farming_page
+```

@@ -5,6 +5,80 @@ title: "Portfolio Gallery"
 ::: portfolio-header
 :::
 
+## Stakeholder Projects
+
+::::::::: portfolio-container
+::::: columns
+::: column
+```{r echo=FALSE}
+library(htmltools)
+
+portfolio_card <- tags$div(
+  class = "portfolio-container",
+  tags$a(
+    class = "portfolio-card",
+    tags$img(
+      src = "images/researches.jpg",  # Replace with actual image
+      alt = "research_analysis",
+      class = "card-image"
+    ),
+    tags$div(
+      class = "card-content",
+      tags$h3("Research Data Analysis", class = "card-title"),
+      tags$p(
+        "Model of Academic Research Project Analysis for Clients",
+        class = "card-description"
+      ),
+      tags$p("R, Statistical Modeling, Academic Reporting", class = "card-tags")
+    ),
+    tags$a(
+      "View Details", href = "research_projects.qmd",
+      class = "view-project-btn"
+    )
+  )
+)
+portfolio_card
+```
+:::
+
+::: column
+```{r echo=FALSE}
+library(htmltools)
+
+portfolio_card <- tags$div(
+  class = "portfolio-container",
+  tags$a(
+    class = "portfolio-card",
+    tags$img(
+      src = "images/pronaf.jpg",
+      alt = "pronaf_investments",
+      class = "card-image"
+    ),
+    tags$div(
+      class = "card-content",
+      tags$h3("PRONAF Investment Analysis", class = "card-title"),
+      tags$p(
+        "Geospatial Evaluation of PRONAF Loans for Brazilian Agriculture",
+        class = "card-description"
+      ),
+      tags$p("R, RShiny, Dashboard, Geospatial Analysis, Public Policy Analysis", class = "card-tags"),
+      tags$p("May 2025", class = "card-date")
+    ),
+    tags$a(
+      "View Project", href = "pronaf_analysis.qmd",
+      class = "view-project-btn"
+    )
+  )
+)
+portfolio_card
+```
+
+:::
+:::::
+:::::::::
+
+## Academic Projects
+
 ::::::::: portfolio-container
 ::::: columns
 ::: column
@@ -24,21 +98,18 @@ portfolio_card <- tags$div(
       class = "card-content",
       tags$h3("Experiment", class = "card-title"),
       tags$p(
-        "Nipple Water Troughs Reduces Cross-Sucking in Dairy Calves.",
+        "Nipple Water Troughs Reduces Cross-Sucking in Dairy Calves",
         class = "card-description"
       ),
       tags$p("Excel, R, Data collection, Data visualization, Applied Ethology, Animal science", class = "card-tags"),
       tags$p("November 2024", class = "card-date")
     ),
-    tags$button(
-      "View Project", href = "cv.qmd",
+    tags$a(
+      "View Project", href = "watercalves.qmd",
       class = "view-project-btn"
     )
   )
 )
-
-
-# To render the HTML
 portfolio_card
 ```
 :::
@@ -52,7 +123,7 @@ portfolio_card <- tags$div(
   tags$a(
     class = "portfolio-card",
     tags$img(
-      src = "images/IMG_20240111_204935_6162.png",
+      src = "images/groupcalves.jpg",
       alt = "group_calves",
       class = "card-image"
     ),
@@ -60,21 +131,58 @@ portfolio_card <- tags$div(
       class = "card-content",
       tags$h3("Meta-analysis", class = "card-title"),
       tags$p(
-        "Evaluation of the effects of early group housing on calf performance, health, and behavior during the preweaning period.",
+        "Evaluation of the effects of early group housing on calf's performance, health, and behavior during the preweaning period",
         class = "card-description"
       ),
       tags$p("R, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization", class = "card-tags"),
       tags$p("June 2024", class = "card-date")
     ),
-    tags$button(
+    tags$a(
       "View Project", href = "metaanalysis.qmd",
       class = "view-project-btn"
     )
   )
 )
+portfolio_card
+```
 
+:::
+:::::
+:::::::::
 
-# To render the HTML
+## Personal Projects
+
+::::::::: portfolio-container
+::::: columns
+::: column
+```{r echo=FALSE}
+library(htmltools)
+
+portfolio_card <- tags$div(
+  class = "portfolio-container",
+  tags$a(
+    class = "portfolio-card",
+    tags$img(
+      src = "images/organic_farmers_hero.jpg",
+      alt = "organic_farmers",
+      class = "card-image"
+    ),
+    tags$div(
+      class = "card-content",
+      tags$h3("Organic Farming in Brazil", class = "card-title"),
+      tags$p(
+        "Analysis of the National Registration of Organic Farmers",
+        class = "card-description"
+      ),
+      tags$p("Large Data Extraction, Data Cleaning, Excel, R, SQL, Tableau, Geospatial Visualization", class = "card-tags"),
+      tags$p("June 2025", class = "card-date")
+    ),
+    tags$a(
+      "View Project", href = "organic.qmd",
+      class = "view-project-btn"
+    )
+  )
+)
 portfolio_card
 ```
 :::

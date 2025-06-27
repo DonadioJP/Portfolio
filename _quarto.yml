@@ -14,6 +14,12 @@ website:
         menu:
           - href: projects.qmd
             text: "All Projects"
+          - href: research_projects.qmd
+            text: "Research Project Analysis"
+          - href: pronaf.qmd
+            text: "PRONAF Investments Analysis"
+          - href: organic.qmd
+            text: "Organic Farming in Brazil"
           - href: metaanalysis.qmd
             text: "Meta-analysis Calves"
           - href: watercalves.qmd

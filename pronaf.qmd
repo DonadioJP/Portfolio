@@ -1,0 +1,150 @@
+---
+title: "PRONAF Investment Analysis"
+subtitle: "Geospatial Evaluation of Agricultural Loans in Brazil"
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(htmltools)
+
+# Content Columns
+content_cols <- list(
+  list(
+    title = "Project Overview",
+    content = tagList(
+      tags$p("This project analyzes the National Program for Family Agriculture (PRONAF) loans across Brazil from 2013-2024."),
+      tags$ul(
+        tags$li("Comprehensive evaluation of R$64 billion (in 2024) in agricultural loans"),
+        tags$li("Geospatial analysis at national, regional, and municipal levels"),
+        tags$li("Interactive RShiny dashboard"),
+        tags$li("Focused analysis of specific product investments")
+      )
+    )
+  ),
+  list(
+    title = "Tools Used",
+    content = tagList(
+      tags$ul(
+        tags$li("R (tidyverse, sf)"),
+        tags$li("RShiny for interactive dashboard"),
+        tags$li("Geospatial analysis (leaflet, geobr)"),
+        tags$li("Data visualization (ggplot2)"),
+        tags$li("Public policy evaluation frameworks")
+      )
+    )
+  )
+)
+
+# Workflow Steps
+workflow_steps <- list(
+  list(
+    title = "Data Collection & Cleaning",
+    desc = "Processed raw data from Brazilian Central Bank (2025):",
+    details = tags$ul(
+      tags$li("API-collected loan records"),
+      tags$li("Standardized values across 12-year period (2013-2025)"),
+      tags$li("Geocoded municipality-level data"),
+      tags$li("Filtered and validated 3.6M+ records")
+    )
+  ),
+  list(
+    title = "Geospatial Visualization",
+    desc = "Advanced mapping techniques:",
+    details = tags$ul(
+      tags$li("Interactive choropleth maps by state/municipality"),
+      tags$li("Regional comparison dashboards"),
+      tags$li("Special focus on Santa Catarina tourism investments"),
+      tags$li("Animated time-series maps")
+    )
+  ),
+  list(
+    title = "Interactive Dashboard",
+    desc = "RShiny application features:",
+    details = tagList(
+      tags$ul(
+        tags$li("Dynamic filtering by year, region, and program"),
+        tags$li("Loan value and number of contracts distribution analysis"),
+        tags$li("Comparative benchmarking tools")
+        ),
+      tags$div(style="margin-top:1rem; text-align:center;",
+               tags$h4("Dashboard Usage Demonstration"),
+               HTML('<iframe width="100%" height="315" src="https://youtu.be/17zhB9qcFMc" frameborder="0" allowfullscreen></iframe>')
+      )
+    )
+  )
+)
+
+# Build Page
+pronaf_page <- div(class = "project-container",
+  
+  # Header image
+  img(class = "shared-header",
+      src = "images/pronaf.jpg",
+      alt = "PRONAF Brazil Map"),
+  
+  # Three columns
+  div(class = "columns-wrapper",
+      lapply(content_cols, function(col) {
+        div(class = "column-box",
+            div(class = "column-content",
+                h3(style = "color: #1e40af; margin-top: 0; border-bottom: 2px solid #3b82f6;", col$title),
+                col$content
+            )
+        )
+      })
+  ),
+  
+  # Workflow steps
+  div(class = "workflow-steps",
+      lapply(workflow_steps, function(step) {
+        div(class = "workflow-step",
+            h2(style = "color: #1e40af; border-bottom: 2px solid #3b82f6; padding-bottom: 0.5rem;",
+               step$title),
+                div(class = "step-desc",
+                    p(step$desc),
+                    step$details
+                )
+            )
+      })
+  ),
+  
+  div(style = "text-align: center; margin-top: 2rem;",
+    h3("Project Repository"),
+    p("Explore the code for the dashboard project on GitHub:"),
+    a(href = "https://github.com/DonadioJP/pronafdashboard", 
+      target = "_blank",
+      style = "display: inline-block; background-color: #1e40af; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; margin-top: 0.5rem;",
+      "View on GitHub"
+    )
+  ),
+  
+  # Key Findings Section
+  div(class = "full-width-section",
+      h2(style = "color: #1e40af; border-bottom: 2px solid #3b82f6;",
+         "Key Policy Insights"),
+      div(class = "insights-grid",
+          div(class = "insight-card",
+              h4("Regional Disparities"),
+              p("Southeast received 3.2x more funding than North region"),
+              img(src = "images/pronaf_region.jpg", alt = "Regional analysis")
+          ),
+          div(class = "insight-card",
+              h4("Tourism Growth"),
+              p("Rural tourism loans increased from R$1M to R$62M (2013-2024)"),
+              img(src = "images/pronaf_tourism.png", alt = "Tourism growth")
+          ),
+          div(class = "insight-card",
+              h4("Santa Catarina Focus"),
+              p("32 municipalities received tourism-specific investments"),
+              img(src = "images/sc_pronaf.jpg", alt = "SC analysis")
+          )
+      )
+  )
+)
+
+pronaf_page
+```
+

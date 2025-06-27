@@ -24,22 +24,22 @@ content_cols <- list(
     )
   ),
   list(
-    title = "Results",
-    content = tagList(
-      tags$ul(
-        tags$li("Group-housed calves had higher average daily gain (ADG) (+0.06 kg/d, P = 0.001) and weaning weight (+1.44 kg, P = 0.037)"),
-        tags$li("More active behaviors (feeding, playing) and fewer stress-related behaviors (self-grooming, pen interactions) in group-housed calves"),
-        tags$li("Limited data on robust health outcomes (e.g., disease incidence)")
-      )
+  title = "Results",
+  content = tagList(
+    tags$ul(
+      tags$li("Group-housed calves had higher average daily gain (ADG) (+0.06 kg/d, P = 0.001) and weaning weight (+1.44 kg, P = 0.037)"),
+      tags$li("More active behaviors (feeding, playing) and fewer stress-related behaviors (self-grooming, pen interactions) in group-housed calves"),
+      tags$li("Limited data on robust health outcomes (e.g., disease incidence)")
+    ),
+    div(style = "margin-top: 1.5rem; text-align: center;",
+        a(href = "https://doi.org/10.3168/jds.2024-25159", 
+          target = "_blank",
+          class = "publication-button",
+          "View Publication"
+        )
     )
   )
 )
-
-div(style = "position: relative; height: 100px; text-align: center;",
-    a(href = "images/metaanalysis_manuscript.pdf", download = "metaanalysis_manuscript.pdf", 
-    class = "publication-button",
-    "View publication"
-  )
 )
 
 # Graph Boxes
@@ -52,12 +52,12 @@ graphs <- list(
   list(
     title = "Subgroup analysis",
     img = "images/subgroup_calves.png",
-    desc = "Different weaning ages have different effects on the average daily gain of dairy calves."
+    desc = "Different housing systems (indoor and outdoor) have different effects on the lying behavior of dairy calves."
   ),
   list(
     title = "Forest plot",
     img = "images/forest_calves.png",
-    desc = "Studies on pair-housed calves show a higher average daily gain compared to individually housed calves."
+    desc = "Studies on pair-housed calves showed a higher average daily gain compared to individually housed calves."
   )
 )
 
@@ -69,7 +69,7 @@ project_page <- div(class = "project-container",
   
   # Single image spanning above the columns
   img(class = "shared-header",
-      src = "images/IMG_20240111_204935_6162.png",
+      src = "images/groupcalves.jpg",
       alt = "Group_calves"),
   
   # Three columns
@@ -100,7 +100,18 @@ project_page <- div(class = "project-container",
     h3("Skills Used:"),
     div(lapply(skills, function(s) {
       span(s)
-    }))))
+    }))),
+  
+  div(style = "text-align: center; margin-top: 2rem;",
+    h3("Project Repository"),
+    p("Explore the code and analysis for this project on GitHub:"),
+    a(href = "https://github.com/DonadioJP/meta-group-calves", 
+      target = "_blank",
+      style = "display: inline-block; background-color: #1e40af; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; margin-top: 0.5rem;",
+      "View on GitHub"
+    )
+  )
+)
 
 
 project_page

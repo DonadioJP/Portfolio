@@ -1,5 +1,5 @@
 ---
-title: "Experiment: Water Delivery Method for Dairy Calves"
+title: "Experiment: Nipple water troughs for dairy calves"
 ---
 
 ```{r}
@@ -29,7 +29,14 @@ content_cols <- list(
       tags$ul(
         tags$li("42% reduction in cross-sucking in calves with nipple access vs. open troughs (p = 0.003)"),
         tags$li("No negative impact on growth (weaning weights: p = 0.788)"),
-        tags$li("Longer water trough visits and nighttime water intake in groups of calves with nipple water troughs")
+        tags$li("Longer water trough visits and nighttime water intake in groups of calves with nipple water troughs"),
+    div(style = "margin-top: 1.5rem; text-align: center;",
+        a(href = "https://doi.org/10.1016/j.applanim.2025.106684", 
+          target = "_blank",
+          class = "publication-button",
+          "View Publication"
+        )
+    )
       )
     )
   )
@@ -93,7 +100,18 @@ project_page <- div(class = "project-container",
     h3("Skills Used:"),
     div(lapply(skills, function(s) {
       span(s)
-    }))))
+    }))),
+  
+  div(style = "text-align: center; margin-top: 2rem;",
+    h3("Project Repository"),
+    p("Explore the code and analysis for this project on GitHub:"),
+    a(href = "https://github.com/DonadioJP/nipple-troughs-calf", 
+      target = "_blank",
+      style = "display: inline-block; background-color: #1e40af; color: white; padding: 0.5rem 1rem; border-radius: 4px; text-decoration: none; margin-top: 0.5rem;",
+      "View on GitHub"
+    )
+  )
+)
 
 
 project_page

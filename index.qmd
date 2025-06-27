@@ -15,15 +15,15 @@ subtitle: "Agricultural Engineer | Research Data Analyst"
 ::: bio-box
 **Hi, I’m João Pedro Donadio** — an Agricultural Engineer and Research Data Analyst passionate about turning raw data into meaningful insights. I am specialized in bridging the gap between fieldwork and analytics, helping researchers and decision-makers make informed, data-driven choices.
 
-My toolbox includes SQL, R, statistical modeling, Quarto, MS Office (Excel, Word, Powerpoint...), and Canva. I'm also comfortable with version control on GitHub to ensure clean and collaborative workflows.
+My toolbox includes R, statistical modeling, Quarto and MS Office (Excel, Word, Powerpoint...). I'm also comfortable with version control on GitHub to ensure clean and collaborative workflows.
 
-Driven by a deep curiosity about how systems work, I bring a unique blend of technical rigor and hands-on field experience. With a background in sustainable livestock farming and applied research, I focus on practical solutions for real-world challenges.
+Driven by a deep curiosity about how things work, I bring a unique blend of technical rigor and hands-on field experience. With a background in sustainable livestock farming and applied research, I focus on practical solutions for real-world challenges.
 :::
 ::::
 ::::::
 
 ::: bio-box2
-I’m here to help you connect science and strategy by:
+I’m here to connect science and strategy by:
 
 -   **Designing rigorous studies** with clear, actionable objectives
 
@@ -125,7 +125,6 @@ girafe(ggobj = combined,
 *"Data alone isn’t enough, it must be analysed deeply, visualized clearly, and communicated effectively to drive meaningful decisions."*
 :::
 
-::: cv-button
 ```{r}
 #| echo: false
 library(htmltools)
@@ -137,7 +136,7 @@ div(style = "position: relative; height: 100px; text-align: center;",
   )
 )
 ```
-:::
+
 
 ```{r}
 #| echo: FALSE
@@ -166,40 +165,43 @@ library(htmltools)
 
 portfolio_gallery <- function() {
   div(class = "portfolio-gallery",
-    # Item 1 (Mais recente)
+    # Item 1
+    div(class = "portfolio-item",
+        a(href = "organic.qmd",
+          img(src = "images/organic_farmers_hero.jpg", class = "portfolio-image", alt = "organic_farmers")
+        ),
+        p(class = "portfolio-theme", "Personal project"),
+        h3(class = "portfolio-title", "Organic Farming in Brazil"),
+        p(class = "portfolio-date", "June 2025")
+    ),
+    
+    # Item 2
+    div(class = "portfolio-item",
+        a(href = "pronaf.qmd",
+          img(src = "images/researches.jpg", class = "portfolio-image", alt = "researchs")
+        ),
+        p(class = "portfolio-theme", "Service"),
+        h3(class = "portfolio-title", "Research Project Analysis"),
+        p(class = "portfolio-date", "2025")
+    ),
+    
     div(class = "portfolio-item",
         a(href = "watercalves.qmd",
-          img(src = "images/Calves_water.png", class = "portfolio-image", alt = "calves_water")
+          img(src = "images/Calves_water.png", class = "portfolio-image", alt = "calves")
         ),
         p(class = "portfolio-theme", "Experiment"),
         h3(class = "portfolio-title", "Nipple water troughs for dairy calves"),
         p(class = "portfolio-date", "November 2024")
     ),
     
-    # Item 2 (Projeto 2o mais recente)
-    div(class = "portfolio-item",
-        a(href = "metaanalysis.qmd",
-          img(src = "images/IMG_20240111_204935_6162.png", class = "portfolio-image", alt = "groupcalves")
-        ),
-        p(class = "portfolio-theme", "Meta-analysis"),
-        h3(class = "portfolio-title", "Group-housed Calves"),
-        p(class = "portfolio-date", "June 2024")
-    ),
-    
-    # Item 3 (Ver portfólio completo)
-    div(class = "portfolio-item see-more",
-    a(href = "projects.qmd", class = "full-portfolio-link",
-      div(class = "content-wrapper",
-        img(src = "images/seemore.png", class = "portfolio-image", alt = "Full Portfolio"),
-        p(class = "portfolio-theme", "Portfolio"),
-        h3(class = "portfolio-title", "See more projects"),
-        p(class = "portfolio-date", "Since 2023")
-      ),
-      div(class = "portfolio-overlay",
-          div(class = "plus-sign", "+")
-      )
+    # Item 3 
+     div(class = "portfolio-item see-more-button",
+        a(href = "projects.qmd", class = "portfolio-button",
+          span("View All Projects"),
+          div(class = "button-icon", "+")
+        )
     )
-))
+  )
 }
 
 portfolio_gallery()
