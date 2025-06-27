@@ -192,19 +192,22 @@ portfolio_gallery <- function() {
         p(class = "portfolio-theme", "Experiment"),
         h3(class = "portfolio-title", "Nipple water troughs for dairy calves"),
         p(class = "portfolio-date", "November 2024")
-    ),
-    
-    # Item 3 
+    )
+  )
+}
+
+portfolio_gallery()
+
+view_projects <- function() {
      div(class = "portfolio-item see-more-button",
         a(href = "projects.qmd", class = "portfolio-button",
           span("View All Projects"),
           div(class = "button-icon", "+")
         )
     )
-  )
 }
 
-portfolio_gallery()
+view_projects()
 ```
 :::
 

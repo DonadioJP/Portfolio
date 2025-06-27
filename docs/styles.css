@@ -216,14 +216,15 @@ main {
   margin: 0.2rem 0.8rem 0.8rem;
 }
 
-/* See More Button Styling */
+/* View All Projects Button - Full Width Version */
 .portfolio-item.see-more-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  grid-column: 1 / -1; /* Makes the item span all columns */
+  max-width: 100%;
+  margin: 2rem auto 0;
   border: 2px solid #2E48AB;
   background-color: white;
   transition: all 0.3s ease;
+  text-align: center;
 }
 
 .portfolio-button {
@@ -233,12 +234,10 @@ main {
   justify-content: center;
   text-align: center;
   width: 100%;
-  height: 100%;
-  padding: 1rem;
+  padding: 1rem 1rem; /* Increased vertical padding */
   color: #2E48AB;
   text-decoration: none !important;
   font-weight: bold;
-  position: relative;
 }
 
 .portfolio-button span {
