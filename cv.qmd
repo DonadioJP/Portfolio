@@ -41,35 +41,6 @@ edu_content <- tagList(
 edu_content
 ```
 
-## Courses Certificates
-
-```{r}
-#| echo: false
-div(class = "cert-box",
-    tags$ul(
-      tags$li("Dairy calf rearing: strategies to increase efficiency - Embrapa (40h)"),
-      tags$li("Graduate Student Writing Workshop - University of Calgary (12h)"),
-      tags$li("R Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)"),
-      tags$li("Teaching in higher education: foundations and pedagogical practices - São Paulo State University (30h)"),
-      tags$li("Calculation and analysis of production costs in agriculture - Federal University of Santa Catarina (16h)"),
-      tags$li("Ambience, Precision Animal Science and Animal Welfare - University of São Paulo (40h)")
-    )
-)
-```
-
-## Skills Matrix
-
-```{r}
-#| echo: false
-skills <- c("Project Management", "Experimental designs", "Academic Research", "Animal Ethology", "Animal Welfare", "Excel", "SQL", "R", "Data Visualization", "Quarto", "Word", "GitHub", "Microsoft Teams", "HTML", "CSS")
-
-tagList(
-  lapply(skills, function(skill) {
-    div(class = "skill-box", skill)
-  })
-)
-```
-
 ## Professional Experience
 
 ```{r}
@@ -194,3 +165,44 @@ carousel <- div(class = "timeline-container",
 carousel
 ```
 
+## Skills Matrix
+
+```{r}
+#| echo: false
+skills <- c("Project Management", "Experimental designs", "Academic Research", "Animal Ethology", "Animal Welfare", "Excel", "SQL", "R", "Data Visualization", "Quarto", "Word", "GitHub", "Microsoft Teams", "HTML", "CSS")
+
+tagList(
+  lapply(skills, function(skill) {
+    div(class = "skill-box", skill)
+  })
+)
+```
+
+## Languages
+
+```{r}
+#| echo: false
+languages <- c("Portuguese (Native)", "English (Fluent)", "Spanish (Fluent)", "French (Basic)")
+
+tagList(
+  lapply(languages, function(languages) {
+    div(class = "skill-box", languages)
+  })
+)
+```
+
+## Courses Certificates
+
+```{r}
+#| echo: false
+div(class = "cert-box",
+    tags$ul(
+      tags$li("Dairy calf rearing: strategies to increase efficiency - Embrapa (40h)"),
+      tags$li("Graduate Student Writing Workshop - University of Calgary (12h)"),
+      tags$li("R Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)"),
+      tags$li("Teaching in higher education: foundations and pedagogical practices - São Paulo State University (30h)"),
+      tags$li("Calculation and analysis of production costs in agriculture - Federal University of Santa Catarina (16h)"),
+      tags$li("Ambience, Precision Animal Science and Animal Welfare - University of São Paulo (40h)")
+    )
+)
+```

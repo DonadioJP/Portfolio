@@ -37,6 +37,9 @@ main {
   box-sizing: border-box;
 }
 
+.anchorjs-link, .header-anchor {
+  display: none !important;
+}
 
 /* ===== Navigation ===== */
 .navbar {
@@ -622,7 +625,7 @@ main {
   position: relative;       /* Required for pseudo-element */
   width: 100%;
   padding-bottom: 10px;   /* Space for the line */
-  text-align: center;       /* Center text (optional) */
+  text-align: left;       /* Center text (optional) */
 }
 
 /* Remove the right border from the last column */

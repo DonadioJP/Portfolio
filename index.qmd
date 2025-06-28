@@ -177,7 +177,7 @@ portfolio_gallery <- function() {
     
     # Item 2
     div(class = "portfolio-item",
-        a(href = "pronaf.qmd",
+        a(href = "research_projects.qmd",
           img(src = "images/researches.jpg", class = "portfolio-image", alt = "researchs")
         ),
         p(class = "portfolio-theme", "Service"),

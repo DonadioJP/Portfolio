@@ -65,7 +65,7 @@ portfolio_card <- tags$div(
       tags$p("May 2025", class = "card-date")
     ),
     tags$a(
-      "View Project", href = "pronaf_analysis.qmd",
+      "View Project", href = "pronaf.qmd",
       class = "view-project-btn"
     )
   )
