@@ -80,7 +80,7 @@ carousel <- div(class = "timeline-container",
   ),
   div(class = "carousel-item",
       h3("2023-2025"),
-      h4("Graduate Researcher"),
+      h4("Research Assistant"),
       p("São Paulo State University"),
       tags$ul(
         tags$li("Coordinated international dairy cattle welfare projects"),

@@ -755,14 +755,19 @@ main {
 }
 
 .carousel-nav {
-  position: relative;
-  height: 40px;
-  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .carousel-arrow {
-  position: absolute;
-  top: 0;
+  pointer-events: auto;
   width: 40px;
   height: 40px;
   background-color: #2E86AB;
@@ -772,6 +777,7 @@ main {
   font-size: 1.2em;
   cursor: pointer;
   transition: all 0.3s ease;
+  margin: 0 15px;
 }
 
 .carousel-arrow:hover {
@@ -779,22 +785,13 @@ main {
   transform: scale(1.1);
 }
 
-.carousel-arrow.left {
-  left: 0;
-}
-
-.carousel-arrow.right {
-  right: 0;
-}
-
 .carousel-item {
   display: none;
-  padding-left: 15px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 20px;
   background-color: #f8f9fa;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .carousel-item.active {

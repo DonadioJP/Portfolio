@@ -39,7 +39,7 @@
     "href": "cv.html#education",
     "title": "Curriculum Vitæ",
     "section": "Education",
-    "text": "Education\n\n\n\nMSc Animal Science\n\nSão Paulo State University\n\n2023-2025\n\n\nBSc Agriculture\n\nFederal University of Santa Catarina\n\n2017-2022"
+    "text": "Education\n\n\n\nMSc in Animal Science\n\nSão Paulo State University\n\n2023-2025\n\n\nBSc in Agriculture\n\nFederal University of Santa Catarina\n\n2017-2022"
   },
   {
     "objectID": "cv.html#courses-certificates",
@@ -60,7 +60,7 @@
     "href": "cv.html#professional-experience",
     "title": "Curriculum Vitæ",
     "section": "Professional Experience",
-    "text": "Professional Experience\n\n\n\n\n←\n→\n\n\n2025-Present\nResearch Technician\nSão Paulo State University\n\nTraining teams on experimental procedures\nStatistical analysis planning\nTechnical report writing\n\n\n\n2024\nVisiting Research Student\nUniversity of British Columbia\n\nAnimal welfare research collaboration\nPresented findings at international seminars\n\n\n\n2023-2024\nHerdsperson\nEMBRAPA Pecuária Sudeste\n\nManaged dairy calf health protocols\nImplemented vaccination programs\n\n\n\n2023-2025\nGraduate Researcher\nSão Paulo State University\n\nCoordinated international dairy cattle welfare projects\nDeveloped patents and scientific papers\n\n\n\n2023\nTeaching Intern\nSão Paulo State University\n\nTaught 'Dairy Cattle' for veterinary students\n\n\n\n2022\nFarm Labourer\nEstância Santa Bárbara\n\nManaged operations for 11,000-head sheep farm\n\n\n\n2019-2022\nResearch Assistant\nFederal University of Santa Catarina (LETA)\n\nLed dairy cattle behavior studies\nDeveloped outreach materials\n\n\n\n2018\nTeaching Assistant\nFederal University of Santa Catarina\n\nPhysics instruction for agriculture students\n\n\n\n2017-2018\nSearch Engine Evaluator\nLionbridge\n\nImproved search algorithm quality"
+    "text": "Professional Experience\n\n\n\n\n←\n→\n\n\n2025-Present\nResearch Technician\nSão Paulo State University\n\nTraining teams on experimental procedures\nStatistical analysis planning\nTechnical report writing\n\n\n\n2024\nVisiting Research Student\nUniversity of British Columbia\n\nAnimal welfare research collaboration\nPresented findings at international seminars\n\n\n\n2023-2024\nHerdsperson\nEMBRAPA Pecuária Sudeste\n\nManaged dairy calf health protocols\nImplemented vaccination programs\n\n\n\n2023-2025\nResearch Assistant\nSão Paulo State University\n\nCoordinated international dairy cattle welfare projects\nDeveloped patents and scientific papers\n\n\n\n2023\nTeaching Intern\nSão Paulo State University\n\nTaught 'Dairy Cattle' for veterinary students\n\n\n\n2022\nFarm Labourer\nEstância Santa Bárbara\n\nManaged operations for 11,000-head sheep farm\n\n\n\n2019-2022\nResearch Assistant\nFederal University of Santa Catarina (LETA)\n\nLed dairy cattle behavior studies\nDeveloped outreach materials\n\n\n\n2018\nTeaching Assistant\nFederal University of Santa Catarina\n\nPhysics instruction for agriculture students\n\n\n\n2017-2018\nSearch Engine Evaluator\nLionbridge\n\nImproved search algorithm quality"
   },
   {
     "objectID": "index.html",
@@ -124,5 +124,12 @@
     "title": "Portfolio Gallery",
     "section": "Personal Projects",
     "text": "Personal Projects\n\n\n\n\n\n\n\n\n\nOrganic Farming in Brazil\nAnalysis of the National Registration of Organic Farmers\nLarge Data Extraction, Data Cleaning, Excel, R, SQL, Tableau, Geospatial Visualization\nJune 2025\n\nView Project"
+  },
+  {
+    "objectID": "cv.html#languages",
+    "href": "cv.html#languages",
+    "title": "Curriculum Vitæ",
+    "section": "Languages",
+    "text": "Languages\n\n\nPortuguese (Native)\nEnglish (Fluent)\nSpanish (Fluent)\nFrench (Basic)"
   }
 ]
