@@ -24,13 +24,13 @@ div(style = "display: block; justify-content: space-between; margin-bottom: 2rem
 
 edu_content <- tagList(
   div(class = "edu-box",
-      h3("MSc Animal Science"),
+      h3("MSc in Animal Science"),
       p(em("São Paulo State University")),
       p(style = "text-align: right;", "2023-2025"),
       style = "float: right;"
   ),
   div(class = "edu-box",
-      h3("BSc Agriculture"),
+      h3("BSc in Agriculture"),
       p(em("Federal University of Santa Catarina")),
       p(style = "text-align: right;", "2017-2022"),
       style = "float: left;"
