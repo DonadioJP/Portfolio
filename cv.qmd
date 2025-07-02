@@ -182,12 +182,29 @@ tagList(
 
 ```{r}
 #| echo: false
-languages <- c("Portuguese (Native)", "English (Fluent)", "Spanish (Fluent)", "French (Basic)")
+languages <- data.frame(
+  language = c("Portuguese", "English", "Spanish", "French"),
+  proficiency = c(100, 95, 90, 30)
+)
 
 tagList(
-  lapply(languages, function(languages) {
-    div(class = "skill-box", languages)
-  })
+  div(class = "languages-container",
+    lapply(1:nrow(languages), function(i) {
+      div(class = "language-item",
+        div(class = "language-header",
+          span(class = "language-flag", languages$flag[i]),
+          span(class = "language-name", languages$language[i])
+          ),
+        div(class = "language-bar-container",
+          div(
+            class = "language-bar",
+            style = paste0("width: ", languages$proficiency[i], "%;"),
+            `data-proficiency` = languages$proficiency[i]
+          )
+        )
+      )
+    })
+  )
 )
 ```
 

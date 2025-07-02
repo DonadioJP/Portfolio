@@ -1005,3 +1005,77 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+.languages-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.language-item {
+  margin-bottom: 25px;
+}
+
+.language-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.language-flag {
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.language-name {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.language-level {
+  color: #666;
+  margin-right: auto;
+}
+
+.language-percent {
+  color: #2E86AB;
+  font-weight: bold;
+}
+
+.language-bar-container {
+  height: 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.language-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #2E86AB, #4BB3FD);
+  border-radius: 5px;
+  transition: width 1s ease-out;
+}
+
+/* Animation on load */
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.language-bar {
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+/* Hover effects */
+.language-item:hover .language-name {
+  color: #2E86AB;
+}
+
+.language-item:hover .language-bar {
+  background: linear-gradient(90deg, #1B4F72, #2E86AB);
+  box-shadow: 0 0 5px rgba(46, 134, 171, 0.5);
+}
