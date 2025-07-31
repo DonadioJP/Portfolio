@@ -147,4 +147,3 @@ pronaf_page <- div(class = "project-container",
 
 pronaf_page
 ```
-

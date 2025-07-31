@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Portfolio Gallery – João Pedro Donadio</title>
+<title>Quantifying Animal Welfare Narratives in BBC News – João Pedro Donadio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -156,7 +156,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Portfolio Gallery</h1>
+<h1 class="title">Quantifying Animal Welfare Narratives in BBC News</h1>
+<p class="subtitle lead">Web Scraping and Text Analysis of BBC News Coverage</p>
 </div>
 
 
@@ -173,128 +174,190 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="portfolio-header">
-
-</div>
-<section id="stakeholder-projects" class="level2">
-<h2 class="anchored" data-anchor-id="stakeholder-projects">Stakeholder Projects</h2>
-<div class="portfolio-container">
-<div class="columns">
-<div class="column">
 <div class="cell">
 <div class="cell-output-display">
-<div class="portfolio-container">
-<a class="portfolio-card">
-<img src="images/researches.jpg" alt="research_analysis" class="card-image">
-<div class="card-content">
-<h3 class="card-title anchored">Research Data Analysis</h3>
-<p class="card-description">Model of Academic Research Project Analysis for Clients</p>
-<p class="card-tags">R, Statistical Modeling, Academic Reporting</p>
+<div class="project-container">
+<div class="project-hero">
+<img src="images/animal-welfare.jpg" alt="Animal welfare concept image" class="hero-image">
 </div>
-</a><a href="./research_projects.html" class="view-project-btn">View Details</a>
+<div style="margin-top: 1.5rem; text-align: center;">
+<a href="images/Web-Scraping-project.pdf" target="_blank" class="publication-button">View PDF</a>
+</div>
+<div class="project-context">
+<h2 class="anchored">Background</h2>
+<p>
+This project analyzes how animal welfare topics are framed in media by scraping and analyzing 
+<a href="https://www.bbc.com/news" target="_blank">
+<strong>BBC News</strong>
+</a>
+ articles. Using computational text analysis, we examine frequency, tone, and framing of 
+animal welfare coverage to understand media representation patterns.
+</p>
+<p>
+The analysis covers 
+<strong>3,441 articles</strong>
+ published between 2010-2025, revealing 
+how language shapes public perception of animal welfare issues.
+</p>
+</div>
+<div class="project-objectives">
+<h2 class="anchored">Goals</h2>
+<ul>
+<li>Scrape and analyze BBC News articles about animal welfare</li>
+<li>Identify most frequent terms and sentiment patterns</li>
+<li>Understand framing devices and subject focus in coverage</li>
+<li>Quantify negative vs. positive narratives</li>
+</ul>
+</div>
+<div class="project-findings">
+<h2 class="anchored">Results</h2>
+<div class="findings-grid">
+<div class="finding-card">
+<h3 class="anchored">Sentiment Analysis</h3>
+<p>76.04% of headlines had negative sentiment</p>
+<p>23.96% had positive sentiment</p>
+</div>
+<div class="finding-card">
+<h3 class="anchored">Top Words</h3>
+<p>Dog, ban, dogs, found, cat, farm, charity, rescued, pet, puppy</p>
+</div>
+<div class="finding-card">
+<h3 class="anchored">Framing Patterns</h3>
+<p>1.8:1 ratio of negative-to-positive framing terms</p>
+<p>Problem-centric language dominates coverage</p>
+</div>
+<div class="finding-card">
+<h3 class="anchored">Subject Focus</h3>
+<p>Pets receive 3x more coverage than farm animals</p>
+<p>Wildlife appears primarily as conservation icons</p>
+</div>
+</div>
+</div>
+<div class="analysis-section">
+<h2 class="anchored">Detailed Analysis</h2>
+<div class="analysis-card">
+<h3 class="anchored">Word Frequency Analysis</h3>
+<p>The most frequent terms in headlines reveal key topics in BBC's coverage:</p>
+<img src="images/word_frequency.png" alt="Word frequency visualization" class="analysis-image">
+<p>Domestic animals dominate the discourse, with 'dog' appearing 168 times and 'cat' 95 times.</p>
+</div>
+<div class="analysis-card">
+<h3 class="anchored">Sentiment Analysis</h3>
+<p>Using the Bing lexicon, we classified headlines as positive or negative:</p>
+<div class="sentiment-table">
+
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Word</th>
+<th data-quarto-table-cell-role="th">Sentiment</th>
+<th data-quarto-table-cell-role="th">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>dead</td>
+<td>negative</td>
+<td>62</td>
+</tr>
+<tr class="even">
+<td>dies</td>
+<td>negative</td>
+<td>53</td>
+</tr>
+<tr class="odd">
+<td>warning</td>
+<td>negative</td>
+<td>49</td>
+</tr>
+<tr class="even">
+<td>appeal</td>
+<td>positive</td>
+<td>33</td>
+</tr>
+<tr class="odd">
+<td>protect</td>
+<td>positive</td>
+<td>12</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
+<div class="analysis-card">
+<h3 class="anchored">Framing Analysis</h3>
+<p>Quantitative analysis reveals how BBC News employs specific language:</p>
+<ul>
+<li>
+<strong>Problem-Centric Language:</strong>
+ 'abandoned' (61 mentions), 'cruelty' (47)
+</li>
+<li>
+<strong>Rescue Narratives:</strong>
+ 'rescue' (60), 'sanctuary' (37)
+</li>
+<li>
+<strong>Policy Discourse:</strong>
+ 'law' (24), 'rules' (27)
+</li>
+</ul>
+<p>The 1.8:1 ratio of negative-to-positive framing terms confirms a predominantly crisis-oriented narrative.</p>
 </div>
-</div><div class="column">
-<div class="cell">
-<div class="cell-output-display">
-<div class="portfolio-container">
-<a class="portfolio-card">
-<img src="images/pronaf.jpg" alt="pronaf_investments" class="card-image">
-<div class="card-content">
-<h3 class="card-title anchored">PRONAF Investment Analysis</h3>
-<p class="card-description">Geospatial Evaluation of PRONAF Loans for Brazilian Agriculture</p>
-<p class="card-tags">R, RShiny, Dashboard, Geospatial Analysis, Public Policy Analysis</p>
-<p class="card-date">May 2025</p>
-</div>
-</a><a href="./pronaf.html" class="view-project-btn">View Project</a>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="academic-projects" class="level2">
-<h2 class="anchored" data-anchor-id="academic-projects">Academic Projects</h2>
-<div class="portfolio-container">
-<div class="columns">
-<div class="column">
-<div class="cell">
-<div class="cell-output-display">
-<div class="portfolio-container">
-<a class="portfolio-card">
-<img src="images/Calves_water.png" alt="calves_water" class="card-image">
-<div class="card-content">
-<h3 class="card-title anchored">Experiment</h3>
-<p class="card-description">Nipple Water Troughs Reduces Cross-Sucking in Dairy Calves</p>
-<p class="card-tags">Excel, R, Data collection, Data visualization, Applied Ethology, Animal science</p>
-<p class="card-date">November 2024</p>
-</div>
-</a><a href="./watercalves.html" class="view-project-btn">View Project</a>
-
+<div class="analysis-card">
+<h3 class="anchored">Animal Type Coverage</h3>
+<p>Distinct patterns in how different animal categories are discussed:</p>
+<img src="images/animal_types.png" alt="Animal type coverage visualization" class="analysis-image">
+<p>Pets dominate coverage (818 mentions) compared to wildlife (115) or livestock (213).</p>
 </div>
 </div>
+<div class="methodology-section">
+<h2 class="anchored">Methodology</h2>
+<p>The project followed these steps:</p>
+<ol>
+<li>
+<strong>Web Scraping:</strong>
+ Used Rselenium and rvest to extract article titles, snippets, and dates from BBC News search results
+</li>
+<li>
+<strong>Data Cleaning:</strong>
+ Removed HTML artifacts, duplicates, and empty fields
+</li>
+<li>
+<strong>Text Mining:</strong>
+ Tokenized words, removed stopwords, analyzed term frequencies
+</li>
+<li>
+<strong>Sentiment Analysis:</strong>
+ Applied tidytext sentiment lexicons (bing)
+</li>
+<li>
+<strong>Visualization:</strong>
+ Created charts and plots to illustrate findings
+</li>
+</ol>
 </div>
-</div><div class="column">
-<div class="cell">
-<div class="cell-output-display">
-<div class="portfolio-container">
-<a class="portfolio-card">
-<img src="images/groupcalves.jpg" alt="group_calves" class="card-image">
-<div class="card-content">
-<h3 class="card-title anchored">Meta-analysis</h3>
-<p class="card-description">Evaluation of the effects of early group housing on calf's performance, health, and behavior during the preweaning period</p>
-<p class="card-tags">R, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization</p>
-<p class="card-date">June 2024</p>
+<div class="conclusion-section">
+<h2 class="anchored">Conclusions</h2>
+<p>This analysis reveals BBC's animal welfare coverage is characterized by:</p>
+<ul>
+<li>A strong focus on domestic animals and regulatory actions</li>
+<li>Predominantly negative framing (76% of headlines)</li>
+<li>Disproportionate attention to pets over ecologically significant species</li>
+<li>Frequent linkage of animals to legislative debates</li>
+</ul>
+<p>The project demonstrates how computational methods can reveal hidden patterns in media ecosystems.</p>
 </div>
-</a><a href="./metaanalysis.html" class="view-project-btn">View Project</a>
-
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="personal-projects" class="level2">
-<h2 class="anchored" data-anchor-id="personal-projects">Personal Projects</h2>
-<div class="portfolio-container">
-<div class="columns">
-<div class="column">
-<div class="cell">
-<div class="cell-output-display">
-<div class="portfolio-container">
-<a class="portfolio-card">
-<img src="images/organic_farmers_hero.jpg" alt="organic_farmers" class="card-image">
-<div class="card-content">
-<h3 class="card-title anchored">Organic Farming in Brazil</h3>
-<p class="card-description">Analysis of the National Registration of Organic Farmers</p>
-<p class="card-tags">Large Data Extraction, Data Cleaning, Excel, R, SQL, Tableau, Geospatial Visualization</p>
-<p class="card-date">June 2025</p>
-</div>
-</a><a href="./organic.html" class="view-project-btn">View Project</a>
-
-</div>
-</div>
-</div>
-</div><div class="column">
-<div class="cell">
-<div class="cell-output-display">
-<div class="portfolio-container">
-<a class="portfolio-card">
-<img src="images/animal-welfare.jpg" alt="animal welfare" class="card-image">
-<div class="card-content">
-<h3 class="card-title anchored">Quantifying Animal Welfare Narratives in BBC News</h3>
-<p class="card-description">Web Scraping and Text Analysis of BBC News Coverage</p>
-<p class="card-tags">Web Scraping, R, Text Mining, Sentiment Analysis, Data Visualization, Language Processing, Quarto</p>
-<p class="card-date">July 2025</p>
-</div>
-</a><a href="./bbc_scraping.html" class="view-project-btn">View Project</a>
-
-</div>
+<div class="skills-section">
+<h2 class="anchored">Skills Demonstrated</h2>
+<div class="skills-tags">
+<span class="skill-tag">Web Scraping</span>
+<span class="skill-tag">R Programming</span>
+<span class="skill-tag">Text Mining</span>
+<span class="skill-tag">Sentiment Analysis</span>
+<span class="skill-tag">Data Visualization</span>
+<span class="skill-tag">Language Processing</span>
+<span class="skill-tag">Statistical Analysis</span>
 </div>
 </div>
 </div>
@@ -302,7 +365,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-</section>
 
 </main> <!-- /main -->
 <div id="footer-container">

@@ -16,6 +16,8 @@ website:
             text: "All Projects"
           - href: research_projects.qmd
             text: "Research Project Analysis"
+          - href: bbc_scraping.qmd
+            text: "Animal Welfare Narratives in BBC News Analysis"
           - href: pronaf.qmd
             text: "PRONAF Investments Analysis"
           - href: organic.qmd

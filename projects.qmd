@@ -186,5 +186,38 @@ portfolio_card <- tags$div(
 portfolio_card
 ```
 :::
+
+::: column
+```{r echo=FALSE}
+library(htmltools)
+
+portfolio_card <- tags$div(
+  class = "portfolio-container",
+  tags$a(
+    class = "portfolio-card",
+    tags$img(
+      src = "images/animal-welfare.jpg",
+      alt = "animal welfare",
+      class = "card-image"
+    ),
+    tags$div(
+      class = "card-content",
+      tags$h3("Quantifying Animal Welfare Narratives in BBC News", class = "card-title"),
+      tags$p(
+        "Web Scraping and Text Analysis of BBC News Coverage",
+        class = "card-description"
+      ),
+      tags$p("Web Scraping, R, Text Mining, Sentiment Analysis, Data Visualization, Language Processing, Quarto", class = "card-tags"),
+      tags$p("July 2025", class = "card-date")
+    ),
+    tags$a(
+      "View Project", href = "bbc_scraping.qmd",
+      class = "view-project-btn"
+    )
+  )
+)
+portfolio_card
+```
+:::
 :::::
 :::::::::

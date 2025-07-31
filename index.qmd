@@ -186,12 +186,12 @@ portfolio_gallery <- function() {
     ),
     
     div(class = "portfolio-item",
-        a(href = "watercalves.qmd",
-          img(src = "images/Calves_water.png", class = "portfolio-image", alt = "calves")
+        a(href = "bbc_scraping.qmd",
+          img(src = "images/animal-welfare.jpg", class = "portfolio-image", alt = "animal welfare")
         ),
-        p(class = "portfolio-theme", "Experiment"),
-        h3(class = "portfolio-title", "Nipple water troughs for dairy calves"),
-        p(class = "portfolio-date", "November 2024")
+        p(class = "portfolio-theme", "Web Scraping"),
+        h3(class = "portfolio-title", "Quantifying Animal Welfare Narratives in BBC News"),
+        p(class = "portfolio-date", "July 2025")
     )
   )
 }

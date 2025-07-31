@@ -1,0 +1,231 @@
+---
+title: "Quantifying Animal Welfare Narratives in BBC News"
+subtitle: "Web Scraping and Text Analysis of BBC News Coverage"
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(htmltools)
+
+animal_welfare_page <- div(
+  class = "project-container",
+  
+  # Hero Section
+  div(
+    class = "project-hero",
+    img(
+      src = "images/animal-welfare.jpg", 
+      alt = "Animal welfare concept image", 
+      class = "hero-image"
+    )
+  ),
+    div(style = "margin-top: 1.5rem; text-align: center;",
+        a(href = "images/Web-Scraping-project.pdf", 
+          target = "_blank",
+          class = "publication-button",
+          "View PDF"
+        )
+    ),
+  # Project Context
+  div(
+    class = "project-context",
+    h2("Background"),
+    p(
+      "This project analyzes how animal welfare topics are framed in media by scraping and analyzing ",
+      a(
+        href = "https://www.bbc.com/news",
+        target = "_blank",
+        strong("BBC News")
+      ), 
+      " articles. Using computational text analysis, we examine frequency, tone, and framing of ",
+      "animal welfare coverage to understand media representation patterns."
+    ),
+    p(
+      "The analysis covers ", strong("3,441 articles"), " published between 2010-2025, revealing ",
+      "how language shapes public perception of animal welfare issues."
+    )
+  ),
+  
+  # Objectives Section
+  div(
+    class = "project-objectives",
+    h2("Goals"),
+    tags$ul(
+      tags$li("Scrape and analyze BBC News articles about animal welfare"),
+      tags$li("Identify most frequent terms and sentiment patterns"),
+      tags$li("Understand framing devices and subject focus in coverage"),
+      tags$li("Quantify negative vs. positive narratives")
+    )
+  ),
+  
+  # Key Findings
+  div(
+    class = "project-findings",
+    h2("Results"),
+    div(
+      class = "findings-grid",
+      div(
+        class = "finding-card",
+        h3("Sentiment Analysis"),
+        p("76.04% of headlines had negative sentiment"),
+        p("23.96% had positive sentiment")
+      ),
+      div(
+        class = "finding-card",
+        h3("Top Words"),
+        p("Dog, ban, dogs, found, cat, farm, charity, rescued, pet, puppy")
+      ),
+      div(
+        class = "finding-card",
+        h3("Framing Patterns"),
+        p("1.8:1 ratio of negative-to-positive framing terms"),
+        p("Problem-centric language dominates coverage")
+      ),
+      div(
+        class = "finding-card",
+        h3("Subject Focus"),
+        p("Pets receive 3x more coverage than farm animals"),
+        p("Wildlife appears primarily as conservation icons")
+      )
+    )
+  ),
+  # Analysis Section
+  div(
+    class = "analysis-section",
+    h2("Detailed Analysis"),
+    
+    # Word Frequency
+    div(
+      class = "analysis-card",
+      h3("Word Frequency Analysis"),
+      p("The most frequent terms in headlines reveal key topics in BBC's coverage:"),
+      img(
+        src = "images/word_frequency.png", 
+        alt = "Word frequency visualization",
+        class = "analysis-image"
+      ),
+      p("Domestic animals dominate the discourse, with 'dog' appearing 168 times and 'cat' 95 times.")
+    ),
+    
+    # Sentiment
+    div(
+      class = "analysis-card",
+      h3("Sentiment Analysis"),
+      p("Using the Bing lexicon, we classified headlines as positive or negative:"),
+      div(
+        class = "sentiment-table",
+        tags$table(
+          tags$thead(
+            tags$tr(
+              tags$th("Word"), 
+              tags$th("Sentiment"), 
+              tags$th("Count")
+            )
+          ),
+          tags$tbody(
+            tags$tr(
+              tags$td("dead"), 
+              tags$td("negative"), 
+              tags$td("62")
+            ),
+            tags$tr(
+              tags$td("dies"), 
+              tags$td("negative"), 
+              tags$td("53")
+            ),
+            tags$tr(
+              tags$td("warning"), 
+              tags$td("negative"), 
+              tags$td("49")
+            ),
+            tags$tr(
+              tags$td("appeal"), 
+              tags$td("positive"), 
+              tags$td("33")
+            ),
+            tags$tr(
+              tags$td("protect"), 
+              tags$td("positive"), 
+              tags$td("12")
+            )
+          )
+        )
+      )
+    ),
+    
+    # Framing
+    div(
+      class = "analysis-card",
+      h3("Framing Analysis"),
+      p("Quantitative analysis reveals how BBC News employs specific language:"),
+      tags$ul(
+        tags$li(strong("Problem-Centric Language:"), " 'abandoned' (61 mentions), 'cruelty' (47)"),
+        tags$li(strong("Rescue Narratives:"), " 'rescue' (60), 'sanctuary' (37)"),
+        tags$li(strong("Policy Discourse:"), " 'law' (24), 'rules' (27)")
+      ),
+      p("The 1.8:1 ratio of negative-to-positive framing terms confirms a predominantly crisis-oriented narrative.")
+    ),
+    
+    # Animal Types
+    div(
+      class = "analysis-card",
+      h3("Animal Type Coverage"),
+      p("Distinct patterns in how different animal categories are discussed:"),
+      img(
+        src = "images/animal_types.png", 
+        alt = "Animal type coverage visualization",
+        class = "analysis-image"
+      ),
+      p("Pets dominate coverage (818 mentions) compared to wildlife (115) or livestock (213).")
+    )
+  ),
+  
+  # Methodology Section
+  div(
+    class = "methodology-section",
+    h2("Methodology"),
+    p("The project followed these steps:"),
+    tags$ol(
+      tags$li(strong("Web Scraping:"), " Used Rselenium and rvest to extract article titles, snippets, and dates from BBC News search results"),
+      tags$li(strong("Data Cleaning:"), " Removed HTML artifacts, duplicates, and empty fields"),
+      tags$li(strong("Text Mining:"), " Tokenized words, removed stopwords, analyzed term frequencies"),
+      tags$li(strong("Sentiment Analysis:"), " Applied tidytext sentiment lexicons (bing)"),
+      tags$li(strong("Visualization:"), " Created charts and plots to illustrate findings")
+    )
+  ),
+  # Conclusion
+  div(
+    class = "conclusion-section",
+    h2("Conclusions"),
+    p("This analysis reveals BBC's animal welfare coverage is characterized by:"),
+    tags$ul(
+      tags$li("A strong focus on domestic animals and regulatory actions"),
+      tags$li("Predominantly negative framing (76% of headlines)"),
+      tags$li("Disproportionate attention to pets over ecologically significant species"),
+      tags$li("Frequent linkage of animals to legislative debates")
+    ),
+    p("The project demonstrates how computational methods can reveal hidden patterns in media ecosystems.")
+  ),
+  
+  # Skills Section
+  div(
+    class = "skills-section",
+    h2("Skills Demonstrated"),
+    div(
+      class = "skills-tags",
+      span(class = "skill-tag", "Web Scraping"),
+      span(class = "skill-tag", "R Programming"),
+      span(class = "skill-tag", "Text Mining"),
+      span(class = "skill-tag", "Sentiment Analysis"),
+      span(class = "skill-tag", "Data Visualization"),
+      span(class = "skill-tag", "Language Processing"),
+      span(class = "skill-tag", "Statistical Analysis")
+    )
+  )
+)
+
+animal_welfare_page
+```
