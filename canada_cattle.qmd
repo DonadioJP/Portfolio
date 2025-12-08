@@ -1,0 +1,132 @@
+---
+title: "Canada's Cattle Population" 
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(htmltools)
+
+cattle_page <- div(
+  class = "project-container",
+  
+  # Hero Section
+  div(
+    class = "project-hero",
+    img(
+      src = "images/canadian_praires.png", 
+      alt = "Cattle in Canadian landscape", 
+      class = "hero-image"
+    ),
+    div(
+      class = "hero-overlay",
+      h1("Canada's Cattle Population"),
+      p("Analyzing National Trends in Cattle Distribution and Farm Types")
+    )
+  ),
+  
+  # Project Context
+  div(
+    class = "project-context",
+    h2("Background"),
+    p(
+      "This project analyzes data from ", 
+      a(
+        href = "https://doi.org/10.25318/3210013001-eng",
+        target = "_blank",
+        strong("Statistics Canada Table 32-10-0130-01")
+      ), 
+      " tracking the number of cattle by class and farm type across Canadian provinces and territories. /n",
+      "Canada's cattle industry is a critical component of the agricultural economy, with significant ",
+      "regional variations in herd sizes, farm types, and cattle classes. This analysis explores ",
+      "these patterns to understand the distribution and evolution of cattle farming across the country."
+    )
+  ),
+  
+  # Objectives Section
+  div(
+    class = "project-objectives",
+    h2("Goals"),
+    tags$ul(
+      tags$li("Visualize the geographic distribution of cattle across Canadian provinces and territories"),
+      tags$li("Analyze trends in different cattle classes (beef cows, dairy cows, bulls, calves, heifers, steers)"),
+      tags$li("Identify temporal patterns and changes in Canada's cattle population over time")
+    )
+  ),
+  
+  # Key Findings
+  div(
+    class = "project-findings",
+    h2("Key Insights"),
+    div(
+      class = "findings-grid",
+      div(
+        class = "finding-card",
+        h3("Regional Concentration"),
+        p("Alberta and Saskatchewan dominate Canada's cattle industry, with the Prairie provinces accounting for the majority of the national herd")
+      ),
+      div(
+        class = "finding-card",
+        h3("Cattle Class Patterns"),
+        p("Beef cows represent the largest cattle class, reflecting Canada's focus on beef production over dairy")
+      )
+    )
+  ),
+  
+  # Tableau Dashboard
+  div(
+    class = "dashboard-section",
+    h2("Interactive Dashboard"),
+    a(
+      href = "https://public.tableau.com/views/CanadasCattle/CanadasCattlePopulationDashboard?:language=pt-BR&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link", 
+      target = "_blank",
+      img(
+        src = "images/cattle_dashboard_preview.png", 
+        alt = "Canada's Cattle Population Dashboard Preview", 
+        class = "dashboard-preview"
+      ),
+      p(class = "dashboard-link", "Click to view interactive dashboard on Tableau Public")
+    )
+  ),
+  
+  # Data Source Citation
+  div(
+    class = "citation-section",
+    h2("Data Source"),
+    p(
+      strong("Citation: "), 
+      "Statistics Canada. Table 32-10-0130-01 Number of cattle, by class and farm type (x 1,000)"
+    ),
+    p(
+      strong("DOI: "), 
+      a(
+        href = "https://doi.org/10.25318/3210013001-eng",
+        target = "_blank",
+        "https://doi.org/10.25318/3210013001-eng"
+      )
+    ),
+    p(
+      strong("Release date: "), "2025-08-22"
+    )
+  ),
+  
+  # Skills Section
+  div(
+    class = "skills-section",
+    h2("Skills Demonstrated"),
+    div(
+      class = "skills-tags",
+      span(class = "skill-tag", "Data Cleaning"),
+      span(class = "skill-tag", "R Programming"),
+      span(class = "skill-tag", "Tableau"),
+      span(class = "skill-tag", "Data Visualization"),
+      span(class = "skill-tag", "Geospatial Analysis"),
+      span(class = "skill-tag", "Time-Series Analysis")
+    )
+  )
+)
+
+cattle_page
+```

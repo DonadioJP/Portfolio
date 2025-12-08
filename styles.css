@@ -1079,3 +1079,317 @@ main {
   background: linear-gradient(90deg, #1B4F72, #2E86AB);
   box-shadow: 0 0 5px rgba(46, 134, 171, 0.5);
 }
+
+/* New ones */
+
+/* ============================================
+   TidyTuesday Projects Page Styles
+   ============================================ */
+
+/* Hero Section */
+.tidytuesday-hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tidytuesday-hero .hero-overlay {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  padding: 2rem;
+}
+
+.tidytuesday-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.tidytuesday-hero p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Introduction Section */
+.tidytuesday-intro {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.tidytuesday-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.tidytuesday-intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.tidytuesday-intro a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.tidytuesday-intro a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* Projects Container */
+.tidytuesday-projects {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Individual Project Card */
+.tt-project-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tt-project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Project Header */
+.tt-header h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #667eea;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.tt-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Project Subtitle */
+.tt-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.tt-subtitle p {
+  font-size: 1.1rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Project Content */
+.tt-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+/* Image Container */
+.tt-image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tt-image-container a {
+  display: block;
+  position: relative;
+}
+
+.tt-preview-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.tt-image-container:hover .tt-preview-image {
+  transform: scale(1.05);
+}
+
+/* Image Overlay */
+.tt-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(102, 126, 234, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tt-image-container:hover .tt-overlay {
+  opacity: 1;
+}
+
+.tt-overlay p {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Description Section */
+.tt-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tt-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Technology Info */
+.tt-tech {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f0f0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.tt-tech strong {
+  color: #333;
+}
+
+/* Technology Tags */
+.tech-tag {
+  display: inline-block;
+  background: #667eea;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  margin: 0.3rem 0.3rem 0.3rem 0;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: #764ba2;
+}
+
+/* Footer Section */
+.tidytuesday-footer {
+  max-width: 900px;
+  margin: 4rem auto 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.tidytuesday-footer p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.tidytuesday-footer a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.tidytuesday-footer a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* ============================================
+   Responsive Design
+   ============================================ */
+
+@media (max-width: 768px) {
+  .tidytuesday-hero {
+    height: 300px;
+  }
+  
+  .tidytuesday-hero h1 {
+    font-size: 2rem;
+  }
+  
+  .tidytuesday-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .tt-project-card {
+    padding: 1.5rem;
+  }
+  
+  .tt-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .tt-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .tt-overlay p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tidytuesday-hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .tidytuesday-hero p {
+    font-size: 1rem;
+  }
+  
+  .tt-project-card {
+    padding: 1rem;
+  }
+  
+  .tt-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .tidytuesday-intro,
+  .tidytuesday-projects,
+  .tidytuesday-footer {
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,139 @@
+---
+title: "TidyTuesday Projects" 
+---
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(htmltools)
+
+tidytuesday_page <- div(
+  class = "project-container",
+  
+  # TidyTuesday Description
+  div(
+    class = "tidytuesday-intro",
+    p(
+      a(
+        href = "https://github.com/rfordatascience/tidytuesday",
+        target = "_blank",
+        strong("TidyTuesday")
+      ),
+      " is a weekly data project. Every week, a new dataset is released, ",
+      "and participants create visualizations, analyses, and applications to explore the data. "
+    ),
+    p(
+      "Below are my contributions to the TidyTuesday challenge"
+    )
+  ),
+  
+  # Projects Section
+  div(
+    class = "tidytuesday-projects",
+    
+    # Week 47 - Statistical Performance Indicators
+    div(
+      class = "tt-project-card",
+      div(
+        class = "tt-header",
+        h2("Statistical Performance Indicators"),
+        h3("Week 47 - November 25, 2024")
+      ),
+      div(
+        class = "tt-subtitle",
+        p("World Bank Statistical Performance Indicators - Measuring the Statistical Performance of Countries")
+      ),
+      div(
+        class = "tt-content",
+        div(
+          class = "tt-image-container",
+          a(
+            href = "https://jpdonadio.shinyapps.io/Statistical_Indicators_tidytuesday47/",
+            target = "_blank",
+            img(
+              src = "images/tt_week47_preview.png",
+              alt = "Statistical Performance Indicators Shiny App Preview",
+              class = "tt-preview-image"
+            ),
+            div(
+              class = "tt-overlay",
+              p("Click to launch interactive Shiny app")
+            )
+          )
+        ),
+        div(
+          class = "tt-tech",
+          strong("Type: "), "Interactive Shiny Application",
+          br(),
+          strong("Technologies: "), 
+          span(class = "tech-tag", "R"),
+          span(class = "tech-tag", "Shiny"),
+          span(class = "tech-tag", "World Bank Data"),
+          span(class = "tech-tag", "Interactive Visualization")
+        )
+      )
+    ),
+    
+    # Week 48 - Snowman Prediction
+    div(
+      class = "tt-project-card",
+      div(
+        class = "tt-header",
+        h2("Can an Exploding Snowman Predict the Summer Season?"),
+        h3("Week 48 - December 2, 2024")
+      ),
+      div(
+        class = "tt-subtitle",
+        p("OpenData for Zurich's Sechseläuten - Böögg Prediction")
+      ),
+      div(
+        class = "tt-content",
+        div(
+          class = "tt-image-container",
+          a(
+            href = "https://jpdonadio.shinyapps.io/Snowman_prediction_tt48/",
+            target = "_blank",
+            img(
+              src = "images/tt_week48_preview.png",
+              alt = "Snowman Prediction Shiny App Preview",
+              class = "tt-preview-image"
+            ),
+            div(
+              class = "tt-overlay",
+              p("Click to launch interactive Shiny app")
+            )
+          )
+        ),
+        div(
+          class = "tt-tech",
+          strong("Type: "), "Interactive Shiny Application",
+          br(),
+          strong("Technologies: "), 
+          span(class = "tech-tag", "R"),
+          span(class = "tech-tag", "Shiny"),
+          span(class = "tech-tag", "Predictive Analysis"),
+          span(class = "tech-tag", "Swiss Open Data")
+        )
+      )
+    )
+  ),
+  
+  # Footer Note
+  div(
+    class = "tidytuesday-footer",
+    p(
+      "Interested in participating? Visit the ",
+      a(
+        href = "https://github.com/rfordatascience/tidytuesday",
+        target = "_blank",
+        "TidyTuesday GitHub repository"
+      ),
+      " to see current and past datasets."
+    )
+  )
+)
+
+tidytuesday_page
+```

@@ -350,7 +350,7 @@ organic_farming_page <- div(
     class = "dashboard-section",
     h2("Interactive Dashboard"),
     a(
-      href = "https://public.tableau.com/views/Organic_Tableau/Dashboard1?:language=pt-BR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link", 
+      href = "https://public.tableau.com/shared/K2HRZ4RYQ?:display_count=n&:origin=viz_share_link", 
       target = "_blank",
       img(
         src = "images/organic_dashboard_preview.jpg", 
