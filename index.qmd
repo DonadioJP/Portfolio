@@ -167,12 +167,12 @@ portfolio_gallery <- function() {
   div(class = "portfolio-gallery",
     # Item 1
     div(class = "portfolio-item",
-        a(href = "organic.qmd",
-          img(src = "images/organic_farmers_hero.jpg", class = "portfolio-image", alt = "organic_farmers")
+        a(href = "canada_cattle.qmd",
+          img(src = "images/canadian_praires.png", class = "portfolio-image", alt = "Canadian Prairies")
         ),
-        p(class = "portfolio-theme", "Personal project"),
-        h3(class = "portfolio-title", "Organic Farming in Brazil"),
-        p(class = "portfolio-date", "June 2025")
+        p(class = "portfolio-theme", "Tableau Project"),
+        h3(class = "portfolio-title", "Canada's Cattle Population Analysis"),
+        p(class = "portfolio-date", "December 2025")
     ),
     
     # Item 2
@@ -186,12 +186,12 @@ portfolio_gallery <- function() {
     ),
     
     div(class = "portfolio-item",
-        a(href = "bbc_scraping.qmd",
-          img(src = "images/animal-welfare.jpg", class = "portfolio-image", alt = "animal welfare")
+        a(href = "organic.qmd",
+          img(src = "images/organic_farmers_hero.jpg", class = "portfolio-image", alt = "organic_farmers")
         ),
-        p(class = "portfolio-theme", "Web Scraping"),
-        h3(class = "portfolio-title", "Quantifying Animal Welfare Narratives in BBC News"),
-        p(class = "portfolio-date", "July 2025")
+        p(class = "portfolio-theme", "Personal project"),
+        h3(class = "portfolio-title", "Organic Farming in Brazil"),
+        p(class = "portfolio-date", "June 2025")
     )
   )
 }

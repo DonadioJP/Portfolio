@@ -196,6 +196,74 @@ portfolio_card <- tags$div(
   tags$a(
     class = "portfolio-card",
     tags$img(
+      src = "images/canadian_praires.png",
+      alt = "canada_cattle",
+      class = "card-image"
+    ),
+    tags$div(
+      class = "card-content",
+      tags$h3("Canada's Cattle Population", class = "card-title"),
+      tags$p(
+        "Analyzing National Trends in Cattle Distribution and Farm Types",
+        class = "card-description"
+      ),
+      tags$p("R, tidyverse, Data Cleaning, Tableau, Geospatial Analysis, Time-Series Analysis", class = "card-tags"),
+      tags$p("August 2024", class = "card-date")
+    ),
+    tags$a(
+      "View Project", href = "cattle.qmd",
+      class = "view-project-btn"
+    )
+  )
+)
+portfolio_card
+```
+:::
+:::::
+
+::::: columns
+::: column
+```{r echo=FALSE}
+library(htmltools)
+
+portfolio_card <- tags$div(
+  class = "portfolio-container",
+  tags$a(
+    class = "portfolio-card",
+    tags$img(
+      src = "images/tidytuesday_hero.png",
+      alt = "tidytuesday_projects",
+      class = "card-image"
+    ),
+    tags$div(
+      class = "card-content",
+      tags$h3("TidyTuesday Projects", class = "card-title"),
+      tags$p(
+        "Weekly Data Visualization Challenges and Interactive Applications",
+        class = "card-description"
+      ),
+      tags$p("R, Shiny, Quarto, Text Analysis, Data Visualization, Interactive Apps", class = "card-tags"),
+      tags$p("November-December 2024", class = "card-date")
+    ),
+    tags$a(
+      "View Projects", href = "tidytuesday.qmd",
+      class = "view-project-btn"
+    )
+  )
+)
+portfolio_card
+```
+:::
+
+::: column
+```{r echo=FALSE}
+library(htmltools)
+
+portfolio_card <- tags$div(
+  class = "portfolio-container",
+  tags$a(
+    class = "portfolio-card",
+    tags$img(
       src = "images/animal-welfare.jpg",
       alt = "animal welfare",
       class = "card-image"
