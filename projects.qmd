@@ -211,7 +211,7 @@ portfolio_card <- tags$div(
       tags$p("August 2024", class = "card-date")
     ),
     tags$a(
-      "View Project", href = "cattle.qmd",
+      "View Project", href = "canada_cattle.qmd",
       class = "view-project-btn"
     )
   )

@@ -166,7 +166,7 @@ portfolio_gallery <- function() {
   div(class = "portfolio-gallery",
     # Item 1 (Projeto normal)
     div(class = "portfolio-item",
-        a(href = "watercalves.pt.qmd",
+        a(href = "watercalves.qmd",
           img(src = "images/Calves_water.png", class = "portfolio-image", alt = "watercalves")
         ),
         p(class = "portfolio-theme", "Experimento"),
@@ -176,7 +176,7 @@ portfolio_gallery <- function() {
     
     # Item 2 (Projeto normal)
     div(class = "portfolio-item",
-        a(href = "metaanalysis.pt.qmd",
+        a(href = "metaanalysis.qmd",
           img(src = "images/IMG_20240111_204935_6162.png", class = "portfolio-image", alt = "meta-analysis")
         ),
         p(class = "portfolio-theme", "Meta-Análise"),
@@ -186,7 +186,7 @@ portfolio_gallery <- function() {
     
     # Item 3 (Ver portfólio completo)
     div(class = "portfolio-item see-more",
-        a(href = "projects.pt.qmd", class = "full-portfolio-link",
+        a(href = "projects.qmd", class = "full-portfolio-link",
           img(src = "images/seemore.png", class = "portfolio-image", alt = "Full Portfolio"),
         p(class = "portfolio-theme", ""),
         h3(class = "portfolio-title", "Ver mais projetos"),
