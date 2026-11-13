@@ -7,32 +7,88 @@
     "text": "Background\nCross-sucking is a common abnormal behaviour in group-housed dairy calves, linked to welfare concerns and management practices. This study evaluates whether nipple-equipped water troughs can reduce this behaviour, promoting more natural drinking patterns and improved welfare outcomes.\n\n\n\n\nGoals\n\nAssess the effect of nipple water troughs on the frequency and duration of cross-sucking in group-housed calves\nEvaluate behavioural changes in response to different water provision systems\nDetermine whether nipple water troughs support more natural oral behaviours in calves after milk feeding\n\n\n\n\n\nResults\n\n42% reduction in cross-sucking in calves with nipple access vs. open troughs (p = 0.003)\nNo negative impact on growth (weaning weights: p = 0.788)\nLonger water trough visits and nighttime water intake in groups of calves with nipple water troughs\n\nView Publication\n\n\n\n\n\n\n\nCross-sucking Behavior\n\nCalves with nipple water troughs exhibited less cross-sucking events than calves with open water troughs during pre-weaning period.\n\n\nWater intake\n\nCalves with nipple water troughs consumed more water during night-time.\n\n\nWeight Gain\n\nThere was no difference in the performance of calves with nipple or open water troughs.\n\n\n\nSkills Used:\n\nR\nExcel\nData collection\nData visualization\nApplied Ethology\nAnimal Science\n\n\n\nProject Repository\nExplore the code and analysis for this project on GitHub:\nView on GitHub"
   },
   {
-    "objectID": "research_projects.html",
-    "href": "research_projects.html",
-    "title": "Research Project Analysis Service",
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
     "section": "",
-    "text": "Service Overview\nI provide comprehensive statistical analysis services for academic research projects. My approach follows a rigorous, reproducible workflow from raw data to publication-ready results.\n\nLongitudinal data analysis\nMixed-effects modeling\nData visualization for scientific communication\n\n\n\n\n\nMethodology\n\nCustomized analysis plans aligned to the specific research questions\nTransparent documentation of all analytical steps\nDiagnostic checks and sensitivity analyses\nContextual interpretation of the results\n\n\n\n\n\nDeliverables\n\nCleaned datasets\nReproducible R scripts with detailed comments\nStatistical reports with tables/figures\nSupport for manuscript methods/results sections\n\n\n\n\n\nStep-by-Step\n\n\n\n1. Data Cleaning & Quality Control\n\n\n\n\n\n\nMissing data diagnostics\nOutlier detection\nDistribution checks\nVisual verification (example shown)\n\n\n\n\n\n2. Statistical Analysis\n\n\n\nGeneralized Linear Mixed Models for repeated measures\nTime-series analysis\nMultivariate techniques\nModel selection, diagnostics and performance analysis\nExample table showing model results:\n\n\n\n\n\n\n\n\n\n3. Data Visualization\n\n\n\n\n\n\nTime-series plots\nTreatment effect plots\nMultidimensional scaling\nInteractive exploratory visuals\n\n\n\n\n\n4. Scientific Reporting\n\n\n\nComprehensive documentation\nStatistical methods justification\nResults interpretation\nManuscript-ready tables/figures\n\n\n\n\n\n\n\n\n\nRequest Your Analysis"
+    "text": "2026\nNational and state-level datasets of United States forensic DNA databases 2001–2025\nPryor Y, Ranka V, Donadio JP, Muller SC, Wilson J, Lasisi T\n\nScientific Data, 13, 1322\n\nA data descriptor compiling national and state-level records of U.S. forensic DNA databases over 25 years.\n\nRead paper\nCode on GitHub\ndoi:10.1038/s41597-026-07605-5\n\n\n\n\n\n\n2025\nThe use of nipple water trough for group-housed dairy calves reduces cross-sucking\nDonadio JP, De-Sousa KT, Alves TC, Hötzel MJ, Deniz M\n\nApplied Animal Behaviour Science, 289, 106684\n\nCalves with nipple water troughs showed 42% less cross-sucking than calves with open troughs, with no effect on growth.\n\nRead paper\nProject summary\nCode on GitHub\ndoi:10.1016/j.applanim.2025.106684\n\n\n\n\n\n\n2025\nA meta-analysis approach to evaluate the effects of early group housing on calf performance, health, and behavior during the preweaning period\nDonadio JP, De-Sousa KT, Torres RNS, Alves TC, Hötzel MJ, Deniz M\n\nJournal of Dairy Science, 108, 954–967\n\nGroup-housed calves gained more weight before weaning and showed more active and fewer stress-related behaviours than individually housed calves.\n\nRead paper\nProject summary\nCode on GitHub\ndoi:10.3168/jds.2024-25159\n\n\n\n\n\n\nFull list on ORCID."
+  },
+  {
+    "objectID": "projects.html#maker",
+    "href": "projects.html#maker",
+    "title": "Projects",
+    "section": "Maker",
+    "text": "Maker\n\n\n\n\n\n\n\nCriação Animal Agroecológica\nOpen educational portal on agroecological animal production: evidence-based guides, lessons, calculators and a field notebook (in Portuguese).\nAstro, R, Shiny, Science Communication, Agroecology\n2026\n\nVisit Website\n\n\n\n\nManuscript in preparation\nWater & Shade for Grazing Cattle\nHow shade and water access affect the behaviour and thermal comfort of cows under Voisin Rational Grazing in a silvopastoral system.\nR, Applied Ethology, Thermal Comfort, Silvopasture\n\nManuscript in preparation"
   },
   {
     "objectID": "projects.html#stakeholder-projects",
     "href": "projects.html#stakeholder-projects",
-    "title": "Portfolio Gallery",
+    "title": "Projects",
     "section": "Stakeholder Projects",
-    "text": "Stakeholder Projects\n\n\n\n\n\n\n\n\n\nResearch Data Analysis\nModel of Academic Research Project Analysis for Clients\nR, Statistical Modeling, Academic Reporting\n\nView Details\n\n\n\n\n\n\n\n\n\n\n\nPRONAF Investment Analysis\nGeospatial Evaluation of PRONAF Loans for Brazilian Agriculture\nR, RShiny, Dashboard, Geospatial Analysis, Public Policy Analysis\nMay 2025\n\nView Project"
+    "text": "Stakeholder Projects\n\n\n\n\n\n\n\nResearch Data Analysis\nModel of academic research project analysis for clients\nR, Statistical Modeling, Academic Reporting\n2025\n\nView Details\n\n\n\n\nPRONAF Investment Analysis\nGeospatial evaluation of PRONAF loans for Brazilian agriculture\nR, RShiny, Dashboard, Geospatial Analysis, Public Policy Analysis\nMay 2025\n\nView Project\n\n\n\n\n\nLooking for peer-reviewed work? See Publications."
   },
   {
-    "objectID": "projects.html#academic-projects",
-    "href": "projects.html#academic-projects",
-    "title": "Portfolio Gallery",
-    "section": "Academic Projects",
-    "text": "Academic Projects\n\n\n\n\n\n\n\n\n\nExperiment\nNipple Water Troughs Reduces Cross-Sucking in Dairy Calves\nExcel, R, Data collection, Data visualization, Applied Ethology, Animal science\nNovember 2024\n\nView Project\n\n\n\n\n\n\n\n\n\n\n\nMeta-analysis\nEvaluation of the effects of early group housing on calf's performance, health, and behavior during the preweaning period\nR, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization\nJune 2024\n\nView Project"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "João Pedro Donadio",
+    "section": "",
+    "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\nVersão em português\n\n\n\nHi, I’m João Pedro Donadio, an agricultural engineer and PhD student at Lincoln University, New Zealand.\nI work where field research meets data analysis. I design experiments, collect data on farms, and turn it into clear, practical insight. My work focuses on animal welfare, cattle behaviour and sustainable, agroecological livestock systems.\nI think of myself as a scientist-practitioner-maker: I do the research, I know the day-to-day reality of the farm, and I build the tools that put what we learn into people’s hands.\n\n\n\n\n\n\n\nScientist\nPeer-reviewed research on dairy calf welfare, behaviour and housing, from experimental design to meta-analysis and statistical modelling in R.\nPublications →\n\n\nPractitioner\nYears in the field across Latin America, working on agroecological pasture management with beef cattle, dairy cattle and sheep.\nExperience →\n\n\nMaker\nTools that put research to work: an open portal on agroecological animal production, Shiny calculators, dashboards and reproducible reports.\nProjects →\n\n\n\n\n\n\n\nWant to know more? Access my CV\n\n\n\n\n\n\n\n\n\nFeatured work\n\n\n\n\n\n\n\nMaker · Website\nCriação Animal Agroecológica\n2026\n\n\n\nScientist · Research\nWater & Shade for Grazing Cattle\nManuscript in preparation\n\n\n\n\n\nScientist · Publication\nNipple Water Troughs Reduce Cross-Sucking in Calves\nApplied Animal Behaviour Science, 2025\n\n\n\n\n\n\nView All Projects\n+\n\n\n\n\n\n\n\n\n\n\n\nContact me ✉️\n\n\n\n\n\n\nName\n\n\n\nEmail\n\n\n\nMessage\n\n\n\nSend"
   },
   {
-    "objectID": "projects.html#personal-projects",
-    "href": "projects.html#personal-projects",
-    "title": "Portfolio Gallery",
-    "section": "Personal Projects",
-    "text": "Personal Projects\n\n\n\n\n\n\n\n\n\nOrganic Farming in Brazil\nAnalysis of the National Registration of Organic Farmers\nLarge Data Extraction, Data Cleaning, Excel, R, SQL, Tableau, Geospatial Visualization\nJune 2025\n\nView Project\n\n\n\n\n\n\n\n\n\n\n\nCanada's Cattle Population\nAnalyzing National Trends in Cattle Distribution and Farm Types\nR, tidyverse, Data Cleaning, Tableau, Geospatial Analysis, Time-Series Analysis\nAugust 2024\n\nView Project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTidyTuesday Projects\nWeekly Data Visualization Challenges and Interactive Applications\nR, Shiny, Quarto, Text Analysis, Data Visualization, Interactive Apps\nNovember-December 2024\n\nView Projects\n\n\n\n\n\n\n\n\n\n\n\nQuantifying Animal Welfare Narratives in BBC News\nWeb Scraping and Text Analysis of BBC News Coverage\nWeb Scraping, R, Text Mining, Sentiment Analysis, Data Visualization, Language Processing, Quarto\nJuly 2025\n\nView Project"
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Curriculum Vitæ",
+    "section": "",
+    "text": "PDF Download\nI work at the intersection of fieldwork research and data analysis, turning real-world data into clear, practical insights. My work focuses on animal science, farm management and applied agricultural research. With a background in sustainable cattle production systems, I bring the day-to-day reality of farms into the analysis I do."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitæ",
+    "section": "Education",
+    "text": "Education\n\n\n\n\nPhD in Agricultural Sciences\n\nLincoln University, New Zealand\n\n2026–present\n\n\nMSc in Animal Science\n\nSão Paulo State University (UNESP)\n\n2023–2025\n\n\nBSc in Agriculture\n\nFederal University of Santa Catarina (UFSC)\n\n2017–2022"
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Curriculum Vitæ",
+    "section": "Professional Experience",
+    "text": "Professional Experience\n\n\n\n\n←\n→\n\n\n2025–2026\nResearch Assistant\nIndependent · Vancouver, Canada\n\nData analysis and research support for academic and scientific projects\nCo-author of a data descriptor on U.S. forensic DNA databases (Scientific Data, 2026)\nManaged several concurrent mini-projects, delivering analysis on time\n\n\n\n2025\nResearch Technician\nFAPESP · Botucatu, Brazil\n\nTrained and supervised teams on experimental procedures\nStatistical analysis planning: experimental design, interpretation and validation\nDetailed technical reports on methods, results and conclusions\n\n\n\n2024\nVisiting Research Student\nUniversity of British Columbia · Agassiz, Canada\n\nEmerging Leaders in the Americas Program (EduCanada)\nAnimal welfare research collaboration\n\n\n\n2023–2024\nGraduate Research Assistant\nEmbrapa · São Carlos, Brazil\n\nConducted experiments with dairy calves\nManaged dairy calf management protocols\n\n\n\n2023–2025\nGraduate Research Assistant\nSão Paulo State University (UNESP) · Botucatu, Brazil\n\nCoordinated collaborative dairy cattle welfare research with UNESP and Embrapa\nManaged team scheduling, meetings and project execution\nOrganised conferences, workshops and science communication events\nContributed to technical reports, new technologies and patent applications\n\n\n\n2023\nTeaching Assistant\nSão Paulo State University (UNESP)\n\nAssisted the 'Dairy Cattle' course for veterinary medicine students\n\n\n\n2022\nFarm Trainee\nEstância Santa Bárbara · Magallanes, Chile\n\nDaily operations of an 11,000-sheep farm: selection, reproduction, health, shearing and pasture management\nFollowed the marketing of wool and meat products\n\n\n\n2019–2022\nResearch & Extension Intern\nFederal University of Santa Catarina (LETA and PRV Lab)\n\nExtension project promoting Voisin Rational Grazing as a sustainable technology for ruminant production (2020–2022)\nDesigning better water troughs: herd, water temperature and luminosity (2021–2022)\nSocial hierarchy and personality in cattle access to limited resources (2020–2021)\nSocial hierarchy, proximity of calving and nociceptive thermal threshold in pregnant cows (2019–2020)\n\n\n\n2018\nTeaching Assistant\nFederal University of Santa Catarina\n\nSupported the 'Physics for Agricultural Sciences' course\n\n\n\n2017–2018\nSearch Engine Evaluator\nLionbridge\n\nImproved search algorithm quality"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Curriculum Vitæ",
+    "section": "Publications",
+    "text": "Publications\n\n\n\n\n\nPryor Y, Ranka V, Donadio JP, Muller SC, Wilson J, Lasisi T (2026). National and state-level datasets of United States forensic DNA databases 2001–2025. Scientific Data, 13, 1322.\n \ndoi:10.1038/s41597-026-07605-5\n\n\nDonadio JP, De-Sousa KT, Alves TC, Hötzel MJ, Deniz M (2025). The use of nipple water trough for group-housed dairy calves reduces cross-sucking. Applied Animal Behaviour Science, 289, 106684.\n \ndoi:10.1016/j.applanim.2025.106684\n\n\nDonadio JP, De-Sousa KT, Torres RNS, Alves TC, Hötzel MJ, Deniz M (2025). A meta-analysis approach to evaluate the effects of early group housing on calf performance, health, and behavior during the preweaning period. Journal of Dairy Science, 108, 954–967.\n \ndoi:10.3168/jds.2024-25159\n\n\n\nMore about each paper →"
+  },
+  {
+    "objectID": "cv.html#skills-matrix",
+    "href": "cv.html#skills-matrix",
+    "title": "Curriculum Vitæ",
+    "section": "Skills Matrix",
+    "text": "Skills Matrix\n\n\nExperimental Design\nAcademic Research\nAnimal Ethology\nAnimal Welfare\nProject Management\nData Analytics\nR\nSQL\nPostgreSQL\nShiny\nData Visualization\nSystematic Review & Meta-analysis\nQuarto\nExcel\nGitHub\nHTML\nCSS\nScience Communication"
+  },
+  {
+    "objectID": "cv.html#languages",
+    "href": "cv.html#languages",
+    "title": "Curriculum Vitæ",
+    "section": "Languages",
+    "text": "Languages\n\n\n\n\n\nPortuguese (native)\n\n\n\n\n\n\n\nEnglish (full professional)\n\n\n\n\n\n\n\nSpanish (full professional)"
+  },
+  {
+    "objectID": "cv.html#courses-certificates",
+    "href": "cv.html#courses-certificates",
+    "title": "Curriculum Vitæ",
+    "section": "Courses & Certificates",
+    "text": "Courses & Certificates\n\n\n\n\nLearning Data Visualization - LinkedIn Learning\nThe Non-Technical Skills of Effective Data Scientists - LinkedIn Learning\nLearning Excel: Data Analysis - LinkedIn Learning\nData Literacy: Exploring and Describing Data - LinkedIn Learning\nFoundations of Learning Management Systems (LMS) - LinkedIn Learning\nDairy calf rearing: strategies to increase efficiency - Embrapa (40h)\nGraduate Student Writing Workshop - University of Calgary (12h)\nR Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)\nTeaching in higher education: foundations and pedagogical practices - São Paulo State University (30h)\nCalculation and analysis of production costs in agriculture - Federal University of Santa Catarina (16h)\nAmbience, Precision Animal Science and Animal Welfare - University of São Paulo (40h)"
+  },
+  {
+    "objectID": "index.pt.html",
+    "href": "index.pt.html",
+    "title": "João Pedro Donadio",
+    "section": "",
+    "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\nEnglish version\n\n\n\nOlá, eu sou João Pedro Donadio, engenheiro agrônomo e doutorando na Lincoln University, Nova Zelândia.\nTrabalho onde a pesquisa de campo encontra a análise de dados. Planejo experimentos, coleto dados nas propriedades e os transformo em respostas claras e práticas. Meu foco é bem-estar animal, comportamento de bovinos e sistemas de produção animal sustentáveis e agroecológicos.\nMe vejo como cientista, profissional de campo e criador de conteúdo: faço a pesquisa, conheço o dia a dia da propriedade e construo as ferramentas que levam o que aprendemos às mãos de quem precisa.\n\n\n\n\n\n\n\nCientista\nPesquisa revisada por pares sobre bem-estar, comportamento e alojamento de bezerras leiteiras, do delineamento experimental à meta-análise e modelagem estatística em R.\nPublicações →\n\n\nProfissional de campo\nAnos de campo na América Latina, trabalhando com manejo agroecológico de pastagens na bovinocultura de corte e de leite e na ovinocultura.\nExperiência →\n\n\nCriador de conteúdo\nFerramentas que colocam a pesquisa para trabalhar: um portal aberto sobre criação animal agroecológica, calculadoras em Shiny, painéis e relatórios reprodutíveis.\nProjetos →\n\n\n\n\n\n\n\nQuer saber mais? Acesse meu CV\n\n\n\n\n\n\n\n\n\nDestaques\n\n\n\n\n\n\n\nCriador de conteúdo · Site\nCriação Animal Agroecológica\n2026\n\n\n\nCientista · Pesquisa\nÁgua e Sombra para Bovinos a Pasto\nArtigo em preparação\n\n\n\n\n\nCientista · Publicação\nBebedouros com Bico Reduzem a Mamada Cruzada em Bezerras\nApplied Animal Behaviour Science, 2025\n\n\n\n\n\n\nVer todos os projetos\n+\n\n\n\n\n\n\n\n\n\n\n\nContato ✉️\n\n\n\n\n\n\nNome\n\n\n\nE-mail\n\n\n\nMensagem\n\n\n\nEnviar"
   },
   {
     "objectID": "metaanalysis.html",
@@ -42,90 +98,6 @@
     "text": "Background\nDairy calves are traditionally separated from dams shortly after birth and raised individually during the preweaning period. While this practice is common, it contrasts with natural social dynamics and raises welfare concerns. Social isolation can lead to stress, fearfulness, and reduced cognitive development. Group housing (pairs or small groups) has emerged as a potential alternative, but its effects on performance, health, and behavior remain inconsistently reported across studies.\n\n\n\n\nGoals\n\nAssess how group housing impacts performance, health, and behavior compared to individual housing of dairy calves\nInvestigate housing factors that may influence the outcomes of group housing for dairy calves\nSynthesize findings to support practical improvements in calf-rearing systems\n\n\n\n\n\nResults\n\nGroup-housed calves had higher average daily gain (ADG) (+0.06 kg/d, P = 0.001) and weaning weight (+1.44 kg, P = 0.037)\nMore active behaviors (feeding, playing) and fewer stress-related behaviors (self-grooming, pen interactions) in group-housed calves\nLimited data on robust health outcomes (e.g., disease incidence)\n\n\nView Publication\n\n\n\n\n\n\nFlowchart\n\nThe process to identify and screen articles for eligibility and inclusion in this systematic review and meta-analysis.\n\n\nSubgroup analysis\n\nDifferent housing systems (indoor and outdoor) have different effects on the lying behavior of dairy calves.\n\n\nForest plot\n\nStudies on pair-housed calves showed a higher average daily gain compared to individually housed calves.\n\n\n\nSkills Used:\n\nR\nExcel\nData Collection\nPRISMA\nSystematic Review\nMeta-analysis\nData Visualization\n\n\n\nProject Repository\nExplore the code and analysis for this project on GitHub:\nView on GitHub"
   },
   {
-    "objectID": "index.pt.html",
-    "href": "index.pt.html",
-    "title": "João Pedro Donadio",
-    "section": "",
-    "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\n\n\n\nOlá, eu sou João Pedro Donadio - Engenheiro Agrônomo e Analista de Dados de Pesquisa apaixonado por transformar dados brutos em insights significativos. Sou especializado em fazer a ponte entre o trabalho de campo e a análise de dados, ajudando pesquisadores e gestores a tomar decisões embasadas em dados.\nMinhas ferramentas incluem R, SQL, modelagem estatística, Tableau, Quarto, PowerPoint e Canva. Também trabalho com controle de versão no GitHub para garantir fluxos de trabalho limpos e colaborativos.\nMovido por uma profunda curiosidade sobre como os sistemas funcionam, trago uma combinação única de rigor técnico e experiência prática de campo. Com formação em pecuária sustentável e pesquisa aplicada, foco em soluções práticas para desafios do mundo real.\n\n\n\n\nEstou aqui para ajudá-lo a conectar ciência e estratégia através de:\n\nPlanejamento rigoroso de estudos com objetivos claros e acionáveis\nColeta e limpeza de dados de diversas fontes\nIdentificação de padrões através de análise estatística robusta\nCriação de visualizações intuitivas que contam histórias\nElaboração de relatórios dinâmicos para tomada de decisão inteligente\n\n\n\n\n\n\n\n\n\n\n\n“Dados por si só não são suficientes, eles precisam ser analisados profundamente, visualizados claramente e comunicados efetivamente para impulsionar decisões significativas.”\n\n\n\n\nQuer saber mais? Acesse meu CV\n\n\n\n\n\nPortfolio\n\n\n\n\n\nExperimento\nMétodo de fornecimento de água\nOutubro 2023\n\n\n\n\n\nMeta-Análise\nBezerros em Alojamento Coletivo\nMaio 2024\n\n\n\n\n\nVer mais projetos\n\n\n+\n\n\n\n\n\n\ndivider()\n\n\n\n\n\nEntre em contato ✉️\n\n\n\n\n\n\nNome\n\n\n\nEmail\n\n\n\nMensagem\n\n\n\nEnviar"
-  },
-  {
-    "objectID": "canada_cattle.html",
-    "href": "canada_cattle.html",
-    "title": "Canada’s Cattle Population",
-    "section": "",
-    "text": "Canada's Cattle Population\nAnalyzing National Trends in Cattle Distribution and Farm Types\n\n\n\nBackground\n\nThis project analyzes data from \n\nStatistics Canada Table 32-10-0130-01\n\n tracking the number of cattle by class and farm type across Canadian provinces and territories. /n\nCanada's cattle industry is a critical component of the agricultural economy, with significant \nregional variations in herd sizes, farm types, and cattle classes. This analysis explores \nthese patterns to understand the distribution and evolution of cattle farming across the country.\n\n\n\nGoals\n\nVisualize the geographic distribution of cattle across Canadian provinces and territories\nAnalyze trends in different cattle classes (beef cows, dairy cows, bulls, calves, heifers, steers)\nIdentify temporal patterns and changes in Canada's cattle population over time\n\n\n\nKey Insights\n\n\nRegional Concentration\nAlberta and Saskatchewan dominate Canada's cattle industry, with the Prairie provinces accounting for the majority of the national herd\n\n\nCattle Class Patterns\nBeef cows represent the largest cattle class, reflecting Canada's focus on beef production over dairy\n\n\n\n\nInteractive Dashboard\n\n\nClick to view interactive dashboard on Tableau Public\n\n\n\nData Source\n\nCitation: \nStatistics Canada. Table 32-10-0130-01 Number of cattle, by class and farm type (x 1,000)\n\n\nDOI: \nhttps://doi.org/10.25318/3210013001-eng\n\n\nRelease date: \n2025-08-22\n\n\n\nSkills Demonstrated\n\nData Cleaning\nR Programming\nTableau\nData Visualization\nGeospatial Analysis\nTime-Series Analysis"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "bbc_scraping.html",
-    "href": "bbc_scraping.html",
-    "title": "Quantifying Animal Welfare Narratives in BBC News",
-    "section": "",
-    "text": "View PDF\n\n\nBackground\n\nThis project analyzes how animal welfare topics are framed in media by scraping and analyzing \n\nBBC News\n\n articles. Using computational text analysis, we examine frequency, tone, and framing of \nanimal welfare coverage to understand media representation patterns.\n\n\nThe analysis covers \n3,441 articles\n published between 2010-2025, revealing \nhow language shapes public perception of animal welfare issues.\n\n\n\nGoals\n\nScrape and analyze BBC News articles about animal welfare\nIdentify most frequent terms and sentiment patterns\nUnderstand framing devices and subject focus in coverage\nQuantify negative vs. positive narratives\n\n\n\nResults\n\n\nSentiment Analysis\n76.04% of headlines had negative sentiment\n23.96% had positive sentiment\n\n\nTop Words\nDog, ban, dogs, found, cat, farm, charity, rescued, pet, puppy\n\n\nFraming Patterns\n1.8:1 ratio of negative-to-positive framing terms\nProblem-centric language dominates coverage\n\n\nSubject Focus\nPets receive 3x more coverage than farm animals\nWildlife appears primarily as conservation icons\n\n\n\n\nDetailed Analysis\n\nWord Frequency Analysis\nThe most frequent terms in headlines reveal key topics in BBC's coverage:\n\nDomestic animals dominate the discourse, with 'dog' appearing 168 times and 'cat' 95 times.\n\n\nSentiment Analysis\nUsing the Bing lexicon, we classified headlines as positive or negative:\n\n\n\n\n\nWord\nSentiment\nCount\n\n\n\n\ndead\nnegative\n62\n\n\ndies\nnegative\n53\n\n\nwarning\nnegative\n49\n\n\nappeal\npositive\n33\n\n\nprotect\npositive\n12\n\n\n\n\n\n\n\nFraming Analysis\nQuantitative analysis reveals how BBC News employs specific language:\n\n\nProblem-Centric Language:\n 'abandoned' (61 mentions), 'cruelty' (47)\n\n\nRescue Narratives:\n 'rescue' (60), 'sanctuary' (37)\n\n\nPolicy Discourse:\n 'law' (24), 'rules' (27)\n\n\nThe 1.8:1 ratio of negative-to-positive framing terms confirms a predominantly crisis-oriented narrative.\n\n\nAnimal Type Coverage\nDistinct patterns in how different animal categories are discussed:\n\nPets dominate coverage (818 mentions) compared to wildlife (115) or livestock (213).\n\n\n\nMethodology\nThe project followed these steps:\n\n\nWeb Scraping:\n Used Rselenium and rvest to extract article titles, snippets, and dates from BBC News search results\n\n\nData Cleaning:\n Removed HTML artifacts, duplicates, and empty fields\n\n\nText Mining:\n Tokenized words, removed stopwords, analyzed term frequencies\n\n\nSentiment Analysis:\n Applied tidytext sentiment lexicons (bing)\n\n\nVisualization:\n Created charts and plots to illustrate findings\n\n\n\n\nConclusions\nThis analysis reveals BBC's animal welfare coverage is characterized by:\n\nA strong focus on domestic animals and regulatory actions\nPredominantly negative framing (76% of headlines)\nDisproportionate attention to pets over ecologically significant species\nFrequent linkage of animals to legislative debates\n\nThe project demonstrates how computational methods can reveal hidden patterns in media ecosystems.\n\n\nSkills Demonstrated\n\nWeb Scraping\nR Programming\nText Mining\nSentiment Analysis\nData Visualization\nLanguage Processing\nStatistical Analysis"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitæ",
-    "section": "",
-    "text": "PDF Download"
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Curriculum Vitæ",
-    "section": "Education",
-    "text": "Education\n\n\n\nMSc in Animal Science\n\nSão Paulo State University\n\n2023-2025\n\n\nBSc in Agriculture\n\nFederal University of Santa Catarina\n\n2017-2022"
-  },
-  {
-    "objectID": "cv.html#professional-experience",
-    "href": "cv.html#professional-experience",
-    "title": "Curriculum Vitæ",
-    "section": "Professional Experience",
-    "text": "Professional Experience\n\n\n\n\n←\n→\n\n\n2025-Present\nResearch Technician\nSão Paulo State University\n\nTraining teams on experimental procedures\nStatistical analysis planning\nTechnical report writing\n\n\n\n2024\nVisiting Research Student\nUniversity of British Columbia\n\nAnimal welfare research collaboration\nPresented findings at international seminars\n\n\n\n2023-2024\nHerdsperson\nEMBRAPA Pecuária Sudeste\n\nManaged dairy calf health protocols\nImplemented vaccination programs\n\n\n\n2023-2025\nResearch Assistant\nSão Paulo State University\n\nCoordinated international dairy cattle welfare projects\nDeveloped patents and scientific papers\n\n\n\n2023\nTeaching Intern\nSão Paulo State University\n\nTaught 'Dairy Cattle' for veterinary students\n\n\n\n2022\nFarm Labourer\nEstância Santa Bárbara\n\nManaged operations for 11,000-head sheep farm\n\n\n\n2019-2022\nResearch Assistant\nFederal University of Santa Catarina (LETA)\n\nLed dairy cattle behavior studies\nDeveloped outreach materials\n\n\n\n2018\nTeaching Assistant\nFederal University of Santa Catarina\n\nPhysics instruction for agriculture students\n\n\n\n2017-2018\nSearch Engine Evaluator\nLionbridge\n\nImproved search algorithm quality"
-  },
-  {
-    "objectID": "cv.html#skills-matrix",
-    "href": "cv.html#skills-matrix",
-    "title": "Curriculum Vitæ",
-    "section": "Skills Matrix",
-    "text": "Skills Matrix\n\n\nProject Management\nExperimental designs\nAcademic Research\nAnimal Ethology\nAnimal Welfare\nExcel\nSQL\nR\nData Visualization\nQuarto\nWord\nGitHub\nMicrosoft Teams\nHTML\nCSS"
-  },
-  {
-    "objectID": "cv.html#languages",
-    "href": "cv.html#languages",
-    "title": "Curriculum Vitæ",
-    "section": "Languages",
-    "text": "Languages\n\n\n\n\n\n\nPortuguese\n\n\n\n\n\n\n\n\nEnglish\n\n\n\n\n\n\n\n\nSpanish\n\n\n\n\n\n\n\n\nFrench"
-  },
-  {
-    "objectID": "cv.html#courses-certificates",
-    "href": "cv.html#courses-certificates",
-    "title": "Curriculum Vitæ",
-    "section": "Courses Certificates",
-    "text": "Courses Certificates\n\n\n\n\nDairy calf rearing: strategies to increase efficiency - Embrapa (40h)\nGraduate Student Writing Workshop - University of Calgary (12h)\nR Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)\nTeaching in higher education: foundations and pedagogical practices - São Paulo State University (30h)\nCalculation and analysis of production costs in agriculture - Federal University of Santa Catarina (16h)\nAmbience, Precision Animal Science and Animal Welfare - University of São Paulo (40h)"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "João Pedro Donadio",
-    "section": "",
-    "text": "jp.donadio@gmail.com\nLinkedIn\nGitHub\nORCID\n\n\n\nHi, I’m João Pedro Donadio — an Agricultural Engineer and Research Data Analyst passionate about turning raw data into meaningful insights. I am specialized in bridging the gap between fieldwork and analytics, helping researchers and decision-makers make informed, data-driven choices.\nMy toolbox includes R, statistical modeling, Quarto and MS Office (Excel, Word, Powerpoint…). I’m also comfortable with version control on GitHub to ensure clean and collaborative workflows.\nDriven by a deep curiosity about how things work, I bring a unique blend of technical rigor and hands-on field experience. With a background in sustainable livestock farming and applied research, I focus on practical solutions for real-world challenges.\n\n\n\n\nI’m here to connect science and strategy by:\n\nDesigning rigorous studies with clear, actionable objectives\nCollecting and cleaning data from diverse sources\nUncovering patterns through robust statistical analysis\nCreating intuitive visualizations that bring stories to life\nDelivering dynamic reports for intelligent decision-making\n\n\n\n\n\n\n\n\n\n\n\n“Data alone isn’t enough, it must be analysed deeply, visualized clearly, and communicated effectively to drive meaningful decisions.”\n\n\n\n\nWant to know more? Access my CV\n\n\n\n\n\nPortfolio\n\n\n\n\n\nTableau Project\nCanada's Cattle Population Analysis\nDecember 2025\n\n\n\n\n\nService\nResearch Project Analysis\n2025\n\n\n\n\n\nPersonal project\nOrganic Farming in Brazil\nJune 2025\n\n\n\n\nView All Projects\n+\n\n\n\n\n\n\n\n\n\nContact me ✉️\n\n\n\n\n\n\nName\n\n\n\nEmail\n\n\n\nMessage\n\n\n\nSend"
-  },
-  {
-    "objectID": "organic.html",
-    "href": "organic.html",
-    "title": "Organic Farming in Brazil",
-    "section": "",
-    "text": "Organic Farming in Brazil\nAnalysis of the National Registration of Organic Farmers\n\n\n\nBackground\n\nThis project analyzes data from the \n\nCadastro Nacional de Produtores Orgânicos\n\n maintained by the Coordenação de Produção Orgânica (CPO/DTEC/SDA/MAPA). \nBrazil has seen significant growth in organic farming, but adoption varies widely across regions. \nThis analysis identifies patterns and opportunities for expansion.\n\n\n\nGoals\n\nIdentify municipalities with highest concentration of organic farmers\nAnalyze regional patterns in organic farming adoption\nDiscover potential municipalities for organic farming expansion based on rural population and credit investment\n\n\n\nResults\n\n\nTop 5 Municipalities\nLago do Junco (MA), Brasilia (DF), Viamão (RS), São Sebastião da Boa Vista (PA), Tijucas do Sul (PR) lead in organic farmer concentration\n\n\nRegional Cluster\nSouth region shows highest density of organic farmers\n\n\nExpansion Potential\nIdentified municipalities with high rural population and credit investment but low organic adoption\n\n\n\n\nSQL Queries and Results\n\n1. Municipalities with Significant Organic Farmers\n\n\nSELECT \n  municipality, \n  state, \n  COUNT(*) AS organic_farmers\n\nFROM organic_data\n\nGROUP BY municipality, state\n\nORDER BY organic_farmers DESC\n\nLIMIT 5;\n\n\n\n\n\n\n\nMunicipality\nState\nOrganic Farmers\n\n\n\n\nLago do Junco\nMA\n709\n\n\nBrasilia\nDF\n320\n\n\nViamão\nRS\n267\n\n\nSão Sebastião da Boa Vista\nPA\n259\n\n\nTijucas do Sul\nPR\n247\n\n\n\n\n\n\n\n\n2. Organic Farming Penetration by Region\n\n\nSELECT \n  state,\n          SUM(organic_farmers_count) AS total_organic_farmers,\n    ((total_organic_farmers * 1000) / (sa.total_rural_pop)) AS penetration,\n    CASE \n     WHEN penetration_per_100_rural &gt; 5 THEN 'Very High (&gt;5%)'\n     WHEN penetration_per_100_rural &gt; 2 THEN 'High (2-5%)' \n     WHEN penetration_per_100_rural &gt; 1 THEN 'Medium (1-2%)' \n     WHEN penetration_per_100_rural &gt; 0 THEN 'Low (&lt;1%)' \n     ELSE 'None' \n     END AS penetration_category\n\nFROM organic_data \n\nFROM organic_data \n\nGROUP BY state \n\nORDER BY penetration DESC \n\nLIMIT 10;\n\n\n\n\n\n\n\nState\nTotal Organic Farmers\nPenetration (%)\nCategory\n\n\n\n\nPR\n4351\n3.44\nHigh (2-5%)\n\n\nDF\n320\n3.22\nHigh (2-5%)\n\n\nAP\n221\n2.68\nHigh (2-5%)\n\n\nRS\n3325\n2.45\nHigh (2-5%)\n\n\nRJ\n579\n1.72\nMedium (1-2%)\n\n\nSC\n1351\n1.52\nMedium (1-2%)\n\n\nPA\n2475\n1.22\nMedium (1-2%)\n\n\nAM\n820\n1.21\nMedium (1-2%)\n\n\nSP\n1672\n1.18\nMedium (1-2%)\n\n\nRN\n691\n1.16\nMedium (1-2%)\n\n\n\n\n\n\n\n\n3. High-Potential Municipalities for Expansion\n\n\nWITH high_potential_mun AS (\n\n  SELECT \n\n    md.municipality,\n\n    md.state,\n\n    md.organic_farmers_count,\n\n    md.agriculture_produced_values,\n\n    md.rural_credit_investment,\n\n    ROUND(\n\n      (LOG(md.agriculture_produced_values) * 0.3) + \n\n      (LOG(md.rural_credit_investment) * 0.2) + \n\n      (LOG(md.total_area_harvest) * 0.2) +\n\n      (1 - (md.organic_farmers_count / NULLIF(pm.avg_organic_farmers, 0)) * 0.3), \n\n      2\n\n    ) AS potential_conversion_index\n\n  FROM md\n\n  CROSS JOIN production_metric pm\n\n)\n\n\nSELECT \n\n  RANK() OVER(ORDER BY hpm.potential_conversion_index DESC) AS potential_rank,\n\n  hpm.municipality,\n\n  hpm.state,\n\n  hpm.organic_farmers_count,\n\n  hpm.potential_conversion_index\n\nFROM high_potential_mun hpm\n\nWHERE \n\n  organic_farmers_count &gt; 1\n\nORDER BY \n\n  potential_rank ASC\n\nLIMIT 5;\n\n\n\n\n\n\n\nMunicipality\nUF\nConversion Potential Index\n\n\n\n\nSão Félix do Araguaia\nMT\n5.94\n\n\nPonta Porã\nMS\n5.90\n\n\nParacatu\nMG\n5.88\n\n\nSinop\nMT\n5.83\n\n\nIpameri\nGO\n5.81\n\n\nCoromandel\nMG\n5.78\n\n\nBebedouro\nSP\n5.75\n\n\nSão Borja\nRS\n5.75\n\n\nAraguari\nMG\n5.74\n\n\nSanta Vitória do Palmar\nRS\n5.73\n\n\n\n\n\n\n\n\n\nInteractive Dashboard\n\n\nClick to view interactive dashboard on Tableau Public\n\n\n\nSkills Demonstrated\n\nLarge Data Extraction\nData Cleaning\nExcel\nR\nSQL\nTableau\nGeospatial Visualization"
-  },
-  {
     "objectID": "pronaf.html",
     "href": "pronaf.html",
     "title": "PRONAF Investment Analysis",
@@ -133,10 +105,10 @@
     "text": "Project Overview\nThis project analyzes the National Program for Family Agriculture (PRONAF) loans across Brazil from 2013-2024.\n\nComprehensive evaluation of R$64 billion (in 2024) in agricultural loans\nGeospatial analysis at national, regional, and municipal levels\nInteractive RShiny dashboard\nFocused analysis of specific product investments\n\n\n\n\n\nTools Used\n\nR (tidyverse, sf)\nRShiny for interactive dashboard\nGeospatial analysis (leaflet, geobr)\nData visualization (ggplot2)\nPublic policy evaluation frameworks\n\n\n\n\n\n\nData Collection & Cleaning\n\nProcessed raw data from Brazilian Central Bank (2025):\n\nAPI-collected loan records\nStandardized values across 12-year period (2013-2025)\nGeocoded municipality-level data\nFiltered and validated 3.6M+ records\n\n\n\n\nGeospatial Visualization\n\nAdvanced mapping techniques:\n\nInteractive choropleth maps by state/municipality\nRegional comparison dashboards\nSpecial focus on Santa Catarina tourism investments\nAnimated time-series maps\n\n\n\n\nInteractive Dashboard\n\nRShiny application features:\n\nDynamic filtering by year, region, and program\nLoan value and number of contracts distribution analysis\nComparative benchmarking tools\n\n\nDashboard Usage Demonstration\n\n\n\n\n\n\nProject Repository\nExplore the code for the dashboard project on GitHub:\nView on GitHub\n\n\nKey Policy Insights\n\n\nRegional Disparities\nSoutheast received 3.2x more funding than North region\n\n\n\nTourism Growth\nRural tourism loans increased from R$1M to R$62M (2013-2024)\n\n\n\nSanta Catarina Focus\n32 municipalities received tourism-specific investments"
   },
   {
-    "objectID": "tidytuesday.html",
-    "href": "tidytuesday.html",
-    "title": "TidyTuesday Projects",
+    "objectID": "research_projects.html",
+    "href": "research_projects.html",
+    "title": "Research Project Analysis Service",
     "section": "",
-    "text": "TidyTuesday\n\n is a weekly data project. Every week, a new dataset is released, \nand participants create visualizations, analyses, and applications to explore the data. \n\nBelow are my contributions to the TidyTuesday challenge\n\n\n\n\nStatistical Performance Indicators\nWeek 47 - November 25, 2024\n\n\nWorld Bank Statistical Performance Indicators - Measuring the Statistical Performance of Countries\n\n\n\n\n\n\nClick to launch interactive Shiny app\n\n\n\n\nType: \nInteractive Shiny Application\n\nTechnologies: \nR\nShiny\nWorld Bank Data\nInteractive Visualization\n\n\n\n\n\nCan an Exploding Snowman Predict the Summer Season?\nWeek 48 - December 2, 2024\n\n\nOpenData for Zurich's Sechseläuten - Böögg Prediction\n\n\n\n\n\n\nClick to launch interactive Shiny app\n\n\n\n\nType: \nInteractive Shiny Application\n\nTechnologies: \nR\nShiny\nPredictive Analysis\nSwiss Open Data\n\n\n\n\n\n\nInterested in participating? Visit the \nTidyTuesday GitHub repository\n to see current and past datasets."
+    "text": "Service Overview\nI provide comprehensive statistical analysis services for academic research projects. My approach follows a rigorous, reproducible workflow from raw data to publication-ready results.\n\nLongitudinal data analysis\nMixed-effects modeling\nData visualization for scientific communication\n\n\n\n\n\nMethodology\n\nCustomized analysis plans aligned to the specific research questions\nTransparent documentation of all analytical steps\nDiagnostic checks and sensitivity analyses\nContextual interpretation of the results\n\n\n\n\n\nDeliverables\n\nCleaned datasets\nReproducible R scripts with detailed comments\nStatistical reports with tables/figures\nSupport for manuscript methods/results sections\n\n\n\n\n\nStep-by-Step\n\n\n\n1. Data Cleaning & Quality Control\n\n\n\n\n\n\nMissing data diagnostics\nOutlier detection\nDistribution checks\nVisual verification (example shown)\n\n\n\n\n\n2. Statistical Analysis\n\n\n\nGeneralized Linear Mixed Models for repeated measures\nTime-series analysis\nMultivariate techniques\nModel selection, diagnostics and performance analysis\nExample table showing model results:\n\n\n\n\n\n\n\n\n\n3. Data Visualization\n\n\n\n\n\n\nTime-series plots\nTreatment effect plots\nMultidimensional scaling\nInteractive exploratory visuals\n\n\n\n\n\n4. Scientific Reporting\n\n\n\nComprehensive documentation\nStatistical methods justification\nResults interpretation\nManuscript-ready tables/figures\n\n\n\n\n\n\n\n\n\nRequest Your Analysis"
   }
 ]

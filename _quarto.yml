@@ -1,43 +1,45 @@
 project:
   type: website
   output-dir: docs
-  
+
 website:
   title: "João Pedro Donadio"
+  site-url: https://donadiojp.github.io/Portfolio/
+  description: "Scientist · Practitioner · Maker. Animal welfare and agroecological livestock research."
   navbar:
     title: JP Donadio
     background: "primary"
     left:
       - href: index.qmd
         text: Home
-      - text: Portfolio
+      - text: Projects
         menu:
           - href: projects.qmd
             text: "All Projects"
+          - href: https://donadiojp.github.io/caa/
+            text: "Criação Animal Agroecológica"
           - href: research_projects.qmd
             text: "Research Project Analysis"
-          - href: tidytuesday.qmd
-            text: "TidyTuesday Projects"
-          - href: canada_cattle.qmd
-            text: "Canada's Cattle Population Analysis"
-          - href: bbc_scraping.qmd
-            text: "Animal Welfare Narratives in BBC News Analysis"
           - href: pronaf.qmd
             text: "PRONAF Investments Analysis"
-          - href: organic.qmd
-            text: "Organic Farming in Brazil"
+      - text: Publications
+        menu:
+          - href: publications.qmd
+            text: "All Publications"
           - href: metaanalysis.qmd
-            text: "Meta-analysis Calves"
+            text: "Meta-analysis: Group Housing for Calves"
           - href: watercalves.qmd
-            text: "Experiment Water for Calves"
+            text: "Experiment: Nipple Water Troughs for Calves"
+      - href: https://donadiojp.github.io/caa/caderno/
+        text: Caderno de Campo
       - href: cv.qmd
         text: Curriculum vitæ
-     
+
     right:
       - href: index.qmd#contact
-        icon: envelope  
+        icon: envelope
         text: Contact Me
-    
+
 format:
   html:
     theme: flatly

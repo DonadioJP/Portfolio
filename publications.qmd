@@ -1,0 +1,71 @@
+---
+title: "Publications"
+subtitle: "Peer-reviewed papers"
+---
+
+```{r}
+#| echo: false
+library(htmltools)
+
+publication <- function(year, title, authors, venue, doi, summary = NULL,
+                        page = NULL, code = NULL, img = NULL) {
+  tags$article(
+    class = "pub-item",
+    if (!is.null(img)) tags$img(src = img, alt = "", class = "pub-image"),
+    tags$div(
+      class = "pub-body",
+      tags$p(year, class = "pub-year"),
+      tags$h3(title, class = "pub-title"),
+      tags$p(HTML(authors), class = "pub-authors"),
+      tags$p(tags$em(venue), class = "pub-venue"),
+      if (!is.null(summary)) tags$p(summary, class = "pub-summary"),
+      tags$div(
+        class = "pub-links",
+        tags$a("Read paper", href = paste0("https://doi.org/", doi),
+               target = "_blank", rel = "noopener", class = "publication-button"),
+        if (!is.null(page)) tags$a("Project summary", href = page, class = "pub-link"),
+        if (!is.null(code)) tags$a("Code on GitHub", href = code,
+                                   target = "_blank", rel = "noopener", class = "pub-link"),
+        tags$span(paste0("doi:", doi), class = "pub-doi")
+      )
+    )
+  )
+}
+
+tags$div(
+  class = "pub-list",
+  publication(
+    year = "2026",
+    title = "National and state-level datasets of United States forensic DNA databases 2001–2025",
+    authors = "Pryor Y, Ranka V, <strong>Donadio JP</strong>, Muller SC, Wilson J, Lasisi T",
+    venue = "Scientific Data, 13, 1322",
+    doi = "10.1038/s41597-026-07605-5",
+    summary = "A data descriptor compiling national and state-level records of U.S. forensic DNA databases over 25 years.",
+    code = "https://github.com/DonadioJP/PODFRIDGE_Databases"
+  ),
+  publication(
+    year = "2025",
+    title = "The use of nipple water trough for group-housed dairy calves reduces cross-sucking",
+    authors = "<strong>Donadio JP</strong>, De-Sousa KT, Alves TC, Hötzel MJ, Deniz M",
+    venue = "Applied Animal Behaviour Science, 289, 106684",
+    doi = "10.1016/j.applanim.2025.106684",
+    summary = "Calves with nipple water troughs showed 42% less cross-sucking than calves with open troughs, with no effect on growth.",
+    page = "watercalves.qmd",
+    code = "https://github.com/DonadioJP/nipple-troughs-calf",
+    img = "images/Calves_water.png"
+  ),
+  publication(
+    year = "2025",
+    title = "A meta-analysis approach to evaluate the effects of early group housing on calf performance, health, and behavior during the preweaning period",
+    authors = "<strong>Donadio JP</strong>, De-Sousa KT, Torres RNS, Alves TC, Hötzel MJ, Deniz M",
+    venue = "Journal of Dairy Science, 108, 954–967",
+    doi = "10.3168/jds.2024-25159",
+    summary = "Group-housed calves gained more weight before weaning and showed more active and fewer stress-related behaviours than individually housed calves.",
+    page = "metaanalysis.qmd",
+    code = "https://github.com/DonadioJP/meta-group-calves",
+    img = "images/groupcalves.jpg"
+  )
+)
+```
+
+Full list on [ORCID](https://orcid.org/0000-0002-6728-4373).

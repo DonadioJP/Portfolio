@@ -1,291 +1,99 @@
 ---
-title: "Portfolio Gallery"
+title: "Projects"
 ---
 
 ::: portfolio-header
 :::
 
+```{r}
+#| echo: false
+library(htmltools)
+
+# One project card. Pass href = NULL for a project that is not public yet.
+project_card <- function(title, description, skills, date, img, alt,
+                         href = NULL, button = "View Project",
+                         external = FALSE, status = NULL) {
+  btn <- if (is.null(href)) {
+    tags$span(status, class = "view-project-btn is-disabled")
+  } else {
+    tags$a(button, href = href, class = "view-project-btn",
+           target = if (external) "_blank" else NULL,
+           rel = if (external) "noopener" else NULL)
+  }
+  tags$div(
+    class = "portfolio-card",
+    tags$img(src = img, alt = alt, class = "card-image"),
+    tags$div(
+      class = "card-content",
+      if (!is.null(status)) tags$p(status, class = "card-status"),
+      tags$h3(title, class = "card-title"),
+      tags$p(description, class = "card-description"),
+      tags$p(skills, class = "card-tags"),
+      if (!is.null(date)) tags$p(date, class = "card-date")
+    ),
+    btn
+  )
+}
+
+card_row <- function(...) {
+  tags$div(class = "card-row",
+           list(...))
+}
+```
+
+## Maker
+
+```{r}
+#| echo: false
+tags$div(
+  class = "portfolio-container",
+  card_row(
+    project_card(
+      title = "Criação Animal Agroecológica",
+      description = "Open educational portal on agroecological animal production: evidence-based guides, lessons, calculators and a field notebook (in Portuguese).",
+      skills = "Astro, R, Shiny, Science Communication, Agroecology",
+      date = "2026",
+      img = "images/caa_preview.jpg", alt = "Criação Animal Agroecológica homepage",
+      href = "https://donadiojp.github.io/caa/", button = "Visit Website",
+      external = TRUE
+    ),
+    project_card(
+      title = "Water & Shade for Grazing Cattle",
+      description = "How shade and water access affect the behaviour and thermal comfort of cows under Voisin Rational Grazing in a silvopastoral system.",
+      skills = "R, Applied Ethology, Thermal Comfort, Silvopasture",
+      date = NULL,
+      img = "images/water_shade.jpg", alt = "Cows grazing under trees in a silvopastoral paddock",
+      status = "Manuscript in preparation"
+    )
+  )
+)
+```
+
 ## Stakeholder Projects
 
-::::::::: portfolio-container
-::::: columns
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
+```{r}
+#| echo: false
+tags$div(
   class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/researches.jpg",  # Replace with actual image
-      alt = "research_analysis",
-      class = "card-image"
+  card_row(
+    project_card(
+      title = "Research Data Analysis",
+      description = "Model of academic research project analysis for clients",
+      skills = "R, Statistical Modeling, Academic Reporting",
+      date = "2025",
+      img = "images/researches.jpg", alt = "Research analysis",
+      href = "research_projects.qmd", button = "View Details"
     ),
-    tags$div(
-      class = "card-content",
-      tags$h3("Research Data Analysis", class = "card-title"),
-      tags$p(
-        "Model of Academic Research Project Analysis for Clients",
-        class = "card-description"
-      ),
-      tags$p("R, Statistical Modeling, Academic Reporting", class = "card-tags")
-    ),
-    tags$a(
-      "View Details", href = "research_projects.qmd",
-      class = "view-project-btn"
+    project_card(
+      title = "PRONAF Investment Analysis",
+      description = "Geospatial evaluation of PRONAF loans for Brazilian agriculture",
+      skills = "R, RShiny, Dashboard, Geospatial Analysis, Public Policy Analysis",
+      date = "May 2025",
+      img = "images/pronaf.jpg", alt = "PRONAF investments",
+      href = "pronaf.qmd"
     )
   )
 )
-portfolio_card
-```
-:::
-
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/pronaf.jpg",
-      alt = "pronaf_investments",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("PRONAF Investment Analysis", class = "card-title"),
-      tags$p(
-        "Geospatial Evaluation of PRONAF Loans for Brazilian Agriculture",
-        class = "card-description"
-      ),
-      tags$p("R, RShiny, Dashboard, Geospatial Analysis, Public Policy Analysis", class = "card-tags"),
-      tags$p("May 2025", class = "card-date")
-    ),
-    tags$a(
-      "View Project", href = "pronaf.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
 ```
 
-:::
-:::::
-:::::::::
-
-## Academic Projects
-
-::::::::: portfolio-container
-::::: columns
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/Calves_water.png",
-      alt = "calves_water",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("Experiment", class = "card-title"),
-      tags$p(
-        "Nipple Water Troughs Reduces Cross-Sucking in Dairy Calves",
-        class = "card-description"
-      ),
-      tags$p("Excel, R, Data collection, Data visualization, Applied Ethology, Animal science", class = "card-tags"),
-      tags$p("November 2024", class = "card-date")
-    ),
-    tags$a(
-      "View Project", href = "watercalves.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
-```
-:::
-
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/groupcalves.jpg",
-      alt = "group_calves",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("Meta-analysis", class = "card-title"),
-      tags$p(
-        "Evaluation of the effects of early group housing on calf's performance, health, and behavior during the preweaning period",
-        class = "card-description"
-      ),
-      tags$p("R, Excel, Data Collection, PRISMA, Systematic Review, Meta-analysis, Data Visualization", class = "card-tags"),
-      tags$p("June 2024", class = "card-date")
-    ),
-    tags$a(
-      "View Project", href = "metaanalysis.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
-```
-
-:::
-:::::
-:::::::::
-
-## Personal Projects
-
-::::::::: portfolio-container
-::::: columns
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/organic_farmers_hero.jpg",
-      alt = "organic_farmers",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("Organic Farming in Brazil", class = "card-title"),
-      tags$p(
-        "Analysis of the National Registration of Organic Farmers",
-        class = "card-description"
-      ),
-      tags$p("Large Data Extraction, Data Cleaning, Excel, R, SQL, Tableau, Geospatial Visualization", class = "card-tags"),
-      tags$p("June 2025", class = "card-date")
-    ),
-    tags$a(
-      "View Project", href = "organic.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
-```
-:::
-
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/canadian_praires.png",
-      alt = "canada_cattle",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("Canada's Cattle Population", class = "card-title"),
-      tags$p(
-        "Analyzing National Trends in Cattle Distribution and Farm Types",
-        class = "card-description"
-      ),
-      tags$p("R, tidyverse, Data Cleaning, Tableau, Geospatial Analysis, Time-Series Analysis", class = "card-tags"),
-      tags$p("August 2024", class = "card-date")
-    ),
-    tags$a(
-      "View Project", href = "canada_cattle.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
-```
-:::
-:::::
-
-::::: columns
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/tidytuesday_hero.png",
-      alt = "tidytuesday_projects",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("TidyTuesday Projects", class = "card-title"),
-      tags$p(
-        "Weekly Data Visualization Challenges and Interactive Applications",
-        class = "card-description"
-      ),
-      tags$p("R, Shiny, Quarto, Text Analysis, Data Visualization, Interactive Apps", class = "card-tags"),
-      tags$p("November-December 2024", class = "card-date")
-    ),
-    tags$a(
-      "View Projects", href = "tidytuesday.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
-```
-:::
-
-::: column
-```{r echo=FALSE}
-library(htmltools)
-
-portfolio_card <- tags$div(
-  class = "portfolio-container",
-  tags$a(
-    class = "portfolio-card",
-    tags$img(
-      src = "images/animal-welfare.jpg",
-      alt = "animal welfare",
-      class = "card-image"
-    ),
-    tags$div(
-      class = "card-content",
-      tags$h3("Quantifying Animal Welfare Narratives in BBC News", class = "card-title"),
-      tags$p(
-        "Web Scraping and Text Analysis of BBC News Coverage",
-        class = "card-description"
-      ),
-      tags$p("Web Scraping, R, Text Mining, Sentiment Analysis, Data Visualization, Language Processing, Quarto", class = "card-tags"),
-      tags$p("July 2025", class = "card-date")
-    ),
-    tags$a(
-      "View Project", href = "bbc_scraping.qmd",
-      class = "view-project-btn"
-    )
-  )
-)
-portfolio_card
-```
-:::
-:::::
-:::::::::
+Looking for peer-reviewed work? See [Publications](publications.qmd).

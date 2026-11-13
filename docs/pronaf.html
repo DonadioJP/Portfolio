@@ -97,48 +97,51 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-portfolio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Portfolio</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-portfolio">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="./projects.html">
  <span class="dropdown-text">All Projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://donadiojp.github.io/caa/">
+ <span class="dropdown-text">Criação Animal Agroecológica</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./research_projects.html">
  <span class="dropdown-text">Research Project Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./tidytuesday.html">
- <span class="dropdown-text">TidyTuesday Projects</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./canada_cattle.html">
- <span class="dropdown-text">Canada’s Cattle Population Analysis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./bbc_scraping.html">
- <span class="dropdown-text">Animal Welfare Narratives in BBC News Analysis</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="./pronaf.html">
  <span class="dropdown-text">PRONAF Investments Analysis</span></a>
   </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Publications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-publications">    
         <li>
-    <a class="dropdown-item" href="./organic.html">
- <span class="dropdown-text">Organic Farming in Brazil</span></a>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">All Publications</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./metaanalysis.html">
- <span class="dropdown-text">Meta-analysis Calves</span></a>
+ <span class="dropdown-text">Meta-analysis: Group Housing for Calves</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./watercalves.html">
- <span class="dropdown-text">Experiment Water for Calves</span></a>
+ <span class="dropdown-text">Experiment: Nipple Water Troughs for Calves</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://donadiojp.github.io/caa/caderno/"> 
+<span class="menu-text">Caderno de Campo</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv.html"> 
 <span class="menu-text">Curriculum vitæ</span></a>
@@ -289,111 +292,58 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <div id="footer-container">
-
   <div id="footer-content">
-
-    <div id="footer1">© 2025 João Pedro Donadio</div>
-
+    <div id="footer1">© 2026 João Pedro Donadio</div>
     <div id="footer2">Website made with Quarto</div>
-
   </div>
-
 </div>
-
-
 
 <style>
 
-
-
 /* Main footer container */
-
 #footer-container {
-
   width: 100%;
-
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-
   color: white;
-
   padding: 1.5rem 0;
-
   margin-top: 3rem;
-
 }
-
-
 
 /* Content wrapper */
-
 #footer-content {
-
   max-width: 1200px;
-
   margin: 0 auto;
-
   display: flex;
-
   justify-content: space-between;
-
   padding: 0 2rem;
-
 }
-
-
 
 /* Text elements */
-
 #footer1 {
-
   text-align: center;
-
   flex: 1;
-
 }
-
-
 
 #footer2 {
-
   text-align: right;
-
   flex: 1;
-
   font-size: 0.9em;
-
   opacity: 0.8;
-
 }
-
-
 
 /* Mobile responsiveness */
-
 @media (max-width: 768px) {
-
   #footer-content {
-
     flex-direction: column;
-
     text-align: center;
-
     gap: 0.5rem;
-
   }
-
   
-
   #footer1, #footer2 {
-
     text-align: center;
-
     width: 100%;
-
   }
-
 }
-
 </style>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -468,7 +418,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/donadiojp\.github\.io\/Portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

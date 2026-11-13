@@ -7,8 +7,8 @@ title: "Curriculum Vitæ"
 library(htmltools)
 
 div(style = "display: block; justify-content: space-between; margin-bottom: 2rem;",
-    div(style = "align-self: center; margin-top: 3px;",  
-        a(href = "images/CV_JP2025.pdf", 
+    div(style = "align-self: center; margin-top: 3px;",
+        a(href = "images/CV_JP2025.pdf",
           download = "CV_JP2025.pdf",
           class = "download-button",
           "PDF Download"
@@ -17,132 +17,87 @@ div(style = "display: block; justify-content: space-between; margin-bottom: 2rem
 )
 ```
 
+I work at the intersection of fieldwork research and data analysis, turning real-world data into clear, practical insights. My work focuses on animal science, farm management and applied agricultural research. With a background in sustainable cattle production systems, I bring the day-to-day reality of farms into the analysis I do.
+
 ## Education
 
 ```{r}
 #| echo: false
+edu <- function(degree, school, years) {
+  div(class = "edu-box",
+      h3(degree),
+      p(em(school)),
+      p(style = "text-align: right;", years))
+}
 
-edu_content <- tagList(
-  div(class = "edu-box",
-      h3("MSc in Animal Science"),
-      p(em("São Paulo State University")),
-      p(style = "text-align: right;", "2023-2025"),
-      style = "float: right;"
-  ),
-  div(class = "edu-box",
-      h3("BSc in Agriculture"),
-      p(em("Federal University of Santa Catarina")),
-      p(style = "text-align: right;", "2017-2022"),
-      style = "float: left;"
-  ),
-  div(style = "clear: both;")
+div(class = "edu-grid",
+  edu("PhD in Agricultural Sciences", "Lincoln University, New Zealand", "2026–present"),
+  edu("MSc in Animal Science", "São Paulo State University (UNESP)", "2023–2025"),
+  edu("BSc in Agriculture", "Federal University of Santa Catarina (UFSC)", "2017–2022")
 )
-
-edu_content
 ```
 
 ## Professional Experience
 
 ```{r}
 #| echo: false
-carousel <- div(class = "timeline-container",
+job <- function(years, role, org, bullets) {
+  div(class = "carousel-item",
+      h3(years),
+      h4(role),
+      p(org),
+      tags$ul(lapply(bullets, tags$li)))
+}
+
+div(class = "timeline-container",
   div(class = "carousel-nav",
-    tags$button(class = "carousel-arrow left", HTML("&larr;"), onclick = "moveCarousel(-1)"),
-    tags$button(class = "carousel-arrow right", HTML("&rarr;"), onclick = "moveCarousel(1)")
+    tags$button(class = "carousel-arrow left", HTML("&larr;"), onclick = "moveCarousel(-1)", `aria-label` = "Previous"),
+    tags$button(class = "carousel-arrow right", HTML("&rarr;"), onclick = "moveCarousel(1)", `aria-label` = "Next")
   ),
-  div(class = "carousel-item active",
-      h3("2025-Present"),
-      h4("Research Technician"),
-      p("São Paulo State University"),
-      tags$ul(
-        tags$li("Training teams on experimental procedures"),
-        tags$li("Statistical analysis planning"),
-        tags$li("Technical report writing")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2024"),
-      h4("Visiting Research Student"),
-      p("University of British Columbia"),
-      tags$ul(
-        tags$li("Animal welfare research collaboration"),
-        tags$li("Presented findings at international seminars")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2023-2024"),
-      h4("Herdsperson"),
-      p("EMBRAPA Pecuária Sudeste"),
-      tags$ul(
-        tags$li("Managed dairy calf health protocols"),
-        tags$li("Implemented vaccination programs")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2023-2025"),
-      h4("Research Assistant"),
-      p("São Paulo State University"),
-      tags$ul(
-        tags$li("Coordinated international dairy cattle welfare projects"),
-        tags$li("Developed patents and scientific papers")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2023"),
-      h4("Teaching Intern"),
-      p("São Paulo State University"),
-      tags$ul(
-        tags$li("Taught 'Dairy Cattle' for veterinary students")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2022"),
-      h4("Farm Labourer"),
-      p("Estância Santa Bárbara"),
-      tags$ul(
-        tags$li("Managed operations for 11,000-head sheep farm")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2019-2022"),
-      h4("Research Assistant"),
-      p("Federal University of Santa Catarina (LETA)"),
-      tags$ul(
-        tags$li("Led dairy cattle behavior studies"),
-        tags$li("Developed outreach materials")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2018"),
-      h4("Teaching Assistant"),
-      p("Federal University of Santa Catarina"),
-      tags$ul(
-        tags$li("Physics instruction for agriculture students")
-      )
-  ),
-  div(class = "carousel-item",
-      h3("2017-2018"),
-      h4("Search Engine Evaluator"),
-      p("Lionbridge"),
-      tags$ul(
-        tags$li("Improved search algorithm quality")
-      )
-  ),
+  job("2025–2026", "Research Assistant", "Independent · Vancouver, Canada",
+      c("Data analysis and research support for academic and scientific projects",
+        "Co-author of a data descriptor on U.S. forensic DNA databases (Scientific Data, 2026)",
+        "Managed several concurrent mini-projects, delivering analysis on time")),
+  job("2025", "Research Technician", "FAPESP · Botucatu, Brazil",
+      c("Trained and supervised teams on experimental procedures",
+        "Statistical analysis planning: experimental design, interpretation and validation",
+        "Detailed technical reports on methods, results and conclusions")),
+  job("2024", "Visiting Research Student", "University of British Columbia · Agassiz, Canada",
+      c("Emerging Leaders in the Americas Program (EduCanada)",
+        "Animal welfare research collaboration")),
+  job("2023–2024", "Graduate Research Assistant", "Embrapa · São Carlos, Brazil",
+      c("Conducted experiments with dairy calves",
+        "Managed dairy calf management protocols")),
+  job("2023–2025", "Graduate Research Assistant", "São Paulo State University (UNESP) · Botucatu, Brazil",
+      c("Coordinated collaborative dairy cattle welfare research with UNESP and Embrapa",
+        "Managed team scheduling, meetings and project execution",
+        "Organised conferences, workshops and science communication events",
+        "Contributed to technical reports, new technologies and patent applications")),
+  job("2023", "Teaching Assistant", "São Paulo State University (UNESP)",
+      c("Assisted the 'Dairy Cattle' course for veterinary medicine students")),
+  job("2022", "Farm Trainee", "Estância Santa Bárbara · Magallanes, Chile",
+      c("Daily operations of an 11,000-sheep farm: selection, reproduction, health, shearing and pasture management",
+        "Followed the marketing of wool and meat products")),
+  job("2019–2022", "Research & Extension Intern", "Federal University of Santa Catarina (LETA and PRV Lab)",
+      c("Extension project promoting Voisin Rational Grazing as a sustainable technology for ruminant production (2020–2022)",
+        "Designing better water troughs: herd, water temperature and luminosity (2021–2022)",
+        "Social hierarchy and personality in cattle access to limited resources (2020–2021)",
+        "Social hierarchy, proximity of calving and nociceptive thermal threshold in pregnant cows (2019–2020)")),
+  job("2018", "Teaching Assistant", "Federal University of Santa Catarina",
+      c("Supported the 'Physics for Agricultural Sciences' course")),
+  job("2017–2018", "Search Engine Evaluator", "Lionbridge",
+      c("Improved search algorithm quality")),
   tags$script(HTML('
     let currentItem = 0;
     const items = document.querySelectorAll(".carousel-item");
-    
+
     function showItem(index) {
-      items.forEach((item, i) => {
-        item.classList.toggle("active", i === index);
-      });
-      
-      // Atualiza indicadores de navegação
+      items.forEach((item, i) => item.classList.toggle("active", i === index));
       const arrows = document.querySelectorAll(".carousel-arrow");
       arrows[0].style.visibility = index > 0 ? "visible" : "hidden";
       arrows[1].style.visibility = index < items.length - 1 ? "visible" : "hidden";
     }
-    
+
     function moveCarousel(step) {
       const newIndex = currentItem + step;
       if (newIndex >= 0 && newIndex < items.length) {
@@ -150,32 +105,49 @@ carousel <- div(class = "timeline-container",
         showItem(currentItem);
       }
     }
-    
-    // Inicializa
+
     showItem(0);
-    
-    // Mantém o listener do teclado
+
     document.addEventListener("keydown", (e) => {
       if (e.key === "ArrowLeft") moveCarousel(-1);
       if (e.key === "ArrowRight") moveCarousel(1);
     });
   '))
 )
+```
 
-carousel
+## Publications
+
+```{r}
+#| echo: false
+pub <- function(text, doi) {
+  tags$li(HTML(text), " ",
+          a(paste0("doi:", doi), href = paste0("https://doi.org/", doi), target = "_blank", rel = "noopener"))
+}
+
+div(class = "cert-box",
+  tags$ul(
+    pub("Pryor Y, Ranka V, <strong>Donadio JP</strong>, Muller SC, Wilson J, Lasisi T (2026). National and state-level datasets of United States forensic DNA databases 2001–2025. <em>Scientific Data</em>, 13, 1322.",
+        "10.1038/s41597-026-07605-5"),
+    pub("<strong>Donadio JP</strong>, De-Sousa KT, Alves TC, Hötzel MJ, Deniz M (2025). The use of nipple water trough for group-housed dairy calves reduces cross-sucking. <em>Applied Animal Behaviour Science</em>, 289, 106684.",
+        "10.1016/j.applanim.2025.106684"),
+    pub("<strong>Donadio JP</strong>, De-Sousa KT, Torres RNS, Alves TC, Hötzel MJ, Deniz M (2025). A meta-analysis approach to evaluate the effects of early group housing on calf performance, health, and behavior during the preweaning period. <em>Journal of Dairy Science</em>, 108, 954–967.",
+        "10.3168/jds.2024-25159")
+  ),
+  p(a("More about each paper →", href = "publications.qmd"))
+)
 ```
 
 ## Skills Matrix
 
 ```{r}
 #| echo: false
-skills <- c("Project Management", "Experimental designs", "Academic Research", "Animal Ethology", "Animal Welfare", "Excel", "SQL", "R", "Data Visualization", "Quarto", "Word", "GitHub", "Microsoft Teams", "HTML", "CSS")
+skills <- c("Experimental Design", "Academic Research", "Animal Ethology", "Animal Welfare",
+            "Project Management", "Data Analytics", "R", "SQL", "PostgreSQL", "Shiny",
+            "Data Visualization", "Systematic Review & Meta-analysis", "Quarto", "Excel",
+            "GitHub", "HTML", "CSS", "Science Communication")
 
-tagList(
-  lapply(skills, function(skill) {
-    div(class = "skill-box", skill)
-  })
-)
+tagList(lapply(skills, function(skill) div(class = "skill-box", skill)))
 ```
 
 ## Languages
@@ -183,37 +155,34 @@ tagList(
 ```{r}
 #| echo: false
 languages <- data.frame(
-  language = c("Portuguese", "English", "Spanish", "French"),
-  proficiency = c(100, 95, 90, 30)
+  language = c("Portuguese (native)", "English (full professional)", "Spanish (full professional)"),
+  proficiency = c(100, 90, 90)
 )
 
-tagList(
-  div(class = "languages-container",
-    lapply(1:nrow(languages), function(i) {
-      div(class = "language-item",
-        div(class = "language-header",
-          span(class = "language-flag", languages$flag[i]),
-          span(class = "language-name", languages$language[i])
-          ),
-        div(class = "language-bar-container",
-          div(
-            class = "language-bar",
+div(class = "languages-container",
+  lapply(seq_len(nrow(languages)), function(i) {
+    div(class = "language-item",
+      div(class = "language-header",
+        span(class = "language-name", languages$language[i])),
+      div(class = "language-bar-container",
+        div(class = "language-bar",
             style = paste0("width: ", languages$proficiency[i], "%;"),
-            `data-proficiency` = languages$proficiency[i]
-          )
-        )
-      )
-    })
-  )
+            `data-proficiency` = languages$proficiency[i])))
+  })
 )
 ```
 
-## Courses Certificates
+## Courses & Certificates
 
 ```{r}
 #| echo: false
 div(class = "cert-box",
     tags$ul(
+      tags$li("Learning Data Visualization - LinkedIn Learning"),
+      tags$li("The Non-Technical Skills of Effective Data Scientists - LinkedIn Learning"),
+      tags$li("Learning Excel: Data Analysis - LinkedIn Learning"),
+      tags$li("Data Literacy: Exploring and Describing Data - LinkedIn Learning"),
+      tags$li("Foundations of Learning Management Systems (LMS) - LinkedIn Learning"),
       tags$li("Dairy calf rearing: strategies to increase efficiency - Embrapa (40h)"),
       tags$li("Graduate Student Writing Workshop - University of Calgary (12h)"),
       tags$li("R Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)"),

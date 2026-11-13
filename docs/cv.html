@@ -97,48 +97,51 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-portfolio" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Portfolio</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Projects</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-portfolio">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
         <li>
     <a class="dropdown-item" href="./projects.html">
  <span class="dropdown-text">All Projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://donadiojp.github.io/caa/">
+ <span class="dropdown-text">Criação Animal Agroecológica</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./research_projects.html">
  <span class="dropdown-text">Research Project Analysis</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./tidytuesday.html">
- <span class="dropdown-text">TidyTuesday Projects</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./canada_cattle.html">
- <span class="dropdown-text">Canada’s Cattle Population Analysis</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="./bbc_scraping.html">
- <span class="dropdown-text">Animal Welfare Narratives in BBC News Analysis</span></a>
-  </li>  
-        <li>
     <a class="dropdown-item" href="./pronaf.html">
  <span class="dropdown-text">PRONAF Investments Analysis</span></a>
   </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Publications</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-publications">    
         <li>
-    <a class="dropdown-item" href="./organic.html">
- <span class="dropdown-text">Organic Farming in Brazil</span></a>
+    <a class="dropdown-item" href="./publications.html">
+ <span class="dropdown-text">All Publications</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./metaanalysis.html">
- <span class="dropdown-text">Meta-analysis Calves</span></a>
+ <span class="dropdown-text">Meta-analysis: Group Housing for Calves</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./watercalves.html">
- <span class="dropdown-text">Experiment Water for Calves</span></a>
+ <span class="dropdown-text">Experiment: Nipple Water Troughs for Calves</span></a>
   </li>  
     </ul>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://donadiojp.github.io/caa/caderno/"> 
+<span class="menu-text">Caderno de Campo</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./cv.html" aria-current="page"> 
 <span class="menu-text">Curriculum vitæ</span></a>
@@ -193,25 +196,34 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
+<p>I work at the intersection of fieldwork research and data analysis, turning real-world data into clear, practical insights. My work focuses on animal science, farm management and applied agricultural research. With a background in sustainable cattle production systems, I bring the day-to-day reality of farms into the analysis I do.</p>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="edu-box" style="float: right;">
+<div class="edu-grid">
+<div class="edu-box">
+<h3 class="anchored">PhD in Agricultural Sciences</h3>
+<p>
+<em>Lincoln University, New Zealand</em>
+</p>
+<p style="text-align: right;">2026–present</p>
+</div>
+<div class="edu-box">
 <h3 class="anchored">MSc in Animal Science</h3>
 <p>
-<em>São Paulo State University</em>
+<em>São Paulo State University (UNESP)</em>
 </p>
-<p style="text-align: right;">2023-2025</p>
+<p style="text-align: right;">2023–2025</p>
 </div>
-<div class="edu-box" style="float: left;">
+<div class="edu-box">
 <h3 class="anchored">BSc in Agriculture</h3>
 <p>
-<em>Federal University of Santa Catarina</em>
+<em>Federal University of Santa Catarina (UFSC)</em>
 </p>
-<p style="text-align: right;">2017-2022</p>
+<p style="text-align: right;">2017–2022</p>
 </div>
-<div style="clear: both;"></div>
+</div>
 </div>
 </div>
 </section>
@@ -221,69 +233,84 @@ ul.task-list li input[type="checkbox"] {
 <div class="cell-output-display">
 <div class="timeline-container">
 <div class="carousel-nav">
-<button class="carousel-arrow left" onclick="moveCarousel(-1)">←</button>
-<button class="carousel-arrow right" onclick="moveCarousel(1)">→</button>
+<button class="carousel-arrow left" onclick="moveCarousel(-1)" aria-label="Previous">←</button>
+<button class="carousel-arrow right" onclick="moveCarousel(1)" aria-label="Next">→</button>
 </div>
-<div class="carousel-item active">
-<h3 class="anchored">2025-Present</h3>
-<h4 class="anchored">Research Technician</h4>
-<p>São Paulo State University</p>
+<div class="carousel-item">
+<h3 class="anchored">2025–2026</h3>
+<h4 class="anchored">Research Assistant</h4>
+<p>Independent · Vancouver, Canada</p>
 <ul>
-<li>Training teams on experimental procedures</li>
-<li>Statistical analysis planning</li>
-<li>Technical report writing</li>
+<li>Data analysis and research support for academic and scientific projects</li>
+<li>Co-author of a data descriptor on U.S. forensic DNA databases (Scientific Data, 2026)</li>
+<li>Managed several concurrent mini-projects, delivering analysis on time</li>
+</ul>
+</div>
+<div class="carousel-item">
+<h3 class="anchored">2025</h3>
+<h4 class="anchored">Research Technician</h4>
+<p>FAPESP · Botucatu, Brazil</p>
+<ul>
+<li>Trained and supervised teams on experimental procedures</li>
+<li>Statistical analysis planning: experimental design, interpretation and validation</li>
+<li>Detailed technical reports on methods, results and conclusions</li>
 </ul>
 </div>
 <div class="carousel-item">
 <h3 class="anchored">2024</h3>
 <h4 class="anchored">Visiting Research Student</h4>
-<p>University of British Columbia</p>
+<p>University of British Columbia · Agassiz, Canada</p>
 <ul>
+<li>Emerging Leaders in the Americas Program (EduCanada)</li>
 <li>Animal welfare research collaboration</li>
-<li>Presented findings at international seminars</li>
 </ul>
 </div>
 <div class="carousel-item">
-<h3 class="anchored">2023-2024</h3>
-<h4 class="anchored">Herdsperson</h4>
-<p>EMBRAPA Pecuária Sudeste</p>
+<h3 class="anchored">2023–2024</h3>
+<h4 class="anchored">Graduate Research Assistant</h4>
+<p>Embrapa · São Carlos, Brazil</p>
 <ul>
-<li>Managed dairy calf health protocols</li>
-<li>Implemented vaccination programs</li>
+<li>Conducted experiments with dairy calves</li>
+<li>Managed dairy calf management protocols</li>
 </ul>
 </div>
 <div class="carousel-item">
-<h3 class="anchored">2023-2025</h3>
-<h4 class="anchored">Research Assistant</h4>
-<p>São Paulo State University</p>
+<h3 class="anchored">2023–2025</h3>
+<h4 class="anchored">Graduate Research Assistant</h4>
+<p>São Paulo State University (UNESP) · Botucatu, Brazil</p>
 <ul>
-<li>Coordinated international dairy cattle welfare projects</li>
-<li>Developed patents and scientific papers</li>
+<li>Coordinated collaborative dairy cattle welfare research with UNESP and Embrapa</li>
+<li>Managed team scheduling, meetings and project execution</li>
+<li>Organised conferences, workshops and science communication events</li>
+<li>Contributed to technical reports, new technologies and patent applications</li>
 </ul>
 </div>
 <div class="carousel-item">
 <h3 class="anchored">2023</h3>
-<h4 class="anchored">Teaching Intern</h4>
-<p>São Paulo State University</p>
+<h4 class="anchored">Teaching Assistant</h4>
+<p>São Paulo State University (UNESP)</p>
 <ul>
-<li>Taught 'Dairy Cattle' for veterinary students</li>
+<li>Assisted the 'Dairy Cattle' course for veterinary medicine students</li>
 </ul>
 </div>
 <div class="carousel-item">
 <h3 class="anchored">2022</h3>
-<h4 class="anchored">Farm Labourer</h4>
-<p>Estância Santa Bárbara</p>
+<h4 class="anchored">Farm Trainee</h4>
+<p>Estância Santa Bárbara · Magallanes, Chile</p>
 <ul>
-<li>Managed operations for 11,000-head sheep farm</li>
+<li>Daily operations of an 11,000-sheep farm: selection, reproduction, health, shearing and pasture management</li>
+<li>Followed the marketing of wool and meat products</li>
 </ul>
 </div>
 <div class="carousel-item">
-<h3 class="anchored">2019-2022</h3>
-<h4 class="anchored">Research Assistant</h4>
-<p>Federal University of Santa Catarina (LETA)</p>
+<h3 class="anchored">2019–2022</h3>
+<h4 class="anchored">Research &amp; Extension Intern</h4>
+<p>Federal University of Santa Catarina (LETA and PRV Lab)</p>
 <ul>
-<li>Led dairy cattle behavior studies</li>
-<li>Developed outreach materials</li>
+<li>Extension project promoting Voisin Rational Grazing as a sustainable technology for ruminant production (2020–2022)</li>
+<li>Designing better water troughs: herd, water temperature and luminosity (2021–2022)</li>
+<li>Social hierarchy and personality in cattle access to limited resources (2020–2021)</li>
+<li>Social hierarchy, proximity of calving and nociceptive thermal threshold in pregnant cows (2019–2020)</li>
 </ul>
 </div>
 <div class="carousel-item">
@@ -291,11 +318,11 @@ ul.task-list li input[type="checkbox"] {
 <h4 class="anchored">Teaching Assistant</h4>
 <p>Federal University of Santa Catarina</p>
 <ul>
-<li>Physics instruction for agriculture students</li>
+<li>Supported the 'Physics for Agricultural Sciences' course</li>
 </ul>
 </div>
 <div class="carousel-item">
-<h3 class="anchored">2017-2018</h3>
+<h3 class="anchored">2017–2018</h3>
 <h4 class="anchored">Search Engine Evaluator</h4>
 <p>Lionbridge</p>
 <ul>
@@ -305,18 +332,14 @@ ul.task-list li input[type="checkbox"] {
 <script>
     let currentItem = 0;
     const items = document.querySelectorAll(".carousel-item");
-    
+
     function showItem(index) {
-      items.forEach((item, i) => {
-        item.classList.toggle("active", i === index);
-      });
-      
-      // Atualiza indicadores de navegação
+      items.forEach((item, i) => item.classList.toggle("active", i === index));
       const arrows = document.querySelectorAll(".carousel-arrow");
       arrows[0].style.visibility = index > 0 ? "visible" : "hidden";
       arrows[1].style.visibility = index < items.length - 1 ? "visible" : "hidden";
     }
-    
+
     function moveCarousel(step) {
       const newIndex = currentItem + step;
       if (newIndex >= 0 && newIndex < items.length) {
@@ -324,11 +347,9 @@ ul.task-list li input[type="checkbox"] {
         showItem(currentItem);
       }
     }
-    
-    // Inicializa
+
     showItem(0);
-    
-    // Mantém o listener do teclado
+
     document.addEventListener("keydown", (e) => {
       if (e.key === "ArrowLeft") moveCarousel(-1);
       if (e.key === "ArrowRight") moveCarousel(1);
@@ -338,25 +359,57 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div class="cell">
+<div class="cell-output-display">
+<div class="cert-box">
+<ul>
+<li>
+Pryor Y, Ranka V, <strong>Donadio JP</strong>, Muller SC, Wilson J, Lasisi T (2026). National and state-level datasets of United States forensic DNA databases 2001–2025. <em>Scientific Data</em>, 13, 1322.
+ 
+<a href="https://doi.org/10.1038/s41597-026-07605-5" target="_blank" rel="noopener">doi:10.1038/s41597-026-07605-5</a>
+</li>
+<li>
+<strong>Donadio JP</strong>, De-Sousa KT, Alves TC, Hötzel MJ, Deniz M (2025). The use of nipple water trough for group-housed dairy calves reduces cross-sucking. <em>Applied Animal Behaviour Science</em>, 289, 106684.
+ 
+<a href="https://doi.org/10.1016/j.applanim.2025.106684" target="_blank" rel="noopener">doi:10.1016/j.applanim.2025.106684</a>
+</li>
+<li>
+<strong>Donadio JP</strong>, De-Sousa KT, Torres RNS, Alves TC, Hötzel MJ, Deniz M (2025). A meta-analysis approach to evaluate the effects of early group housing on calf performance, health, and behavior during the preweaning period. <em>Journal of Dairy Science</em>, 108, 954–967.
+ 
+<a href="https://doi.org/10.3168/jds.2024-25159" target="_blank" rel="noopener">doi:10.3168/jds.2024-25159</a>
+</li>
+</ul>
+<p>
+<a href="./publications.html">More about each paper →</a>
+</p>
+</div>
+</div>
+</div>
+</section>
 <section id="skills-matrix" class="level2">
 <h2 class="anchored" data-anchor-id="skills-matrix">Skills Matrix</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div class="skill-box">Project Management</div>
-<div class="skill-box">Experimental designs</div>
+<div class="skill-box">Experimental Design</div>
 <div class="skill-box">Academic Research</div>
 <div class="skill-box">Animal Ethology</div>
 <div class="skill-box">Animal Welfare</div>
-<div class="skill-box">Excel</div>
-<div class="skill-box">SQL</div>
+<div class="skill-box">Project Management</div>
+<div class="skill-box">Data Analytics</div>
 <div class="skill-box">R</div>
+<div class="skill-box">SQL</div>
+<div class="skill-box">PostgreSQL</div>
+<div class="skill-box">Shiny</div>
 <div class="skill-box">Data Visualization</div>
+<div class="skill-box">Systematic Review &amp; Meta-analysis</div>
 <div class="skill-box">Quarto</div>
-<div class="skill-box">Word</div>
+<div class="skill-box">Excel</div>
 <div class="skill-box">GitHub</div>
-<div class="skill-box">Microsoft Teams</div>
 <div class="skill-box">HTML</div>
 <div class="skill-box">CSS</div>
+<div class="skill-box">Science Communication</div>
 </div>
 </div>
 </section>
@@ -367,8 +420,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="languages-container">
 <div class="language-item">
 <div class="language-header">
-<span class="language-flag"></span>
-<span class="language-name">Portuguese</span>
+<span class="language-name">Portuguese (native)</span>
 </div>
 <div class="language-bar-container">
 <div class="language-bar" style="width: 100%;" data-proficiency="100"></div>
@@ -376,17 +428,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="language-item">
 <div class="language-header">
-<span class="language-flag"></span>
-<span class="language-name">English</span>
-</div>
-<div class="language-bar-container">
-<div class="language-bar" style="width: 95%;" data-proficiency="95"></div>
-</div>
-</div>
-<div class="language-item">
-<div class="language-header">
-<span class="language-flag"></span>
-<span class="language-name">Spanish</span>
+<span class="language-name">English (full professional)</span>
 </div>
 <div class="language-bar-container">
 <div class="language-bar" style="width: 90%;" data-proficiency="90"></div>
@@ -394,11 +436,10 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="language-item">
 <div class="language-header">
-<span class="language-flag"></span>
-<span class="language-name">French</span>
+<span class="language-name">Spanish (full professional)</span>
 </div>
 <div class="language-bar-container">
-<div class="language-bar" style="width: 30%;" data-proficiency="30"></div>
+<div class="language-bar" style="width: 90%;" data-proficiency="90"></div>
 </div>
 </div>
 </div>
@@ -406,11 +447,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="courses-certificates" class="level2">
-<h2 class="anchored" data-anchor-id="courses-certificates">Courses Certificates</h2>
+<h2 class="anchored" data-anchor-id="courses-certificates">Courses &amp; Certificates</h2>
 <div class="cell">
 <div class="cell-output-display">
 <div class="cert-box">
 <ul>
+<li>Learning Data Visualization - LinkedIn Learning</li>
+<li>The Non-Technical Skills of Effective Data Scientists - LinkedIn Learning</li>
+<li>Learning Excel: Data Analysis - LinkedIn Learning</li>
+<li>Data Literacy: Exploring and Describing Data - LinkedIn Learning</li>
+<li>Foundations of Learning Management Systems (LMS) - LinkedIn Learning</li>
 <li>Dairy calf rearing: strategies to increase efficiency - Embrapa (40h)</li>
 <li>Graduate Student Writing Workshop - University of Calgary (12h)</li>
 <li>R Software – Analysis and Interpretation of Experiments - Montes Claros State University (30h)</li>
@@ -427,111 +473,58 @@ ul.task-list li input[type="checkbox"] {
 
 </main> <!-- /main -->
 <div id="footer-container">
-
   <div id="footer-content">
-
-    <div id="footer1">© 2025 João Pedro Donadio</div>
-
+    <div id="footer1">© 2026 João Pedro Donadio</div>
     <div id="footer2">Website made with Quarto</div>
-
   </div>
-
 </div>
-
-
 
 <style>
 
-
-
 /* Main footer container */
-
 #footer-container {
-
   width: 100%;
-
   background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
-
   color: white;
-
   padding: 1.5rem 0;
-
   margin-top: 3rem;
-
 }
-
-
 
 /* Content wrapper */
-
 #footer-content {
-
   max-width: 1200px;
-
   margin: 0 auto;
-
   display: flex;
-
   justify-content: space-between;
-
   padding: 0 2rem;
-
 }
-
-
 
 /* Text elements */
-
 #footer1 {
-
   text-align: center;
-
   flex: 1;
-
 }
-
-
 
 #footer2 {
-
   text-align: right;
-
   flex: 1;
-
   font-size: 0.9em;
-
   opacity: 0.8;
-
 }
-
-
 
 /* Mobile responsiveness */
-
 @media (max-width: 768px) {
-
   #footer-content {
-
     flex-direction: column;
-
     text-align: center;
-
     gap: 0.5rem;
-
   }
-
   
-
   #footer1, #footer2 {
-
     text-align: center;
-
     width: 100%;
-
   }
-
 }
-
 </style>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -606,7 +599,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/donadiojp\.github\.io\/Portfolio\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
