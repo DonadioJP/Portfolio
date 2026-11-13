@@ -129,9 +129,9 @@ girafe(ggobj = combined,
 ::: cv-button
 ```{r}
 #| echo: false
-htmltools::tags$div(
+htmltools::tags$a(
   class = "cv-button-box",
-  href = "cv.pt.qmd",
+  href = "cv.qmd",
   style = "cursor: pointer;",
   "Quer saber mais? Acesse meu CV"
 )
