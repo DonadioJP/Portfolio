@@ -1,6 +1,6 @@
 ---
 title: "João Pedro Donadio"
-subtitle: "Cientista · Profissional de campo · Criador de conteúdo"
+subtitle: "Cientista · Profissional de campo · Comunicador científico"
 lang: pt
 ---
 
@@ -19,7 +19,7 @@ lang: pt
 
 Trabalho onde a pesquisa de campo encontra a análise de dados. Planejo experimentos, coleto dados nas propriedades e os transformo em respostas claras e práticas. Meu foco é bem-estar animal, comportamento de bovinos e sistemas de produção animal sustentáveis e agroecológicos.
 
-Me vejo como **cientista, profissional de campo e criador de conteúdo**: faço a pesquisa, conheço o dia a dia da propriedade e construo as ferramentas que levam o que aprendemos às mãos de quem precisa.
+Me vejo como **cientista, profissional de campo e comunicador científico**: faço a pesquisa, conheço o dia a dia da propriedade e transformo o que aprendemos em conhecimento que as pessoas podem usar.
 :::
 ::::
 ::::::
@@ -42,8 +42,8 @@ div(class = "pillars",
   pillar("Profissional de campo",
          "Anos de campo na América Latina, trabalhando com manejo agroecológico de pastagens na bovinocultura de corte e de leite e na ovinocultura.",
          "Experiência →", "cv.qmd"),
-  pillar("Criador de conteúdo",
-         "Ferramentas que colocam a pesquisa para trabalhar: um portal aberto sobre criação animal agroecológica, calculadoras em Shiny, painéis e relatórios reprodutíveis.",
+  pillar("Comunicador científico",
+         "Transformando pesquisa em conhecimento acessível: um portal aberto sobre criação animal agroecológica, com guias práticos, aulas, caderno de campo e calculadoras interativas.",
          "Projetos →", "projects.qmd")
 )
 ```
@@ -78,7 +78,7 @@ featured_item <- function(theme, title, date, src, alt, href = NULL, external = 
 }
 
 div(class = "portfolio-gallery",
-  featured_item("Criador de conteúdo · Site", "Criação Animal Agroecológica", "2026",
+  featured_item("Comunicação científica · Site", "Criação Animal Agroecológica", "2026",
                 "images/caa_preview.jpg", "Página inicial do portal Criação Animal Agroecológica",
                 href = "https://donadiojp.github.io/caa/", external = TRUE),
   featured_item("Cientista · Pesquisa", "Água e Sombra para Bovinos a Pasto",

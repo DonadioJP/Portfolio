@@ -41,7 +41,7 @@ card_row <- function(...) {
 }
 ```
 
-## Maker
+## Science Communication
 
 ```{r}
 #| echo: false

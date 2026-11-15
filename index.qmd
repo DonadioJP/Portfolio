@@ -1,6 +1,6 @@
 ---
 title: "João Pedro Donadio"
-subtitle: "Scientist · Practitioner · Maker"
+subtitle: "Scientist · Practitioner · Science Communicator"
 ---
 
 :::::: columnsABC
@@ -18,7 +18,7 @@ subtitle: "Scientist · Practitioner · Maker"
 
 I work where field research meets data analysis. I design experiments, collect data on farms, and turn it into clear, practical insight. My work focuses on animal welfare, cattle behaviour and sustainable, agroecological livestock systems.
 
-I think of myself as a **scientist-practitioner-maker**: I do the research, I know the day-to-day reality of the farm, and I build the tools that put what we learn into people's hands.
+I think of myself as a **scientist, practitioner and science communicator**: I do the research, I know the day-to-day reality of the farm, and I turn what we learn into knowledge people can use.
 :::
 ::::
 ::::::
@@ -41,8 +41,8 @@ div(class = "pillars",
   pillar("Practitioner",
          "Years in the field across Latin America, working on agroecological pasture management with beef cattle, dairy cattle and sheep.",
          "Experience →", "cv.qmd"),
-  pillar("Maker",
-         "Tools that put research to work: an open portal on agroecological animal production, Shiny calculators, dashboards and reproducible reports.",
+  pillar("Science Communicator",
+         "Turning research into accessible knowledge: an open portal on agroecological animal production, with practical guides, lessons, field notes and interactive calculators.",
          "Projects →", "projects.qmd")
 )
 ```
@@ -77,7 +77,7 @@ featured_item <- function(theme, title, date, src, alt, href = NULL, external = 
 }
 
 div(class = "portfolio-gallery",
-  featured_item("Maker · Website", "Criação Animal Agroecológica", "2026",
+  featured_item("Science Communication · Website", "Criação Animal Agroecológica", "2026",
                 "images/caa_preview.jpg", "Criação Animal Agroecológica homepage",
                 href = "https://donadiojp.github.io/caa/", external = TRUE),
   featured_item("Scientist · Research", "Water & Shade for Grazing Cattle",
